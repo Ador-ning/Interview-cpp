@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/Interview-cpp/./BaseCpp/mystrings.h
+iostream
+-
+
+/Users/ning/Interview-cpp/main.cpp
+iostream
+-
+./BaseCpp/mystrings.h
+/Users/ning/Interview-cpp/./BaseCpp/mystrings.h
+
