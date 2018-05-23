@@ -4,92 +4,85 @@
 
 using namespace std;
 
-// ÀûÓÃ Õ» 
-void PrintListReversing_Iterative(ListNode *pHead){
+// åˆ©ç”¨ æ ˆ
+void PrintListReversing_Iterative(ListNode *pHead) {
 	std::stack<ListNode *> nodes;
-	
+
 	ListNode *pNode = pHead;
-	
-	while (pNode != NULL){
+
+	while (pNode != NULL) {
 		nodes.push(pNode);
 		pNode = pNode->m_pNext;
 	}
-	
-	while (!nodes.empty()){
+
+	while (!nodes.empty()) {
 		pNode = nodes.top();
 		printf("%d\t", pNode->m_nKey);
 		nodes.pop();
 	}
 }
 
-// µİ¹é
-void PrintListReversing_Recursive(ListNode *pHead){
-	if (pHead != NULL){
+// é€’å½’
+void PrintListReversing_Recursive(ListNode *pHead) {
+	if (pHead != NULL) {
 		if (pHead->m_pNext != NULL)
 			PrintListReversing_Recursive(pHead->m_pNext);
-		
+
 		printf("%d\t", pHead->m_nKey);
 	}
-} 
+}
 
-// ====================²âÊÔ´úÂë====================
-void Test(ListNode* pHead)
-{
-    PrintList(pHead);
-    PrintListReversing_Iterative(pHead);
-    printf("\n");
-    PrintListReversing_Recursive(pHead);
+// ====================æµ‹è¯•ä»£ç ====================
+void Test(ListNode *pHead) {
+	PrintList(pHead);
+	PrintListReversing_Iterative(pHead);
+	printf("\n");
+	PrintListReversing_Recursive(pHead);
 }
 
 // 1->2->3->4->5
-void Test1()
-{
-    printf("\nTest1 begins.\n");
+void Test1() {
+	printf("\nTest1 begins.\n");
 
-    ListNode* pNode1 = CreateListNode(1);
-    ListNode* pNode2 = CreateListNode(2);
-    ListNode* pNode3 = CreateListNode(3);
-    ListNode* pNode4 = CreateListNode(4);
-    ListNode* pNode5 = CreateListNode(5);
+	ListNode *pNode1 = CreateListNode(1);
+	ListNode *pNode2 = CreateListNode(2);
+	ListNode *pNode3 = CreateListNode(3);
+	ListNode *pNode4 = CreateListNode(4);
+	ListNode *pNode5 = CreateListNode(5);
 
-    ConnectListNodes(pNode1, pNode2);
-    ConnectListNodes(pNode2, pNode3);
-    ConnectListNodes(pNode3, pNode4);
-    ConnectListNodes(pNode4, pNode5);
+	ConnectListNodes(pNode1, pNode2);
+	ConnectListNodes(pNode2, pNode3);
+	ConnectListNodes(pNode3, pNode4);
+	ConnectListNodes(pNode4, pNode5);
 
-    Test(pNode1);
+	Test(pNode1);
 
-    DestroyList(pNode1);
+	DestroyList(pNode1);
 }
 
-// Ö»ÓĞÒ»¸ö½áµãµÄÁ´±í: 1
-void Test2()
-{
-    printf("\nTest2 begins.\n");
+// åªæœ‰ä¸€ä¸ªç»“ç‚¹çš„é“¾è¡¨: 1
+void Test2() {
+	printf("\nTest2 begins.\n");
 
-    ListNode* pNode1 = CreateListNode(1);
+	ListNode *pNode1 = CreateListNode(1);
 
-    Test(pNode1);
+	Test(pNode1);
 
-    DestroyList(pNode1);
+	DestroyList(pNode1);
 }
 
-// ¿ÕÁ´±í
-void Test3()
-{
-    printf("\nTest3 begins.\n");
+// ç©ºé“¾è¡¨
+void Test3() {
+	printf("\nTest3 begins.\n");
 
-    Test(NULL);
+	Test(NULL);
 }
 
 
-int main(int argc, char* argv[])
-{
-    Test1();
-    Test2();
-    Test3();
+int main(int argc, char *argv[]) {
+	Test1();
+	Test2();
+	Test3();
 
-    return 0;
+	return 0;
 }
-
-

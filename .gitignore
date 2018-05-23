@@ -36,3 +36,5 @@
 *.layout
 
 *.gch
+
+.DS*

@@ -1,72 +1,72 @@
+
 #include <cstdio>
 #include <cstdlib>
 #include <stdexcept>
 
 /*
-ÌáÊ¾£º Èç¹ûÊÇÔÚ ÅÅÐòµÄÊý×é£¨»òÕß²¿·ÖÅÅÐòµÄÊý×é£©ÖÐ²éÕÒÒ»¸öÊý×Ö»òÕßÍ³¼ÆÊý×Ö³öÏÖµÄ´ÎÊý£¬Ê¹ÓÃ¶þ·Ö²éÕÒ 
+æç¤ºï¼š å¦‚æžœæ˜¯åœ¨ æŽ’åºçš„æ•°ç»„ï¼ˆæˆ–è€…éƒ¨åˆ†æŽ’åºçš„æ•°ç»„ï¼‰ä¸­æŸ¥æ‰¾ä¸€ä¸ªæ•°å­—æˆ–è€…ç»Ÿè®¡æ•°å­—å‡ºçŽ°çš„æ¬¡æ•°ï¼Œä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾
 */
 
-void Swap(int *a, int *b){
+void Swap(int *a, int *b) {
 	int temp;
 	temp = *a;
-	*a = *b; 
+	*a = *b;
 	*b = temp;
 	// printf("a: %d\tb:%d", *a, *b);
 }
 
 
-int RandomInRange(int index1, int index2){
-	if (index1 >= index2){
+int RandomInRange(int index1, int index2) {
+	if (index1 >= index2) {
 		printf("Invalid range index.\n");
-		return -125; 
-	} 
-	else{
-		return (rand() % (index2-index1+1) + index1);
+		return -125;
+	} else {
+		return (rand() % (index2 - index1 + 1) + index1);
 	}
-	
+
 }
 
-int Partition(int data[], int length, int start, int end){
-	if (data == NULL || length <= 0 || start < 0 || end >= length){
+int Partition(int data[], int length, int start, int end) {
+	if (data == NULL || length <= 0 || start < 0 || end >= length) {
 		std::logic_error ex("Invalid parameters.\n");
 		throw new std::exception(ex);
 	}
-	
+
 	int index = RandomInRange(start, end);
-	Swap(&data[index], &data[end]); 
-	
+	Swap(&data[index], &data[end]);
+
 	int small = start - 1;
-	 
-	for (index = start; index < end; ++index){
-		if (data[index] < data[end]){
+
+	for (index = start; index < end; ++index) {
+		if (data[index] < data[end]) {
 			++small;
 			if (small != index)
-				Swap(&data[index], &data[small]); 
+				Swap(&data[index], &data[small]);
 		}
 	}
-	
+
 	++small;
 	Swap(&data[small], &data[end]);
 
-	return small;	
-} 
-
-
-void QuickSort(int data[], int length, int start, int end){
-	if (start == end)
-		return;
-	
-	int index = Partition(data, length, start, end);
-	if (index > start)
-		QuickSort(data,length, start, index-1);
-	else (index < end)
-		QuickSort(data, length, index+1, end);
+	return small;
 }
 
-int main(){
+
+void QuickSort(int data[], int length, int start, int end) {
+	if (start == end)
+		return;
+
+	int index = Partition(data, length, start, end);
+	if (index > start)
+		QuickSort(data, length, start, index - 1);
+	else (index < end)
+	QuickSort(data, length, index + 1, end);
+}
+
+int main() {
 	int a = 0;
 	int b = 9;
 	// Swap(&a,&b);
-	// printf("%d", RandomInRange(a, b)); 
+	// printf("%d", RandomInRange(a, b));
 	return 0;
 }

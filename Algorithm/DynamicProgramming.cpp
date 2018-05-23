@@ -1,184 +1,162 @@
 #include <iostream>
-#include <cmath> 
+#include <cmath>
 
 /*
-ÃæÊÔÌâ£º ¼ôÉş×Ó 
-ÌâÄ¿£º Ò»¸ù³¤¶ÈÎª n µÄÉş×Ó£¬¼ô³É m ¶Î £¨ m n ¶¼ÊÇÕûÊı£¬n>1 ºÍ m>=1£©
-Ã¿¶ÎÉş×ÓµÄ³¤¶È¼ÇÎª k[0] k[1] ... k[m]. Çó k[0]*k[1]*k[2]...k[m]µÄ×î´óÖµ 
+é¢è¯•é¢˜ï¼š å‰ªç»³å­
+é¢˜ç›®ï¼š ä¸€æ ¹é•¿åº¦ä¸º n çš„ç»³å­ï¼Œå‰ªæˆ m æ®µ ï¼ˆ m n éƒ½æ˜¯æ•´æ•°ï¼Œn>1 å’Œ m>=1ï¼‰
+æ¯æ®µç»³å­çš„é•¿åº¦è®°ä¸º k[0] k[1] ... k[m]. æ±‚ k[0]*k[1]*k[2]...k[m]çš„æœ€å¤§å€¼
 */
 
 
-// ¶¯Ì¬¹æ»®½âÌâ
-int solution1(int length){
+// åŠ¨æ€è§„åˆ’è§£é¢˜
+int solution1(int length) {
 	if (length < 2)
 		return 0;
 	if (length == 2)
 		return 1;
 	if (length == 3)
 		return 2;
-	
-	int *products = new int[length+1];
+
+	int *products = new int[length + 1];
 	products[0] = 0;
-	products[1]	= 1;
+	products[1] = 1;
 	products[2] = 2;
 	products[3] = 3;
-	
+
 	int max = 0;
-	
-	for (int i = 4; i <= length; ++i)
-	{
+
+	for (int i = 4; i <= length; ++i) {
 		max = 0;
-		for (int j = 1; j <= i/2; ++j){
-			int product = products[j]*products[i-j];
-			if ( max < product)
+		for (int j = 1; j <= i / 2; ++j) {
+			int product = products[j] * products[i - j];
+			if (max < product)
 				max = product;
 			products[i] = max;
 		}
 	}
-	
+
 	max = products[length];
-	
+
 	delete[] products;
 	return max;
 }
 
-// Ì°ĞÄËã·¨½âÌâ
-int solution2(int length){
+// è´ªå¿ƒç®—æ³•è§£é¢˜
+int solution2(int length) {
 	if (length < 2)
 		return 0;
 	if (length == 2)
 		return 1;
 	if (length == 3)
 		return 2;
-	
-	// ¾¡¿ÉÄÜ¶àµØ¼õÈ¥³¤¶ÈÎª 3 µÄÉş×Ó
+
+	// å°½å¯èƒ½å¤šåœ°å‡å»é•¿åº¦ä¸º 3 çš„ç»³å­
 	int timesof3 = length / 3;
-	
-	// µ±Éş×Ó×îºóÊ£ÏÂµÄ³¤¶ÈÎª 4 Ê±ºò£¬²»ÄÜ¼ôÈ¥³¤¶ÈÎª 3 µÄÉş×Ó¶Î
+
+	// å½“ç»³å­æœ€åå‰©ä¸‹çš„é•¿åº¦ä¸º 4 æ—¶å€™ï¼Œä¸èƒ½å‰ªå»é•¿åº¦ä¸º 3 çš„ç»³å­æ®µ
 	if (length - timesof3 * 3 == 1)
-		timesof3 -=1;
-	
+		timesof3 -= 1;
+
 	int timesof2 = (length - timesof3 * 3) / 2;
-	
-	return (int)(pow(3,timesof3)) * (int)(pow(2,timesof2)); 
+
+	return (int) (pow(3, timesof3)) * (int) (pow(2, timesof2));
 }
 
 
-// ----------------- ²âÊÔ´úÂë
-void test(const char *testname, int length, int excepted){
+// ----------------- æµ‹è¯•ä»£ç 
+void test(const char *testname, int length, int excepted) {
 	int results1 = solution1(length);
 	if (results1 == excepted)
-		std::cout << "Solution1 for" << testname << " passed." << std::endl; 
+		std::cout << "Solution1 for" << testname << " passed." << std::endl;
 	else
 		std::cout << "Solution1 for" << testname << " failed." << std::endl;
-		
+
 	int results2 = solution2(length);
 	if (results2 == excepted)
-		std::cout << "Solution2 for" << testname << " passed." << std::endl; 
+		std::cout << "Solution2 for" << testname << " passed." << std::endl;
 	else
 		std::cout << "Solution2 for" << testname << " failed." << std::endl;
 
 }
- 
-void test1()
-{
-    int length = 1;
-    int expected = 0;
-    test("test1", length, expected);
+
+void test1() {
+	int length = 1;
+	int expected = 0;
+	test("test1", length, expected);
 }
 
-void test2()
-{
-    int length = 2;
-    int expected = 1;
-    test("test2", length, expected);
+void test2() {
+	int length = 2;
+	int expected = 1;
+	test("test2", length, expected);
 }
 
-void test3()
-{
-    int length = 3;
-    int expected = 2;
-    test("test3", length, expected);
+void test3() {
+	int length = 3;
+	int expected = 2;
+	test("test3", length, expected);
 }
 
-void test4()
-{
-    int length = 4;
-    int expected = 4;
-    test("test4", length, expected);
+void test4() {
+	int length = 4;
+	int expected = 4;
+	test("test4", length, expected);
 }
 
-void test5()
-{
-    int length = 5;
-    int expected = 6;
-    test("test5", length, expected);
+void test5() {
+	int length = 5;
+	int expected = 6;
+	test("test5", length, expected);
 }
 
-void test6()
-{
-    int length = 6;
-    int expected = 9;
-    test("test6", length, expected);
+void test6() {
+	int length = 6;
+	int expected = 9;
+	test("test6", length, expected);
 }
 
-void test7()
-{
-    int length = 7;
-    int expected = 12;
-    test("test7", length, expected);
+void test7() {
+	int length = 7;
+	int expected = 12;
+	test("test7", length, expected);
 }
 
-void test8()
-{
-    int length = 8;
-    int expected = 18;
-    test("test8", length, expected);
+void test8() {
+	int length = 8;
+	int expected = 18;
+	test("test8", length, expected);
 }
 
-void test9()
-{
-    int length = 9;
-    int expected = 27;
-    test("test9", length, expected);
+void test9() {
+	int length = 9;
+	int expected = 27;
+	test("test9", length, expected);
 }
 
-void test10()
-{
-    int length = 10;
-    int expected = 36;
-    test("test10", length, expected);
+void test10() {
+	int length = 10;
+	int expected = 36;
+	test("test10", length, expected);
 }
 
-void test11()
-{
-    int length = 50;
-    int expected = 86093442;
-    test("test11", length, expected);
+void test11() {
+	int length = 50;
+	int expected = 86093442;
+	test("test11", length, expected);
 }
 
-int main(){
+int main() {
 	test1();
-    test2();
-    test3();
-    test4();
-    test5();
-    test6();
-    test7();
-    test8();
-    test9();
-    test10();
+	test2();
+	test3();
+	test4();
+	test5();
+	test6();
+	test7();
+	test8();
+	test9();
+	test10();
 	test11();
-	
+
 	return 0;
-} 
-
-
-
-
-
-
-
-
-
-
+}

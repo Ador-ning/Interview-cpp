@@ -1,127 +1,119 @@
 #include <cstdio>
 #include <cstdlib>
-/*
-ÃæÊÔ£º ÕÒ³öÊı×éÖĞÖØ¸´µÄÊı×Ö
-ÌâÄ¿£º³¤¶ÈÎªnµÄÊı×éÖĞ£¬ËùÓĞÊı×Ö¶¼ÔÚ0->n-1µÄ·¶Î§ÄÚ 
 
+/*
+é¢è¯•ï¼š æ‰¾å‡ºæ•°ç»„ä¸­é‡å¤çš„æ•°å­—
+é¢˜ç›®ï¼šé•¿åº¦ä¸ºnçš„æ•°ç»„ä¸­ï¼Œæ‰€æœ‰æ•°å­—éƒ½åœ¨0->n-1çš„èŒƒå›´å†…
 */
 
 
-bool duplicate(int numbers[], int length, int *duplication){
-	/* 
-	²ÎÊı1£º
-	²ÎÊı2£º
-	²ÎÊı3£º 
-	*/ 
-	if (numbers == NULL || length ==0 )
+bool duplicate(int numbers[], int length, int *duplication) {
+	/*
+	å‚æ•°1ï¼š
+	å‚æ•°2ï¼š
+	å‚æ•°3ï¼š
+	*/
+	if (numbers == NULL || length == 0)
 		return false;
-	
-	for (int i=0; i < length; ++i){
-		if(numbers[i] < 0 || numbers[i] > length-1)
+
+	for (int i = 0; i < length; ++i) {
+		if (numbers[i] < 0 || numbers[i] > length - 1)
 			return false;
 	}
-	
-	for (int i=0; i < length; ++i){
-		while (numbers[i] != i){
-			if (numbers[i] == numbers[numbers[i]]){
+
+	for (int i = 0; i < length; ++i) {
+		while (numbers[i] != i) {
+			if (numbers[i] == numbers[numbers[i]]) {
 				*duplication = numbers[i];
-				return true; 
+				return true;
 			}
-		
-			// ½»»» numbers[i] ºÍ numbers[numbers[i]]
+
+			// äº¤æ¢ numbers[i] å’Œ numbers[numbers[i]]
 			int temp = numbers[i];
 			numbers[i] = numbers[temp];
-			numbers[temp] = temp; 
+			numbers[temp] = temp;
 		}
 	}
-	
+
 	return false;
 }
 
 
-// ******** ²âÊÔ´úÂë
-bool contains(int array[], int length, int number){
-	for (int i = 0; i < length; ++i){
+// ******** æµ‹è¯•ä»£ç 
+bool contains(int array[], int length, int number) {
+	for (int i = 0; i < length; ++i) {
 		if (array[i] == number)
-			return true; 
+			return true;
 	}
-	
+
 	return false;
-} 
+}
 
 
-void test(const char *testName, int numbers[], int lengthNumbers, int exceptedArray[], int excepted, bool validArgument)
-{
+void
+test(const char *testName, int numbers[], int lengthNumbers, int exceptedArray[], int excepted, bool validArgument) {
 	printf("%s begins: ", testName);
-	
+
 	int duplication;
 	bool validInput = duplicate(numbers, lengthNumbers, &duplication);
-	
-	if (validArgument == validInput){
-		if (validArgument){
+
+	if (validArgument == validInput) {
+		if (validArgument) {
 			if (contains(exceptedArray, excepted, duplication))
 				printf("Passed.\n");
 			else
-				printf("Failed.\n"); 
-		}
-		else
+				printf("Failed.\n");
+		} else
 			printf("Passed.\n");
-	}
-	else
+	} else
 		printf("Failed.\n");
 }
 
 
-// ÖØ¸´µÄÊı×ÖÊÇÊı×éÖĞ×îĞ¡µÄÊı×Ö
-void test1(){
-	int numbers[]={2,1,3,1,4};
-	int duplications[]={1};
-	test("Test1",numbers, sizeof(numbers)/sizeof(int), duplications, sizeof(duplications)/sizeof(int), true);
-} 
-
-// ÖØ¸´µÄÊı×ÖÊÇÊı×éÖĞ×î´óµÄÊı×Ö
-void test2()
-{
-    int numbers[] = { 2, 4, 3, 1, 4 };
-    int duplications[] = { 4 };
-    test("Test2", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), true);
+// é‡å¤çš„æ•°å­—æ˜¯æ•°ç»„ä¸­æœ€å°çš„æ•°å­—
+void test1() {
+	int numbers[] = {2, 1, 3, 1, 4};
+	int duplications[] = {1};
+	test("Test1", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), true);
 }
 
-// Êı×éÖĞ´æÔÚ¶à¸öÖØ¸´µÄÊı×Ö
-void test3()
-{
-    int numbers[] = { 2, 4, 2, 1, 4 };
-    int duplications[] = { 2, 4 };
-    test("Test3", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), true);
+// é‡å¤çš„æ•°å­—æ˜¯æ•°ç»„ä¸­æœ€å¤§çš„æ•°å­—
+void test2() {
+	int numbers[] = {2, 4, 3, 1, 4};
+	int duplications[] = {4};
+	test("Test2", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), true);
 }
 
-// Ã»ÓĞÖØ¸´µÄÊı×Ö
-void test4()
-{
-    int numbers[] = { 2, 1, 3, 0, 4 };
-    int duplications[] = { -1 }; // not in use in the test function
-    test("Test4", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), false);
+// æ•°ç»„ä¸­å­˜åœ¨å¤šä¸ªé‡å¤çš„æ•°å­—
+void test3() {
+	int numbers[] = {2, 4, 2, 1, 4};
+	int duplications[] = {2, 4};
+	test("Test3", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), true);
 }
 
-// Ã»ÓĞÖØ¸´µÄÊı×Ö
-void test5()
-{
-    int numbers[] = { 2, 1, 3, 5, 4 };
-    int duplications[] = { -1 }; // not in use in the test function
-    test("Test5", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), false);
+// æ²¡æœ‰é‡å¤çš„æ•°å­—
+void test4() {
+	int numbers[] = {2, 1, 3, 0, 4};
+	int duplications[] = {-1}; // not in use in the test function
+	test("Test4", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), false);
 }
 
-// ÎŞĞ§µÄÊäÈë
-void test6()
-{
-    int* numbers = NULL;
-    int duplications[] = { -1 }; // not in use in the test function
-    test("Test6", numbers, 0, duplications, sizeof(duplications) / sizeof(int), false);
+// æ²¡æœ‰é‡å¤çš„æ•°å­—
+void test5() {
+	int numbers[] = {2, 1, 3, 5, 4};
+	int duplications[] = {-1}; // not in use in the test function
+	test("Test5", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), false);
+}
+
+// æ— æ•ˆçš„è¾“å…¥
+void test6() {
+	int *numbers = NULL;
+	int duplications[] = {-1}; // not in use in the test function
+	test("Test6", numbers, 0, duplications, sizeof(duplications) / sizeof(int), false);
 }
 
 
-
-int main(){
+int main() {
 	test6();
 	return 0;
 }

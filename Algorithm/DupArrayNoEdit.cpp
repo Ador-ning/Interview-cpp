@@ -2,58 +2,57 @@
 #include <cstdlib>
 
 /*
-ÃæÊÔ£º
-³¤¶ÈÎª n+1 Êı×éÖĞËùÓĞÊı×Ö·¶Î§Îª 1->n£¬Êı×éÖĞÖÁÉÙÓĞÒ»¸öÊı×ÖÊÇÖØ¸´µÄ
-ÕÒ³öÊı×éÖĞÖØ¸´µÄÊı×Ö£¬µ«ÊÇ²»ÄÜĞŞ¸ÄÊäÈëµÄÊı×é 
+é¢è¯•ï¼š
+é•¿åº¦ä¸º n+1 æ•°ç»„ä¸­æ‰€æœ‰æ•°å­—èŒƒå›´ä¸º 1->nï¼Œæ•°ç»„ä¸­è‡³å°‘æœ‰ä¸€ä¸ªæ•°å­—æ˜¯é‡å¤çš„
+æ‰¾å‡ºæ•°ç»„ä¸­é‡å¤çš„æ•°å­—ï¼Œä½†æ˜¯ä¸èƒ½ä¿®æ”¹è¾“å…¥çš„æ•°ç»„
 */
 
-int countRange(const int *numbers, int length, int start, int end){
+int countRange(const int *numbers, int length, int start, int end) {
 	if (numbers == NULL)
 		return 0;
-	
+
 	int count = 0;
-	
-	for (int i = 0; i < length; ++i)
-	{
+
+	for (int i = 0; i < length; ++i) {
 		if (numbers[i] > start && numbers[i] <= end)
 			++count;
 	}
 	return count;
 }
 
-int getDuplication(const int *numbers, int length){
+int getDuplication(const int *numbers, int length) {
 	/*
-	²ÎÊı1£º
-	²ÎÊı2£º 
+	å‚æ•°1ï¼š
+	å‚æ•°2ï¼š
 	*/
 	if (numbers == NULL || length <= 0)
 		return -1;
-		
-	int start = 1;
-	int end = length-1;
 
-	while (end >= start){
+	int start = 1;
+	int end = length - 1;
+
+	while (end >= start) {
 		int middle = ((end - start) >> 1) + start;
-		
-		// Í³¼Æ Êı×éÖĞ ÊıÖµÔÚ start->middle ·¶Î§µÄ¸öÊı 
+
+		// ç»Ÿè®¡ æ•°ç»„ä¸­ æ•°å€¼åœ¨ start->middle èŒƒå›´çš„ä¸ªæ•°
 		int count = countRange(numbers, length, start, middle);
-		
-		// ÖÕÖ¹Çé¿ö 
-		if (end == start){
+
+		// ç»ˆæ­¢æƒ…å†µ
+		if (end == start) {
 			if (count > 1)
 				return start;
 			else
 				break;
 		}
-				
+
 		if (count > (middle - start + 1))
-			end = middle; // Èç¹û Êı×éÖĞÔÚ ·¶Î§ÄÚÊı×ÖµÄ¸öÊı ´óÓÚ ¸Ã×Ó²¿·Ö³¤¶È£¬Ö¤Ã÷  ¸Ã²¿·ÖÒ»¶¨°üº¬ÓĞÖØ¸´µÄÊı×Ö 
+			end = middle; // å¦‚æœ æ•°ç»„ä¸­åœ¨ èŒƒå›´å†…æ•°å­—çš„ä¸ªæ•° å¤§äº è¯¥å­éƒ¨åˆ†é•¿åº¦ï¼Œè¯æ˜  è¯¥éƒ¨åˆ†ä¸€å®šåŒ…å«æœ‰é‡å¤çš„æ•°å­—
 		else
 			start = middle + 1;
 	}
 	return -1;
-} 
+}
 
-int main(){
+int main() {
 	return 0;
 }

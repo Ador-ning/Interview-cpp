@@ -3,129 +3,108 @@
 #include <stdexcept>
 
 /*
-ÃæÊÔ£º
-	°ÑÊı×é×î¿ªÊ¼µÄÈô¸É¸öÔªËØ°áµ½Êı×éµÄÄ©Î²£¬ÎÒÃÇ³ÆÖ®ÎªÊı×éµÄĞı×ª
-	ÊäÈëÒ»¸öµİÔöÅÅĞòµÄÊı×éµÄÒ»¸öĞı×ª£¬Êä³öĞı×ªÊı×éµÄ×îĞ¡ÔªËØ 
+é¢è¯•ï¼š
+	æŠŠæ•°ç»„æœ€å¼€å§‹çš„è‹¥å¹²ä¸ªå…ƒç´ æ¬åˆ°æ•°ç»„çš„æœ«å°¾ï¼Œæˆ‘ä»¬ç§°ä¹‹ä¸ºæ•°ç»„çš„æ—‹è½¬
+	è¾“å…¥ä¸€ä¸ªé€’å¢æ’åºçš„æ•°ç»„çš„ä¸€ä¸ªæ—‹è½¬ï¼Œè¾“å‡ºæ—‹è½¬æ•°ç»„çš„æœ€å°å…ƒç´ 
 */
-
-
-// ²éÕÒ ×ø±ê·¶Î§ÄÚ£¬Êı×é×îĞ¡Öµ 
-int MinInOrder(const int numbers[], int index1, int index2){
+// æŸ¥æ‰¾ åæ ‡èŒƒå›´å†…ï¼Œæ•°ç»„æœ€å°å€¼
+int MinInOrder(const int numbers[], int index1, int index2) {
 	int result = numbers[index1];
-	if (index1 < index2){
-		for (int i = index1+1; i < index2; ++i)
-		{
+	if (index1 < index2) {
+		for (int i = index1 + 1; i < index2; ++i) {
 			if (result > numbers[i])
-				result = numbers[i];	
+				result = numbers[i];
 		}
 		return result;
 	}
 }
 
 //
-int Min(int numbers[], int length){
-	if (numbers == NULL || length <= 0){
+int Min(int numbers[], int length) {
+	if (numbers == NULL || length <= 0) {
 		std::logic_error ex("Invalid parameters.\n");
 		throw std::exception(ex);
 	}
-		
+
 	int index1 = 0;
 	int index2 = length - 1;
 	int indexMid = index1;
-	
-	while (numbers[index1] >= numbers[index2]){
-		// Èç¹û index1 ºÍ index2 Ö¸ÏòÏàÁÚµÄÁ½¸öÊı £¬
-		// Ôò index1 Ö¸ÏòµÚÒ»µİÔö×ÓÊı×éµÄ×îºóÒ»¸öÊı×Ö£¬
-		// index2Ö¸ÏòµÚ¶ş¸ö×ÓÊı×éµÄµÚÒ»¸öÊı×Ö£¬Ò²¾ÍÊÇÊı×éÖĞµÄ×îĞ¡Êı×Ö
-		if (index2-index1 == 1)
-		{
+
+	while (numbers[index1] >= numbers[index2]) {
+		// å¦‚æœ index1 å’Œ index2 æŒ‡å‘ç›¸é‚»çš„ä¸¤ä¸ªæ•° ï¼Œ
+		// åˆ™ index1 æŒ‡å‘ç¬¬ä¸€é€’å¢å­æ•°ç»„çš„æœ€åä¸€ä¸ªæ•°å­—ï¼Œ
+		// index2æŒ‡å‘ç¬¬äºŒä¸ªå­æ•°ç»„çš„ç¬¬ä¸€ä¸ªæ•°å­—ï¼Œä¹Ÿå°±æ˜¯æ•°ç»„ä¸­çš„æœ€å°æ•°å­—
+		if (index2 - index1 == 1) {
 			indexMid = index2;
-			break;	
+			break;
 		}
-		
-		// Èç¹ûÏÂ±êÎª index1¡¢index2ºÍindexMidÖ¸ÏòµÄÈı¸öÊı×ÖÏàµÈ
-		// Ö»ÄÜË³Ğò²éÕÒ
+
+		// å¦‚æœä¸‹æ ‡ä¸º index1ã€index2å’ŒindexMidæŒ‡å‘çš„ä¸‰ä¸ªæ•°å­—ç›¸ç­‰
+		// åªèƒ½é¡ºåºæŸ¥æ‰¾
 		int indexMid = (index2 + index1) / 2;
-		if (numbers[index1] == numbers[2] && numbers[indexMid] == numbers[index1]) 
+		if (numbers[index1] == numbers[2] && numbers[indexMid] == numbers[index1])
 			return MinInOrder(numbers, index1, index2);
-			
-		// ËõĞ¡²éÕÒ·¶Î§   -> Ìø¹ıÓĞĞò²¿·Ö 
+
+		// ç¼©å°æŸ¥æ‰¾èŒƒå›´   -> è·³è¿‡æœ‰åºéƒ¨åˆ†
 		if (numbers[indexMid] >= numbers[index1])
 			index1 = indexMid;
 		else if (numbers[indexMid] <= numbers[index2])
-			index2 = indexMid; 
+			index2 = indexMid;
 	}
-	
-	return numbers[indexMid]; 
+
+	return numbers[indexMid];
 }
 
 
-// ====================²âÊÔ´úÂë====================
-void Test(int* numbers, int length, int expected)
-{
-    int result = 0;
-    try
-    {
-        result = Min(numbers, length);
+// ====================æµ‹è¯•ä»£ç ====================
+void Test(int *numbers, int length, int expected) {
+	int result = 0;
+	try {
+		result = Min(numbers, length);
 
-        for(int i = 0; i < length; ++i)
-            printf("%d ", numbers[i]);
+		for (int i = 0; i < length; ++i)
+			printf("%d ", numbers[i]);
 
-        if(result == expected)
-            printf("\tpassed\n");
-        else
-            printf("\tfailed\n");
-    }
-    catch (...)
-    {
-        if(numbers == NULL)
-            printf("Test passed.\n");
-        else
-            printf("Test failed.\n");
-    }
+		if (result == expected)
+			printf("\tpassed\n");
+		else
+			printf("\tfailed\n");
+	}
+	catch (...) {
+		if (numbers == NULL)
+			printf("Test passed.\n");
+		else
+			printf("Test failed.\n");
+	}
 }
 
-int main(int argc, char* argv[])
-{
-    // µäĞÍÊäÈë£¬µ¥µ÷ÉıĞòµÄÊı×éµÄÒ»¸öĞı×ª
-    int array1[] = { 3, 4, 5, 1, 2 };
-    Test(array1, sizeof(array1) / sizeof(int), 1);
+int main(int argc, char *argv[]) {
+	// å…¸å‹è¾“å…¥ï¼Œå•è°ƒå‡åºçš„æ•°ç»„çš„ä¸€ä¸ªæ—‹è½¬
+	int array1[] = {3, 4, 5, 1, 2};
+	Test(array1, sizeof(array1) / sizeof(int), 1);
 
-    // ÓĞÖØ¸´Êı×Ö£¬²¢ÇÒÖØ¸´µÄÊı×Ö¸ÕºÃµÄ×îĞ¡µÄÊı×Ö
-    int array2[] = { 3, 4, 5, 1, 1, 2 };
-    Test(array2, sizeof(array2) / sizeof(int), 1);
+	// æœ‰é‡å¤æ•°å­—ï¼Œå¹¶ä¸”é‡å¤çš„æ•°å­—åˆšå¥½çš„æœ€å°çš„æ•°å­—
+	int array2[] = {3, 4, 5, 1, 1, 2};
+	Test(array2, sizeof(array2) / sizeof(int), 1);
 
-    // ÓĞÖØ¸´Êı×Ö£¬µ«ÖØ¸´µÄÊı×Ö²»ÊÇµÚÒ»¸öÊı×ÖºÍ×îºóÒ»¸öÊı×Ö
-    int array3[] = { 3, 4, 5, 1, 2, 2 };
-    Test(array3, sizeof(array3) / sizeof(int), 1);
+	// æœ‰é‡å¤æ•°å­—ï¼Œä½†é‡å¤çš„æ•°å­—ä¸æ˜¯ç¬¬ä¸€ä¸ªæ•°å­—å’Œæœ€åä¸€ä¸ªæ•°å­—
+	int array3[] = {3, 4, 5, 1, 2, 2};
+	Test(array3, sizeof(array3) / sizeof(int), 1);
 
-    // ÓĞÖØ¸´µÄÊı×Ö£¬²¢ÇÒÖØ¸´µÄÊı×Ö¸ÕºÃÊÇµÚÒ»¸öÊı×ÖºÍ×îºóÒ»¸öÊı×Ö
-    int array4[] = { 1, 0, 1, 1, 1 };
-    Test(array4, sizeof(array4) / sizeof(int), 0);
+	// æœ‰é‡å¤çš„æ•°å­—ï¼Œå¹¶ä¸”é‡å¤çš„æ•°å­—åˆšå¥½æ˜¯ç¬¬ä¸€ä¸ªæ•°å­—å’Œæœ€åä¸€ä¸ªæ•°å­—
+	int array4[] = {1, 0, 1, 1, 1};
+	Test(array4, sizeof(array4) / sizeof(int), 0);
 
-    // µ¥µ÷ÉıĞòÊı×é£¬Ğı×ª0¸öÔªËØ£¬Ò²¾ÍÊÇµ¥µ÷ÉıĞòÊı×é±¾Éí
-    int array5[] = { 1, 2, 3, 4, 5 };
-    Test(array5, sizeof(array5) / sizeof(int), 1);
+	// å•è°ƒå‡åºæ•°ç»„ï¼Œæ—‹è½¬0ä¸ªå…ƒç´ ï¼Œä¹Ÿå°±æ˜¯å•è°ƒå‡åºæ•°ç»„æœ¬èº«
+	int array5[] = {1, 2, 3, 4, 5};
+	Test(array5, sizeof(array5) / sizeof(int), 1);
 
-    // Êı×éÖĞÖ»ÓĞÒ»¸öÊı×Ö
-    int array6[] = { 2 };
-    Test(array6, sizeof(array6) / sizeof(int), 2);
+	// æ•°ç»„ä¸­åªæœ‰ä¸€ä¸ªæ•°å­—
+	int array6[] = {2};
+	Test(array6, sizeof(array6) / sizeof(int), 2);
 
-    // ÊäÈënullptr
-    Test(NULL, 0, 0);
+	// è¾“å…¥nullptr
+	Test(NULL, 0, 0);
 
-    return 0;
+	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

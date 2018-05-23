@@ -3,85 +3,82 @@
 #include <cstring>
 
 /*
-ÃæÊÔ£º ×Ö·û´®ÖĞ¿Õ¸ñÌæ»»
-°Ñ×Ö·û´®ÖĞÃ¿¸ö¿Õ¸ñÌæ»»³É "%20" 
+é¢è¯•ï¼š å­—ç¬¦ä¸²ä¸­ç©ºæ ¼æ›¿æ¢
+æŠŠå­—ç¬¦ä¸²ä¸­æ¯ä¸ªç©ºæ ¼æ›¿æ¢æˆ "%20"
 */
 
 /*
-Ìæ»»µÄ»ù±¾Ë¼Â·£º O(n)Ê±¼ä¸´ÔÓ¶È
-1. Í³¼Æ ĞèÒªÌæ»»µÄ ÊıÄ¿ -> O(n) 
-2. Ë«Ö¸Õë£¬ ×ÔºóÏòÇ°Ò»´ÎÌæ»»£¬ÒÆ¶¯  -> O(n)
+æ›¿æ¢çš„åŸºæœ¬æ€è·¯ï¼š O(n)æ—¶é—´å¤æ‚åº¦
+1. ç»Ÿè®¡ éœ€è¦æ›¿æ¢çš„ æ•°ç›® -> O(n)
+2. åŒæŒ‡é’ˆï¼Œ è‡ªåå‘å‰ä¸€æ¬¡æ›¿æ¢ï¼Œç§»åŠ¨  -> O(n)
 */
 
-// length Îª×Ö·ûÊı×éÊµ¼ÊÈİÁ¿£¬´óÓÚ»òµÈÓÚ×Ö·û´®µÄÊµ¼Ê³¤¶È 
-void ReplaceBlank(char str[], int length){
-	
+// length ä¸ºå­—ç¬¦æ•°ç»„å®é™…å®¹é‡ï¼Œå¤§äºæˆ–ç­‰äºå­—ç¬¦ä¸²çš„å®é™…é•¿åº¦
+void ReplaceBlank(char str[], int length) {
+
 	if (str == NULL || length <= 0)
 		return;
-	
-	// RealLength Îª×Ö·û´®µÄÊµ¼Ê³¤¶È
+
+	// RealLength ä¸ºå­—ç¬¦ä¸²çš„å®é™…é•¿åº¦
 	int RealLength = 0;
 	int NumberBlank = 0;
-	
+
 	int i = 0;
-	
-	while (str[i] != '\0'){
+
+	while (str[i] != '\0') {
 		++RealLength;
-		
+
 		if (str[i] == ' ')
-			++NumberBlank;	
+			++NumberBlank;
 		++i;
-	} // Í³¼Æ³ö ×Ö·û´®µÄ³¤¶È ºÍ  ¿Õ¸ñÊıÄ¿ 
-	
+	} // ç»Ÿè®¡å‡º å­—ç¬¦ä¸²çš„é•¿åº¦ å’Œ  ç©ºæ ¼æ•°ç›®
+
 	int newlength = RealLength + NumberBlank * 2;
-	
+
 	if (newlength > length)
-		return; // Ó¦¸ÃÖØĞÂ·ÖÅäÄÚ´æ
-	
-	// Ìæ»»
+		return; // åº”è¯¥é‡æ–°åˆ†é…å†…å­˜
+
+	// æ›¿æ¢
 	int IndexOriginal = RealLength;
 	int IndexNew = newlength;
-	while (IndexOriginal >= 0 && IndexNew > IndexOriginal){
-		if (str[IndexOriginal] == ' '){
+	while (IndexOriginal >= 0 && IndexNew > IndexOriginal) {
+		if (str[IndexOriginal] == ' ') {
 			str[IndexNew--] = '0';
 			str[IndexNew--] = '2';
 			str[IndexNew--] = '%';
-		}
-		else
+		} else
 			str[IndexNew--] = str[IndexOriginal];
 		--IndexOriginal;
-	} 
-} 
-
-
-// ====================²âÊÔ´úÂë====================
-void Test(const char *testName, char str[], int length, char expected[])
-{
-    if(testName != NULL)
-        printf("%s begins: ", testName);
-
-    ReplaceBlank(str, length);
-
-    if(expected == NULL && str == NULL)
-        printf("passed.\n");
-    else if(expected == NULL && str != NULL)
-        printf("failed.\n");
-    else if(strcmp(str, expected) == 0)
-        printf("passed.\n");
-    else
-        printf("failed.\n");
+	}
 }
 
-// ¿Õ¸ñÔÚ¾ä×ÓÖĞ¼ä
-void Test1()
-{
-    const int length = 100;
+
+// ====================æµ‹è¯•ä»£ç ====================
+void Test(const char *testName, char str[], int length, char expected[]) {
+	if (testName != NULL)
+		printf("%s begins: ", testName);
+
+	ReplaceBlank(str, length);
+
+	if (expected == NULL && str == NULL)
+		printf("passed.\n");
+	else if (expected == NULL && str != NULL)
+		printf("failed.\n");
+	else if (strcmp(str, expected) == 0)
+		printf("passed.\n");
+	else
+		printf("failed.\n");
+}
+
+// ç©ºæ ¼åœ¨å¥å­ä¸­é—´
+void Test1() {
+	const int length = 100;
 
 	char str[length] = "hello world!";
-    Test("Test1", str, length, "hello%20world!");
+	Test("Test1", str, length, "hello%20world!");
 }
 
-int main(){
+int main() {
 	Test1();
 	return 0;
-} 
+}
