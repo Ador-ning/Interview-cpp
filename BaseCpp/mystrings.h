@@ -84,7 +84,7 @@ char *my_strcpy(char *strDest, const char *strSrc) {
 	return strDestCopy;
 }
 
-void *memcpy2(void *memTo, void *memFrom, int size) {
+void *memcpy2(char *memTo, char *memFrom, int size) {
 	if ((memTo == nullptr) || (memFrom == nullptr))
 		return nullptr;
 
@@ -150,7 +150,6 @@ void RevStr2(char *src) {
 	// 省
 }
 
-void RevStr2(char *src) {}
 
 // 判断回文数
 int isRevStr(const char *str) {
@@ -169,7 +168,6 @@ int isRevStr(const char *str) {
 	}
 	return tag;
 }
-
 
 
 #endif //PROJECT_MYSTRINGS_H

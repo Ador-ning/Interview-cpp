@@ -33,16 +33,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BaseCpp/oop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/BinaryTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/DuplicationInArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DuplicationInArray.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/DynamicProgramming.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DynamicProgramming.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Fibonacci.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Fibonacci.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/FindandSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/FindandSort.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/MinNumberInRotatedArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/MinNumberInRotatedArray.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseCpp/mystrings.h" beforeDir="false" afterPath="$PROJECT_DIR$/BaseCpp/mystrings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -56,9 +54,57 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrintListInReversedOrder.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="e#0#2#0" />
+                <element signature="e#119#171#1" />
+                <element signature="e#173#221#0" />
+                <element signature="e#326#511#0" />
+                <element signature="e#513#678#0" />
+                <element signature="e#680#909#0" />
+                <element signature="e#911#1073#0" />
+                <element signature="e#1075#1384#0" />
+                <element signature="e#1386#1984#0" />
+                <element signature="e#1994#2002#0" />
+                <element signature="e#1994#2061#0" />
+                <element signature="e#2531#2539#0" />
+                <element signature="e#2531#3042#0" />
+                <element signature="e#3057#3134#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="e#201#253#0" />
+                <element signature="e#399#437#0" />
+                <element signature="e#592#652#0" />
+                <element signature="e#1178#1233#0" />
+                <element signature="e#1389#1440#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -77,10 +123,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/BaseCpp/mystrings.h" />
         <option value="$PROJECT_DIR$/BaseCpp/oop.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Algorithm/List.h" />
         <option value="$PROJECT_DIR$/Algorithm/FindandSort.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/Fibonacci.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/DynamicProgramming.cpp" />
@@ -88,13 +131,20 @@
         <option value="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/MinNumberInRotatedArray.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp" />
+        <option value="$PROJECT_DIR$/Algorithm/ReplaceBlank.cpp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Algorithm/List.cpp" />
+        <option value="$PROJECT_DIR$/BaseCpp/mystrings.h" />
+        <option value="$PROJECT_DIR$/Algorithm/List.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Algorithm/BinaryTree.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="width" value="1150" />
+    <option name="x" value="496" />
+    <option name="width" value="1236" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -134,11 +184,6 @@
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="BaseCpp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -174,27 +219,27 @@
       <workItem from="1525163674351" duration="1797000" />
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
-      <workItem from="1525794474004" duration="5826000" />
+      <workItem from="1525794474004" duration="13153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8280000" />
+    <option name="totallyTimeSpent" value="15607000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="0" width="1150" height="800" extended-state="0" />
+    <frame x="496" y="0" width="1236" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23472099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.052674897" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32872927" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.48618785" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32872927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,30 +348,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/FindandSort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
           <folding>
             <element signature="e#2#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaseCpp/mystrings.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#97#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -345,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2209">
-          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -363,22 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/wchar.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,7 +427,113 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/ReplaceBlank.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/wchar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaseCpp/mystrings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#97#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="105" lean-forward="true" selection-start-line="16" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#119#171#1" />
+            <element signature="e#173#221#0" />
+            <element signature="e#326#511#0" />
+            <element signature="e#513#678#0" />
+            <element signature="e#680#909#0" />
+            <element signature="e#911#1073#0" />
+            <element signature="e#1075#1384#0" />
+            <element signature="e#1386#1984#0" />
+            <element signature="e#1994#2002#0" />
+            <element signature="e#1994#2061#0" />
+            <element signature="e#2531#2539#0" />
+            <element signature="e#2531#3042#0" />
+            <element signature="e#3057#3134#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.cpp">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#201#253#0" />
+            <element signature="e#399#437#0" />
+            <element signature="e#592#652#0" />
+            <element signature="e#1178#1233#0" />
+            <element signature="e#1389#1440#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
