@@ -33,7 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Algorithm/StringUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/List.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +48,34 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#2#0" />
+                <element signature="e#243#439#0" />
+                <element signature="e#441#632#0" />
+                <element signature="e#634#1176#0" />
+                <element signature="e#1178#1387#0" />
+                <element signature="e#1389#1631#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubStructureInTree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/SubStructureInTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,16 +103,19 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Algorithm/List.cpp" />
         <option value="$PROJECT_DIR$/BaseCpp/mystrings.h" />
-        <option value="$PROJECT_DIR$/Algorithm/List.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/BinaryTree.h" />
         <option value="$PROJECT_DIR$/Algorithm/Tree.h" />
+        <option value="$PROJECT_DIR$/Algorithm/StringUtils.h" />
+        <option value="$PROJECT_DIR$/Algorithm/List.h" />
+        <option value="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="412" />
+    <option name="x" value="385" />
+    <option name="y" value="8" />
     <option name="width" value="961" />
     <option name="height" value="800" />
   </component>
@@ -159,17 +192,18 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="1959000" />
+      <workItem from="1527335577206" duration="6842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18136000" />
+    <option name="totallyTimeSpent" value="23019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="412" y="0" width="961" height="800" extended-state="0" />
+    <frame x="385" y="8" width="961" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24787234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23723404" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
@@ -453,39 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#326#511#0" />
-            <element signature="e#513#678#0" />
-            <element signature="e#680#909#0" />
-            <element signature="e#911#1073#0" />
-            <element signature="e#1075#1384#0" />
-            <element signature="e#1386#1984#0" />
-            <element signature="e#2531#3042#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#154#240#1" />
-            <element signature="e#243#439#0" />
-            <element signature="e#441#632#0" />
-            <element signature="e#634#1176#0" />
-            <element signature="e#1178#1387#0" />
-            <element signature="e#1389#1631#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/Tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -509,6 +510,67 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/StringUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#113#133#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#118#170#1" />
+            <element signature="e#173#324#0" />
+            <element signature="e#326#511#0" />
+            <element signature="e#513#678#0" />
+            <element signature="e#680#909#0" />
+            <element signature="e#911#1073#0" />
+            <element signature="e#1075#1384#0" />
+            <element signature="e#1386#1984#0" />
+            <element signature="e#1994#2032#0" />
+            <element signature="e#1994#2515#0" />
+            <element signature="e#2208#2257#0" />
+            <element signature="e#2531#2549#0" />
+            <element signature="e#2531#3042#0" />
+            <element signature="e#2662#2693#0" />
+            <element signature="e#3057#3075#0" />
+            <element signature="e#3057#3490#0" />
+            <element signature="e#3522#3607#0" />
+            <element signature="e#3522#4245#0" />
+            <element signature="e#4247#5023#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#243#439#0" />
+            <element signature="e#441#632#0" />
+            <element signature="e#634#1176#0" />
+            <element signature="e#1178#1387#0" />
+            <element signature="e#1389#1631#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/SubStructureInTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

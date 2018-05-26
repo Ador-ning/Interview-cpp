@@ -185,7 +185,133 @@ ListNode *Merge(ListNode *pHead1, ListNode *pHead2) {
 	return pMergedHead;
 }
 
+// 链表结点删除 O(1)  --> 給被删除结点的指针
+/*
+ * 面试18：给定单向链表的头节点 和 一个结点指针
+ * 技巧：将要删除结点的下一个结点信息，复制到该结点。删除其下一个结点空间；注意删除结点的位置
+ * */
+void DeleteNode(ListNode **pHead, ListNode *pDeleted) {
 
+	if (!pDeleted || !pHead)
+		return;
 
+	// 要删除的结点不是尾结点
+	if (pDeleted->m_pNext != nullptr) {
+		ListNode *pNext = pDeleted->m_pNext; // 被删除结点的 next
+		pDeleted->m_nKey = pNext->m_nKey;
+		pDeleted->m_pNext = pNext->m_pNext;
+		delete pNext;
+		pNext = nullptr;
+	} else if (*pHead == pDeleted) { // 链表只有头结点，删除结点也是头结点
+		delete pDeleted;
+		pDeleted = nullptr;
+		*pHead = nullptr;
+	} else { // 多个结点链表，要删除结点为 尾结点; 遍历到尾部
+		ListNode *pNode = *pHead;
+
+		while (pNode->m_pNext != pDeleted) {
+			pNode = pNode->m_pNext;
+		}
+
+		pNode->m_pNext = nullptr;
+		delete pDeleted;
+		pDeleted = nullptr;
+	}
+}
+
+// 删除有序链表中重复结点
+void DeleteDup(ListNode **pHead) {
+	if (pHead == nullptr || *pHead == nullptr)
+		return;
+
+	ListNode *pNode = *pHead;
+	ListNode *pPreNode = nullptr;
+
+	while (pNode != nullptr) {
+
+		ListNode *pNext = pNode->m_pNext; // 对比是否重复
+		bool needDelete = false;
+
+		if (pNext != nullptr && pNext->m_nKey == pNode->m_nKey)
+			needDelete = true;
+
+		if (!needDelete) { // 没有遇到重复, 前移
+			// pPreNode = pNode;
+			pNode = pNode->m_pNext;
+		} else { // 遇到重复 --> 向前移动直到不重复
+			int value = pNode->m_nKey;
+
+			ListNode *pDelete = pNext; // 保留重复值的第一个结点
+
+			while (pDelete->m_nKey == value && pDelete != nullptr) {
+				pNext = pDelete->m_pNext;
+
+				delete pDelete;
+				pDelete = nullptr;
+
+				pDelete = pNext;
+			} // 删除直到 非  value
+
+			pNode->m_pNext = pNext;
+			pNode = pNext;
+		}
+	}
+}
+
+// 一个链表中包含环，如何找出环的入口结点？
+/*
+ * 面试23：
+ * */
+ListNode *MeetingNode(ListNode *pHead) {
+	if (pHead == nullptr)
+		return nullptr;
+
+	ListNode *pSlow = pHead->m_pNext;
+	if (pSlow == nullptr)
+		return nullptr;
+
+	ListNode *pFast = pSlow->m_pNext;
+
+	while (pFast != nullptr && pSlow != nullptr) {
+
+		if (pFast == pSlow) // 指向
+			return pFast;
+		pSlow = pSlow->m_pNext;
+		pFast = pFast->m_pNext;
+
+		if (pFast != nullptr)
+			pFast = pFast->m_pNext;
+	}
+	return nullptr;
+}
+
+ListNode *EntryNode(ListNode *pHead) {
+	ListNode *meetingNode = MeetingNode(pHead);
+
+	if (meetingNode == nullptr)
+		return nullptr;
+
+	// 得到环中结点的数目
+	int nodeInLoop = 1;
+	ListNode *pNode1 = meetingNode;
+	while (pNode1->m_pNext != meetingNode) {
+		pNode1 = pNode1->m_pNext;
+		++nodeInLoop;
+	}
+
+	// 先移动pNode1，次数为环中结点数
+	pnode1 = pHead;
+	for (int i = 0; i < nodeInLoop; ++i) {
+		pNode1 = pNode1->m_pNext;
+	}
+
+	// 再移动pNode1和pNode2
+	ListNode *pNode2 = pHead;
+	while (pNode1 != pNode2) {
+		pNode1 = pNode1->m_pNext;
+		pNode2 = pNode2->m_pNext;
+	}
+	return pNode1;
+}
 
 #endif //INTERVIEW_CPP_LIST_H
