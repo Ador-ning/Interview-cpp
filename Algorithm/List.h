@@ -314,4 +314,6 @@ ListNode *EntryNode(ListNode *pHead) {
 	return pNode1;
 }
 
+//
+
 #endif //INTERVIEW_CPP_LIST_H
