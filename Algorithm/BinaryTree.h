@@ -88,11 +88,11 @@ void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 	if (pRoot == nullptr)
 		return;
 
-	std::deque<BinaryTreeNode *> dequeTreeNode;
+	std::deque<const BinaryTreeNode *> dequeTreeNode;
 	dequeTreeNode.push_back(pRoot);
 
 	while (dequeTreeNode.size()) {
-		BinaryTreeNode *pNode = dequeTreeNode.front();
+		const BinaryTreeNode *pNode = dequeTreeNode.front();
 		dequeTreeNode.pop_front();
 
 		cout << "%d\t" << pNode->value;
@@ -141,22 +141,23 @@ void Serialize(const BinaryTreeNode *pRoot, ostream &stream) {
 		return;
 	}
 
-	stream << pRoot->m_nValue << ',';
-	Serialize(pRoot->m_pLeft, stream);
-	Serialize(pRoot->m_pRight, stream);
+	stream << pRoot->value << ',';
+	Serialize(pRoot->pLeft, stream);
+	Serialize(pRoot->pRight, stream);
 }
 
 void Deserialize(BinaryTreeNode **pRoot, istream &stream) {
 	int number;
 	if (ReadStream(stream, &number)) {
 		*pRoot = new BinaryTreeNode();
-		(*pRoot)->m_nValue = number;
-		(*pRoot)->m_pLeft = nullptr;
-		(*pRoot)->m_pRight = nullptr;
+		(*pRoot)->value = number;
+		(*pRoot)->pLeft = nullptr;
+		(*pRoot)->pRight = nullptr;
 
-		Deserialize(&((*pRoot)->m_pLeft), stream);
-		Deserialize(&((*pRoot)->m_pRight), stream);
+		Deserialize(&((*pRoot)->pLeft), stream);
+		Deserialize(&((*pRoot)->pRight), stream);
 	}
 }
+
 
 #endif //INTERVIEW_CPP_BINARYTREE_H

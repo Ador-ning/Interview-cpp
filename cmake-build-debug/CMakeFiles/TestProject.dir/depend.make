@@ -3,6 +3,8 @@
 
 CMakeFiles/TestProject.dir/main.cpp.o: .././BaseCpp/mystrings.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/BinaryTree.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/ConvertBST.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/List.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/StringUtils.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../main.cpp
 

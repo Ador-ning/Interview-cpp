@@ -300,7 +300,7 @@ ListNode *EntryNode(ListNode *pHead) {
 	}
 
 	// 先移动pNode1，次数为环中结点数
-	pnode1 = pHead;
+	pNode1 = pHead;
 	for (int i = 0; i < nodeInLoop; ++i) {
 		pNode1 = pNode1->m_pNext;
 	}
