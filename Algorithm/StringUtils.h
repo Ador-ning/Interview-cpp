@@ -74,5 +74,38 @@ void test_main() {
 	Test(string4);
 }
 
+// 反转字符串
+/*
+ * 面试58：输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变
+ * 翻转两次 2O(n)
+ * */
+char *ReverseSentence(char *pData) {
+	if (pData == nullptr)
+		return nullptr;
+
+	char *pBegin = pData;
+	char *pEnd = pData;
+
+	while (*pEnd != '\0')
+		pEnd++;
+	pEnd--;
+
+	// 翻转句子
+	Reverse(pBegin, pEnd);
+
+	// 翻转句子中的每一个单词
+	pBegin = pEnd = pData;
+	while (*pBegin != '\0') {
+		if (*pBegin == ' ') {
+			pBegin++;
+			pEnd++;
+		} else if (*pEnd == ' ' || *pEnd == '\0') {
+			Reverse(pBegin, --pEnd);
+			pBegin = ++pEnd;
+		} else
+			pEnd++;
+	}
+	return pData;
+}
 
 #endif //INTERVIEW_CPP_STRINGUTILS_H
