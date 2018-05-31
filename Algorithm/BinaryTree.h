@@ -159,5 +159,46 @@ void Deserialize(BinaryTreeNode **pRoot, istream &stream) {
 	}
 }
 
+// 二叉树深度
+/*
+ * 面试55：输入一棵二叉树的根结点，求该树的深度
+ * 从根结点到叶结点一次经过的结点（含根、叶结点）形成树的一条路径，最长路径为其深度
+ */
+int TreeDepth(const BinaryTreeNode *pRoot) {
+	if (pRoot == nullptr)   // 空树 或者 叶结点
+		return 0;
+
+	int nLeft = TreeDepth(pRoot->pLeft);
+	int nRight = TreeDepth(pRoot->pRight);
+	return (nLeft > nRight) ? (nLeft + 1) : (nRight + 1);
+}
+
+// BST树 -- 二叉搜索树的第K个结点
+/*
+ * 面试54：给定一棵二叉搜索树，请找出其中的第K大结点
+ * */
+const BinaryTreeNode *KthNodeCore(const BinaryTreeNode *pRoot, unsigned int &k) {
+	const BinaryTreeNode *target = nullptr;
+
+	if (pRoot->pLeft != nullptr)
+		target = KthNodeCore(pRoot->pLeft, k);
+
+	if (target == nullptr) {
+		if (k == 1)
+			target = pRoot;
+		k--;
+	}
+
+	if (target == nullptr && pRoot->pRight != nullptr)
+		target = KthNodeCore(pRoot->pRight, k);
+
+	return target;
+}
+
+const BinaryTreeNode *kthNode(const BinaryTreeNode *pRoot, unsigned int k) {
+	if (pRoot == nullptr || k == 0)
+		return nullptr;
+	return KthNodeCore(pRoot, k);
+}
 
 #endif //INTERVIEW_CPP_BINARYTREE_H
