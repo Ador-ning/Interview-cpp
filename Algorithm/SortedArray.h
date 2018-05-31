@@ -145,4 +145,39 @@ int GetNumberSameAsIndex(const int *numbers, int length) {
 	return -1;
 }
 
+// ######################### next
+// 和为s的两个数字 -- 有序
+/*
+ * 面试57：输入一个递增数组和一个数字s，在数组中查找两个数，使得和为s
+ * 如果有多对数字，输出任意一对即可
+ */
+bool FindNumbersWithSum(int *data, int length, int sum, int *num1, int *num2) {
+	bool found = false;
+
+	if (length < 1 || num1 == nullptr || num2 == nullptr)
+		return found;
+
+	int ahead = length - 1;
+	int behind = 0;
+
+	while (ahead > behind) {
+		long long curSum = data[ahead] + data[behind];
+
+		if (curSum == sum) {
+			*num1 = data[ahead];
+			*num2 = data[behind];
+			found = true;
+			break;
+		} else if (curSum > sum)
+			ahead--; // 调整1
+		else
+			behind++; // 调整2
+	}
+
+	return found;
+}
+
+
+
+
 #endif //INTERVIEW_CPP_SORTEDARRAY_H
