@@ -10,6 +10,10 @@
 struct ListNode {
 	int m_nKey;
 	ListNode *m_pNext;
+
+	ListNode(int x) : m_nKey(x), m_pNext(nullptr) {}
+
+	ListNode() : m_nKey(0), m_pNext(nullptr) {}
 };
 
 // 创建 List 结点
@@ -18,6 +22,16 @@ ListNode *CreateListNode(int value) {
 	pNode->m_nKey = value;
 	pNode->m_pNext = NULL;
 	return pNode;
+}
+
+// get value and move next
+int getValueAndMoveNext(ListNode *l) {
+	int x = 0;
+	if (l != nullptr) {
+		x = l->m_nKey;
+		l = l->m_pNext;
+	}
+	return x;
 }
 
 // 连接 List结点

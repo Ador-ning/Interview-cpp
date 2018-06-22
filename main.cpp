@@ -5,6 +5,9 @@
 //#include "./BaseCpp/oop.h"
 #include "Algorithm/ConvertBST.h"
 #include "Algorithm/StringUtils.h"
+#include "Algorithm/SortedArray.h"
+
+#include "leetcode/twoSum.h"
 
 
 using namespace std;
@@ -22,9 +25,8 @@ void test_ConvertBST() {
 }
 
 int main(int argc, char **argv) {
-	cout << "Project Interview-cpp:" << endl;
-
-	// test_BaseCpp();
-	test_main();
+	cout << "Project Interview-cpp: leetcode" << endl;
+	// test_twoSum();
+	test_leet8();
 	return 0;
 }

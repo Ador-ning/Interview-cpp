@@ -107,7 +107,7 @@ int GetMissingNumber(const int *numbers, int length) {
 		int middle = (right + left) >> 1;
 
 		if (numbers[middle] != middle) {
-			if (middle == 0 || numbers[middle - 1] = middle - 1)
+			if (middle == 0 || numbers[middle - 1] == middle - 1)
 				return middle;
 			right = middle - 1;
 		} else
