@@ -54,6 +54,113 @@ void test_leet21() {
 	PrintList(h);
 }
 
+// ============================== 题目24 单链表 相邻两结点两两交换
+ListNode *SwapPairs(ListNode *head) {
+	if (head == nullptr)
+		return nullptr;
+	if (head->m_pNext == nullptr)
+		return head;    // 一个结点
+
+	ListNode *next = head->m_pNext;
+	head->m_pNext = next->m_pNext;
+	next->m_pNext = head;
+	head = next; // 调整前两个结点
+	if (head->m_pNext->m_pNext == nullptr)
+		return head; // 两个结点
+
+	ListNode *pre = head->m_pNext;
+	ListNode *p = pre->m_pNext;
+	if (p->m_pNext == nullptr)
+		return head; // 三个结点
+	next = p->m_pNext;
+
+	for (; next != nullptr; next = next->m_pNext->m_pNext) {
+		p->m_pNext = next->m_pNext;
+		next->m_pNext = p;
+		pre->m_pNext = next; // 调整
+
+		p = next;
+		next = p->m_pNext; // 换位置
+
+		if (next->m_pNext == nullptr)
+			return head; // 偶数结点
+
+		pre = pre->m_pNext->m_pNext;
+		p = p->m_pNext->m_pNext; // 循环更新
+		if (p->m_pNext == nullptr)
+			return head; // 奇数结点
+	}
+
+}
+
+void test_leet24() {
+	ListNode l1(1);
+	ListNode l2(2);
+	// ListNode l3(3);
+	// ListNode l4(4);
+	// ListNode l5(5);
+	// ListNode l6(6);
+	// ListNode l7(7);
+	// ListNode l8(8);
+	// ListNode l9(9);
+	ConnectListNodes(&l1, &l2);
+	// ConnectListNodes(&l2, &l3);
+	// ConnectListNodes(&l3, &l4);
+	// ConnectListNodes(&l4, &l5);
+	// ConnectListNodes(&l5, &l6);
+	// ConnectListNodes(&l6, &l7);
+	// ConnectListNodes(&l7, &l8);
+	// ConnectListNodes(&l8, &l9);
+	PrintList(SwapPairs(&l1));
+
+	// PrintList(&l1);
+}
+
+// ============================== 题目25 k个一组反转链表
+
+ListNode *Reverse(ListNode *p, int k) {
+	// 反转一组， p -> 反转起始结点
+}
+
+ListNode *ReverseKGroup(ListNode *head, int k) {
+
+	if (head == nullptr || k <= 1)
+		return head; // base situations
+
+	ListNode *p = head;
+	int num = 0;
+	while (p != nullptr) {
+		num += 1;
+		p = p->m_pNext;
+	} // 结点数目
+
+	int times = num / k; // 需要反转的次数
+
+	cout << num << '\t' << times << endl;
+	return head;
+}
+
+void test_leet25() {
+	ListNode l1(1);
+	ListNode l2(2);
+	ListNode l3(3);
+	ListNode l4(4);
+	// ListNode l5(5);
+	// ListNode l6(6);
+	// ListNode l7(7);
+	// ListNode l8(8);
+	// ListNode l9(9);
+	ConnectListNodes(&l1, &l2);
+	ConnectListNodes(&l2, &l3);
+	ConnectListNodes(&l3, &l4);
+	// ConnectListNodes(&l4, &l5);
+	// ConnectListNodes(&l5, &l6);
+	// ConnectListNodes(&l6, &l7);
+	// ConnectListNodes(&l7, &l8);
+	// ConnectListNodes(&l8, &l9);
+	ReverseKGroup(&l1, 3);
+}
+
 // ==============================   题目26 删除有序数组中重复的元素 -- 原地
 int RemoveDuplications(vector<int> &nums) {
 
