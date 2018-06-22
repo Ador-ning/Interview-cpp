@@ -289,8 +289,8 @@ string LongestCommonPrefix(vector<string> &strs) {
 		string w = strs[0].substr(0, i); //
 		bool match = true;
 
-		for (vector<string>::iterator i = strs.begin(); i < strs.end(); ++i) {
-			if (i > (*i).size() || w != (*i).substr(0, i)) {
+		for (int j = 1; j < strs.size(); ++j) {
+			if (i > strs[j].size() || w != strs[j].substr(0, i)) {
 				match = false; // 1. 长度
 				break;         // 2. 不匹配
 			}
@@ -298,12 +298,16 @@ string LongestCommonPrefix(vector<string> &strs) {
 
 		if (!match) // match == false
 			return prefix;
+		prefix = w;
 	}
+	return prefix;
 }
 
-test_leet14() {
+void test_leet14() {
 	vector<string> strs1 = {"dog", "racecar", "car"};
 	vector<string> strs2 = {"flower", "flow", "flight"};
+	cout << LongestCommonPrefix(strs1) << endl;
+	cout << LongestCommonPrefix(strs2) << endl;
 }
 
 #endif //INTERVIEW_CPP_TWOSUM_H
