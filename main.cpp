@@ -7,7 +7,8 @@
 #include "Algorithm/StringUtils.h"
 #include "Algorithm/SortedArray.h"
 
-#include "leetcode/twoSum.h"
+#include "leetcode/leet20.h"
+#include "leetcode/leet40.h"
 
 
 using namespace std;
@@ -27,6 +28,6 @@ void test_ConvertBST() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
-	test_leet8();
+	test_leet25();
 	return 0;
 }

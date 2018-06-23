@@ -40,7 +40,21 @@ iostream
 
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 
-/Users/ning/Interview-cpp/leetcode/twoSum.h
+/Users/ning/Interview-cpp/leetcode/leet20.h
+iostream
+-
+vector
+-
+map
+-
+unordered_map
+-
+cmath
+-
+../Algorithm/List.h
+/Users/ning/Interview-cpp/Algorithm/List.h
+
+/Users/ning/Interview-cpp/leetcode/leet40.h
 iostream
 -
 vector
@@ -69,6 +83,8 @@ Algorithm/StringUtils.h
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 Algorithm/SortedArray.h
 /Users/ning/Interview-cpp/Algorithm/SortedArray.h
-leetcode/twoSum.h
-/Users/ning/Interview-cpp/leetcode/twoSum.h
+leetcode/leet20.h
+/Users/ning/Interview-cpp/leetcode/leet20.h
+leetcode/leet40.h
+/Users/ning/Interview-cpp/leetcode/leet40.h
 
