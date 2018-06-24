@@ -227,4 +227,103 @@ void test_leet28() {
 	cout << strStr(haystack, needle);
 }
 
+// ============================== 题目29 两整数数相除
+#define  INT_MAX 2147483647
+#define INT_MIN (-INT_MAX-1)
+
+int divide(int dividend, int divisor) {
+	int sign = (float) dividend / divisor > 0 ? 1 : -1;
+	unsigned int dvd = dividend > 0 ? dividend : -dividend;
+	unsigned int dvs = divisor > 0 ? divisor : -divisor;
+
+	unsigned int bit_num[32];
+	unsigned int i = 0;
+	long long d = dvs;
+	bit_num[i] = d;
+
+	while (d <= dvd)
+		bit_num[++i] = d = d << 1;
+
+	i--;
+	unsigned int result = 0;
+
+	while (dvd >= dvs) {
+		if (dvd >= bit_num[i]) {
+			dvd -= bit_num[i];
+			result += (1 << i);
+		} else {
+			i--;
+		}
+	}
+
+	if (result > INT_MAX && sign > 0)
+		return INT_MAX;
+	return (int) result * sign;
+}
+
+void test_leet29() {
+	cout << divide(-2147483647, -1) << '\t' << divide(7, -3) << endl;
+}
+
+// ============================== 题目33 Search in Rotated Sorted Array -- [4,5,6,7,0,1,2]
+int search(vector<int> &nums, int target) {
+	int n = nums.size();
+
+	if (n <= 0)
+		return -1; // base situation
+	if (n == 1)
+		return nums[0] == target ? 0 : -1;
+
+	int low = 0, high = n - 1;
+
+	while (low <= high) {
+
+		if (nums[low] < nums[high] && (target < nums[low] || target > nums[high]))
+			return -1;
+
+		// remove the duplication
+		while (low < high && nums[low] == nums[high])
+			low++;
+
+		int mid = low + (high - low) / 2;
+
+		if (nums[low] == target)
+			return low;
+		if (nums[high] == target)
+			return high;
+		if (nums[mid] == target)
+			return mid;  // 返回
+
+		// the target in non-rotated array  情况1 target在左侧有序部分
+		if (nums[low] < nums[mid] && target >= nums[low] && target < nums[mid]) {
+			high = mid - 1;
+			continue;
+		}
+
+		// the target in non-rotated array  情况2 target在右侧有序部分
+		if (nums[mid] < nums[high] && target >= nums[mid] && target < nums[high]) {
+			low = mid + 1;
+			continue;
+		}
+
+		// the target in rotated array  情况3  旋转点在左侧
+		if (nums[low] > nums[mid]) {
+			high = mid - 1;
+			continue;
+		}
+		// the target in rotated array  情况4 旋转点在右侧
+		if (nums[mid] > nums[high]) {
+			low = mid + 1;
+			continue;
+		}
+		low++;
+	}
+	return -1;
+}
+
+void test_leet33() {
+	vector<int> nums1 = {5, 1, 3};
+	cout << search(nums1, 3) << endl;
+}
+
 #endif //INTERVIEW_CPP_40_H

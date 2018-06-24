@@ -7,21 +7,59 @@
 
 #include <cstdio>
 
-struct ListNode {
-	int m_nKey;
-	ListNode *m_pNext;
-
+class ListNode {
+public:
+	// 构造函数
 	ListNode(int x) : m_nKey(x), m_pNext(nullptr) {}
 
 	ListNode() : m_nKey(0), m_pNext(nullptr) {}
+
+public:
+	int m_nKey;
+	ListNode *m_pNext;
 };
 
-// 创建 List 结点
-ListNode *CreateListNode(int value) {
-	ListNode *pNode = new ListNode();
-	pNode->m_nKey = value;
-	pNode->m_pNext = NULL;
-	return pNode;
+// 删除有序链表中重复结点
+void DeleteDup(ListNode **pHead) {
+	if (pHead == nullptr || *pHead == nullptr)
+		return;
+
+	ListNode *pNode = *pHead;
+	ListNode *pPreNode = nullptr;
+
+	while (pNode != nullptr) {
+
+		ListNode *pNext = pNode->m_pNext; // 对比是否重复
+		bool needDelete = false;
+
+		if (pNext != nullptr && pNext->m_nKey == pNode->m_nKey)
+			needDelete = true;
+
+		if (!needDelete) { // 没有遇到重复, 前移
+// pPreNode = pNode;
+			pNode = pNode->m_pNext;
+		} else { // 遇到重复 --> 向前移动直到不重复
+			int value = pNode->m_nKey;
+
+			ListNode *pDelete = pNext; // 保留重复值的第一个结点
+
+			while (pDelete->m_nKey ==
+			       value && pDelete
+			                != nullptr) {
+				pNext = pDelete->m_pNext;
+
+				delete
+						pDelete;
+				pDelete = nullptr;
+
+				pDelete = pNext;
+			} // 删除直到 非  value
+
+			pNode->
+					m_pNext = pNext;
+			pNode = pNext;
+		}
+	}
 }
 
 // get value and move next
@@ -32,24 +70,6 @@ int getValueAndMoveNext(ListNode *l) {
 		l = l->m_pNext;
 	}
 	return x;
-}
-
-// 连接 List结点
-void ConnectListNodes(ListNode *pCurrent, ListNode *pNext) {
-	if (pCurrent == NULL) {
-		printf("Error to connect two nodes.\n");
-		return;
-	}
-
-	pCurrent->m_pNext = pNext;
-}
-
-// 打印 List 结点
-void PrintListNode(ListNode *pNode) {
-	if (pNode == NULL)
-		printf("The node is NULL.\n");
-	else
-		printf("The key in node is %d.\n", pNode->m_nKey);
 }
 
 // 顺序打印 List
@@ -75,23 +95,6 @@ void DestroyList(ListNode *pHead) {
 		delete pNode;
 		pNode = pHead;
 	}
-}
-
-// 链表尾部添加 List 结点
-void AddToTail(ListNode **pHead, int value) {
-	ListNode *pNew = new ListNode();
-	pNew->m_nKey = value;
-	pNew->m_pNext = NULL;
-
-	if (*pHead != NULL) {
-		ListNode *pNode = *pHead;
-
-		while (pNode->m_pNext != NULL)
-			pNode = pNode->m_pNext;
-
-		pNode->m_pNext = pNew;
-	} else
-		*pHead = pNew;
 }
 
 // 删除 List 结点
@@ -124,6 +127,50 @@ void RemoveNode(ListNode **pHead, int value) {
 	}
 }
 
+// 创建 List 结点
+ListNode *CreateListNode(int value) {
+	ListNode *pNode = new ListNode();
+	pNode->m_nKey = value;
+	pNode->m_pNext = NULL;
+	return pNode;
+}
+
+// 链表尾部添加 List 结点
+void AddToTail(ListNode **pHead, int value) {
+	ListNode *pNew = new ListNode();
+	pNew->m_nKey = value;
+	pNew->m_pNext = NULL;
+
+	if (*pHead != NULL) {
+		ListNode *pNode = *pHead;
+
+		while (pNode->m_pNext != NULL)
+			pNode = pNode->m_pNext;
+
+		pNode->m_pNext = pNew;
+	} else
+		*pHead = pNew;
+}
+
+// 连接 List结点
+void ConnectListNodes(ListNode *pCurrent, ListNode *pNext) {
+	if (pCurrent == NULL) {
+		printf("Error to connect two nodes.\n");
+		return;
+	}
+
+	pCurrent->m_pNext = pNext;
+}
+
+// 打印 List 结点
+void PrintListNode(ListNode *pNode) {
+	if (pNode == NULL)
+		printf("The node is NULL.\n");
+	else
+		printf("The key in node is %d.\n", pNode->m_nKey);
+}
+
+// ============================ 剑指offer ====================
 // 反转链表
 /*
  * 面试第24题 -- 输入链表头结点，反转该链表并输出
@@ -230,45 +277,6 @@ void DeleteNode(ListNode **pHead, ListNode *pDeleted) {
 		pNode->m_pNext = nullptr;
 		delete pDeleted;
 		pDeleted = nullptr;
-	}
-}
-
-// 删除有序链表中重复结点
-void DeleteDup(ListNode **pHead) {
-	if (pHead == nullptr || *pHead == nullptr)
-		return;
-
-	ListNode *pNode = *pHead;
-	ListNode *pPreNode = nullptr;
-
-	while (pNode != nullptr) {
-
-		ListNode *pNext = pNode->m_pNext; // 对比是否重复
-		bool needDelete = false;
-
-		if (pNext != nullptr && pNext->m_nKey == pNode->m_nKey)
-			needDelete = true;
-
-		if (!needDelete) { // 没有遇到重复, 前移
-			// pPreNode = pNode;
-			pNode = pNode->m_pNext;
-		} else { // 遇到重复 --> 向前移动直到不重复
-			int value = pNode->m_nKey;
-
-			ListNode *pDelete = pNext; // 保留重复值的第一个结点
-
-			while (pDelete->m_nKey == value && pDelete != nullptr) {
-				pNext = pDelete->m_pNext;
-
-				delete pDelete;
-				pDelete = nullptr;
-
-				pDelete = pNext;
-			} // 删除直到 非  value
-
-			pNode->m_pNext = pNext;
-			pNode = pNext;
-		}
 	}
 }
 
