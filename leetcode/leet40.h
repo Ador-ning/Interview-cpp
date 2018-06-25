@@ -232,25 +232,25 @@ void test_leet28() {
 #define INT_MIN (-INT_MAX-1)
 
 int divide(int dividend, int divisor) {
-	int sign = (float) dividend / divisor > 0 ? 1 : -1;
-	unsigned int dvd = dividend > 0 ? dividend : -dividend;
+	int sign = (float) dividend / divisor > 0 ? 1 : -1; // 符号
+	unsigned int dvd = dividend > 0 ? dividend : -dividend; // 变正数
 	unsigned int dvs = divisor > 0 ? divisor : -divisor;
 
-	unsigned int bit_num[32];
+	unsigned int bit_num[32]; // 存放 -- 除数的 i倍结果
 	unsigned int i = 0;
 	long long d = dvs;
-	bit_num[i] = d;
+	bit_num[i] = d; // 除数
 
 	while (d <= dvd)
-		bit_num[++i] = d = d << 1;
+		bit_num[++i] = d = d << 1; // 存放
 
 	i--;
 	unsigned int result = 0;
 
-	while (dvd >= dvs) {
+	while (dvd >= dvs) { // 被除数 >= 除数
 		if (dvd >= bit_num[i]) {
-			dvd -= bit_num[i];
-			result += (1 << i);
+			dvd -= bit_num[i]; // 余数
+			result += (1 << i); // 结果
 		} else {
 			i--;
 		}
@@ -262,7 +262,7 @@ int divide(int dividend, int divisor) {
 }
 
 void test_leet29() {
-	cout << divide(-2147483647, -1) << '\t' << divide(7, -3) << endl;
+	cout << '\t' << divide(7, -3) << endl;
 }
 
 // ============================== 题目33 Search in Rotated Sorted Array -- [4,5,6,7,0,1,2]
