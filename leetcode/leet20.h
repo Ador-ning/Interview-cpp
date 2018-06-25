@@ -310,4 +310,58 @@ void test_leet14() {
 	cout << LongestCommonPrefix(strs2) << endl;
 }
 
+// ============================== 题目19 Remove Nth Node From End of List
+ListNode *RemoveNthFromEnd(ListNode *head, int n) {
+	if (head == nullptr || n == 0)
+		return head;
+	if (n == 1 && head->m_pNext == nullptr)
+		return nullptr;
+
+	ListNode *pre = head;
+	ListNode *next = nullptr; // 指向被删除结点，上一个结点
+	ListNode *pDelete = nullptr; // 指向被删除结点
+
+	int num = 0;
+	int k = n;
+	while (n > 0) {
+		pre = pre->m_pNext;
+		num += 1;
+		if (pre == nullptr)
+			if (num == k) // list length == n
+			{
+				head = head->m_pNext;
+				return head;
+			} else
+				return head; // list length < n
+		n--;
+	}
+	next = head;
+	// pre指向最后一个结点
+	// next指向被删除上一个结点
+	while (pre->m_pNext != nullptr) {
+		pre = pre->m_pNext;
+		next = next->m_pNext;
+	}
+	pDelete = next->m_pNext;
+	next->m_pNext = pDelete->m_pNext; // 改连接
+
+	// delete pDelete;
+	// pDelete = nullptr;
+	return head;
+}
+
+void test_leet19() {
+	ListNode l1(1);
+	ListNode l2(2);
+	ListNode l3(3);
+	ListNode l4(4);
+	//ListNode l5(5);
+
+	ConnectListNodes(&l1, &l2);
+	ConnectListNodes(&l2, &l3);
+	ConnectListNodes(&l3, &l4);
+	//ConnectListNodes(&l4, &l5);
+	PrintList(RemoveNthFromEnd(&l1, 4));
+}
+
 #endif //INTERVIEW_CPP_TWOSUM_H
