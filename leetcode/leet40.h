@@ -367,4 +367,73 @@ void test_leet33() {
 	cout << search(nums1, 3) << endl;
 }
 
+// ============================== 题目34 升序数组中，查找value，返回index
+
+// 返回 val index
+int FindVal(vector<int> &nums, int val, int n) {
+	int left = 0;
+	int right = n - 1;
+
+	while (left <= right) {
+		int mid = left + ((right - left) >> 1);
+		if (nums[mid] > val)
+			right = mid - 1;
+		else if (nums[mid] < val)
+			left = mid + 1;
+		else
+			return mid;
+	}
+	return -1;
+}
+
+vector<int> SearchRange(vector<int> &nums, int target) {
+	int n = nums.size();
+	vector<int> result;
+	int index_left = 0;
+	int index_right = 0;
+
+	if (n <= 0) {
+		index_left = -1;
+		index_right = -1;
+	}
+
+	int index = FindVal(nums, target, n);
+
+	if (index == -1) { // 不存在
+		index_left = -1;
+		index_right = -1;
+	}
+
+	if (index > -1) { // 找左右两侧索引
+		for (int i = index + 1; i < n; ++i) { // 右侧
+			if (nums[i] == target)
+				if (i == n - 1) {
+					index_right = i;
+					break;
+				} else
+					continue;
+			index_right = i - 1;
+			break;
+		}
+		for (int i = index; i >= 0; --i) { // 左侧
+			if (nums[i] == target)
+				continue;
+			index_left = i + 1;
+			break;
+		}
+	}
+
+	cout << index << endl;
+	cout << index_left << '\t' << index_right << endl;
+
+	result.push_back(index_left);
+	result.push_back(index_right);
+	return result;
+}
+
+void test_leet34() {
+	vector<int> n = { 2, 2};
+	SearchRange(n, 2);
+}
+
 #endif //INTERVIEW_CPP_40_H
