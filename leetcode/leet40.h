@@ -204,6 +204,47 @@ void test_leet26() {
 	cout << RemoveDuplications(nums) << endl;
 }
 
+// ============================== 题目27
+int RemoveElement(vector<int> &nums, int val) {
+	int n = nums.size();
+	if (n <= 0)
+		return 0; // base
+
+	int ValNumLeft = 0; // 值为val的数量
+	int ValNumRight = 0;
+	int BackIndex = 1; // 换值调整 index
+
+	for (int i = 0; i <= n - BackIndex; ++i) {  // i <= n-BackIndex
+		if (nums[i] == val) {
+			ValNumLeft += 1;
+
+			// 向左找到
+			while ((n - BackIndex) > i) {
+				if (val == nums[n - BackIndex]) { // 值 == val
+					BackIndex += 1;
+					ValNumRight += 1;
+				} else {
+					nums[i] = nums[n - BackIndex]; // 值 != val
+					BackIndex += 1;
+					break;
+				}
+			}
+		}
+	}
+
+	vector<int>::iterator it = nums.begin();
+	for (; it < nums.end(); ++it)
+		cout << *it << '\t';
+	cout << endl;
+
+	return (n - ValNumLeft - ValNumRight);
+}
+
+void test_leet27() {
+	vector<int> n = {0, 1, 2, 2, 3, 0, 4, 2, 10};// {1};
+	cout << RemoveElement(n, 10);
+}
+
 // ============================== 题目28 判断str2是否为str1的子串
 int strStr(const string s1, const string s2) {
 
