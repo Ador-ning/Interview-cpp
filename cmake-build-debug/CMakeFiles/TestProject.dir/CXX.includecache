@@ -68,6 +68,16 @@ cmath
 ../Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 
+/Users/ning/Interview-cpp/leetcode/leet60.h
+vector
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+
 /Users/ning/Interview-cpp/main.cpp
 iostream
 -
@@ -87,4 +97,6 @@ leetcode/leet20.h
 /Users/ning/Interview-cpp/leetcode/leet20.h
 leetcode/leet40.h
 /Users/ning/Interview-cpp/leetcode/leet40.h
+leetcode/leet60.h
+/Users/ning/Interview-cpp/leetcode/leet60.h
 
