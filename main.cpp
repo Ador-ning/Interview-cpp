@@ -28,6 +28,6 @@ void test_ConvertBST() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
-	test_leet29();
+	test_leet25();
 	return 0;
 }

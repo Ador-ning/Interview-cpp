@@ -118,9 +118,31 @@ void test_leet24() {
 
 // ============================== 题目25 k个一组反转链表
 
-ListNode *Reverse(ListNode *p, int k) {
-	// 反转一组， p -> 反转起始结点
+// p1 -- 指向 反转范围起始结点的 父结点
+// p2 -- 指向 反转范围最后一个结点
+ListNode *Reverse(ListNode *head, ListNode *p1, ListNode *p2) {
+
+// 链表首
+	if (head == p1) {
+		ListNode tmp(-1);
+		tmp.m_pNext = head;
+		p1 = &tmp;
+		head = p2;
+	}
+	ListNode *p3 = p2->m_pNext; // 在p2 和 p3 之间插入结点，更新 p3
+	ListNode *pMove = p1->m_pNext; // 移动结点指针
+
+	while (pMove != p2) {
+		p1->m_pNext = pMove->m_pNext;
+		pMove->m_pNext = p3;
+		p2->m_pNext = pMove;
+
+		p3 = pMove; // 更新 p3
+		pMove = p1->m_pNext; // 更新 pMove
+	}
+	return head;
 }
+
 
 ListNode *ReverseKGroup(ListNode *head, int k) {
 
@@ -136,8 +158,26 @@ ListNode *ReverseKGroup(ListNode *head, int k) {
 
 	int times = num / k; // 需要反转的次数
 
-	cout << num << '\t' << times << endl;
-	return head;
+	if (times == 0)
+		return head;
+
+	ListNode *p2 = head;
+	ListNode *p1 = head;
+	ListNode *NewHead = head;
+
+	int loops = 0;
+	while (times > 0) {
+		for (int i = 1; i < k; ++i)
+			p2 = p2->m_pNext; // 更新p2
+		ListNode *np1;
+		NewHead = Reverse(NewHead, p1, p2);
+		PrintListNode(p2);
+
+		// 更新 p1
+		p1 = p2;
+		times -= 1;
+	}
+	return NewHead;
 }
 
 void test_leet25() {
@@ -145,20 +185,24 @@ void test_leet25() {
 	ListNode l2(2);
 	ListNode l3(3);
 	ListNode l4(4);
-	// ListNode l5(5);
-	// ListNode l6(6);
-	// ListNode l7(7);
-	// ListNode l8(8);
-	// ListNode l9(9);
+	ListNode l5(5);
+	ListNode l6(6);
+	ListNode l7(7);
+	ListNode l8(8);
+	ListNode l9(9);
 	ConnectListNodes(&l1, &l2);
 	ConnectListNodes(&l2, &l3);
 	ConnectListNodes(&l3, &l4);
-	// ConnectListNodes(&l4, &l5);
-	// ConnectListNodes(&l5, &l6);
-	// ConnectListNodes(&l6, &l7);
-	// ConnectListNodes(&l7, &l8);
-	// ConnectListNodes(&l8, &l9);
-	ReverseKGroup(&l1, 3);
+	ConnectListNodes(&l4, &l5);
+	ConnectListNodes(&l5, &l6);
+	ConnectListNodes(&l6, &l7);
+	ConnectListNodes(&l7, &l8);
+	ConnectListNodes(&l8, &l9);
+
+	// PrintList(&l1);
+	// ListNode* New = Reverse(&l1, &l1, &l6);
+	// PrintList(New);
+	PrintList(ReverseKGroup(&l1, 3));
 }
 
 // ==============================   题目26 删除有序数组中重复的元素 -- 原地
@@ -431,8 +475,74 @@ vector<int> SearchRange(vector<int> &nums, int target) {
 }
 
 void test_leet34() {
-	vector<int> n = { 2, 2};
+	vector<int> n = {2, 2};
 	SearchRange(n, 2);
+}
+
+// ============================== 题目39 数组总合 ---- 回溯法 ----
+
+void printMatrix(vector<vector<int> > &vv) {
+	for (int i = 0; i < vv.size(); i++) {
+		cout << "[";
+		for (int j = 0; j < vv[i].size(); j++) {
+			cout << " " << vv[i][j];
+		}
+		cout << "]" << endl;;
+	}
+}
+
+void printArray(vector<int> &v) {
+	cout << "{";
+	for (int i = 0; i < v.size(); i++) {
+		cout << " " << v[i];
+	}
+	cout << "}" << endl;
+}
+
+void CombinationSumHelper(vector<int> &candidates, int start, int target, vector<int> &solution,
+                          vector<vector<int>> &result) {
+	if (target < 0)
+		return;
+	if (target == 0) {
+		result.push_back(solution);
+		return;
+	}
+
+	for (int i = start; i < candidates.size(); ++i) {
+		if (i > start && candidates[i] == candidates[-1]) // skip duplicates
+			continue;
+		solution.push_back(candidates[i]);
+		CombinationSumHelper(candidates, i, target - candidates[i], solution, result);
+		solution.pop_back();
+	}
+}
+
+vector<vector<int>> CombinationSum(vector<int> &candidates, int target) {
+	vector<vector<int>> result;
+
+	if (candidates.size() <= 0)
+		return result;
+
+	sort(candidates.begin(), candidates.end());
+
+	vector<int> solution;
+	CombinationSumHelper(candidates, 0, target, solution, result);
+
+	return result;
+}
+
+void test_leet39() {
+	int a[] = {4, 2, 3, 3, 5, 7};
+	vector<int> v(a, a + sizeof(a) / sizeof(int));
+	int target = 7;
+	cout << "array  = ";
+	printArray(v);
+	cout << "target = " << target << endl;
+
+	vector<vector<int> > vv = CombinationSum(v, target);
+	printMatrix(vv);
+
+	return;
 }
 
 #endif //INTERVIEW_CPP_40_H
