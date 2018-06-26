@@ -110,6 +110,60 @@ void test_leet46() {
 	permute(n);
 }
 
+// ============================== 题目49
+bool Anagrams(string &s1, string &s2) {
+	if (s1.size() != s2.size())
+		return false;
+	for (int i = 0; i < s1.size(); ++i) {
+		if (s2.find(s1[i]) >= s2.size() || s2.find(s1[i]) < 0) // 不存在时，返回结果
+			return false;
+	}
+	return true;
+}
+
+vector<vector<string>> groupAnagrams(vector<string> &strs) {
+	vector<vector<string>> result;
+	int StrsLen = strs.size();
+
+	if (StrsLen <= 1)
+		return result;
+
+	int work[StrsLen]; // 0 表示字符串没有使用
+	for (int i = 0; i < StrsLen; ++i)
+		work[i] = 0;
+
+	for (int i = 0; i < StrsLen; ++i) {
+
+		if (work[i] == 1) // 表示已经归类
+			continue;
+		else {
+			vector<string> val;
+			val.push_back(strs[i]);
+
+			cout << strs[i] << '\t';
+
+			for (int j = i + 1; j < strs.size(); ++j) {
+				if (Anagrams(strs[i], strs[j])) { // 判断 字母异位词
+					val.push_back(val[j]);
+					work[j] = 1;
+					cout << strs[j] << '\t';
+				}
+			}
+
+			result.push_back(val);
+			cout << endl;
+		}
+	}
+	return result;
+}
+
+void test_leet49() {
+	vector<string> s = {"eat", "eat", "tan", "ate", "nat", "bat"};
+
+	groupAnagrams(s);
+}
+
+
 // ============================== 题目50 pow
 
 double myPow(double x, int n) {
