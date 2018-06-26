@@ -117,7 +117,6 @@ void test_leet24() {
 }
 
 // ============================== 题目25 k个一组反转链表
-
 // p1 -- 指向 反转范围起始结点的 父结点
 // p2 -- 指向 反转范围最后一个结点
 ListNode *Reverse(ListNode *head, ListNode *p1, ListNode *p2) {
@@ -132,6 +131,8 @@ ListNode *Reverse(ListNode *head, ListNode *p1, ListNode *p2) {
 	ListNode *p3 = p2->m_pNext; // 在p2 和 p3 之间插入结点，更新 p3
 	ListNode *pMove = p1->m_pNext; // 移动结点指针
 
+	bool Next_tag = false;
+
 	while (pMove != p2) {
 		p1->m_pNext = pMove->m_pNext;
 		pMove->m_pNext = p3;
@@ -142,7 +143,6 @@ ListNode *Reverse(ListNode *head, ListNode *p1, ListNode *p2) {
 	}
 	return head;
 }
-
 
 ListNode *ReverseKGroup(ListNode *head, int k) {
 
@@ -167,11 +167,11 @@ ListNode *ReverseKGroup(ListNode *head, int k) {
 
 	int loops = 0;
 	while (times > 0) {
+
 		for (int i = 1; i < k; ++i)
-			p2 = p2->m_pNext; // 更新p2
-		ListNode *np1;
+			p2 = p2; // 更新p2
+
 		NewHead = Reverse(NewHead, p1, p2);
-		PrintListNode(p2);
 
 		// 更新 p1
 		p1 = p2;
