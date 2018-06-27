@@ -35,7 +35,6 @@
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet60.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet60.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -167,8 +166,8 @@
       <file leaf-file-name="leet60.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/leet60.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+            <state relative-caret-position="690">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#164#224#0" />
@@ -176,6 +175,11 @@
                 <element signature="e#1293#1316#0" />
                 <element signature="e#1438#1540#0" />
                 <element signature="e#1937#1960#0" />
+                <element signature="e#2082#2250#0" />
+                <element signature="e#2129#2711#0" />
+                <element signature="e#3018#3125#0" />
+                <element signature="e#2062#2378#0" />
+                <element signature="e#2099#2122#0" />
               </folding>
             </state>
           </provider>
@@ -229,8 +233,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="width" value="1097" />
+    <option name="x" value="45" />
+    <option name="y" value="2" />
+    <option name="width" value="967" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -306,12 +311,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="108713000" />
+      <workItem from="1527335577206" duration="114051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124890000" />
+    <option name="totallyTimeSpent" value="130228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,7 +328,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1097" height="800" extended-state="0" />
+    <frame x="45" y="2" width="967" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
@@ -333,7 +338,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03345725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03805497" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -860,17 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#144#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet20.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -936,10 +930,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#144#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet60.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+        <state relative-caret-position="690">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#164#224#0" />
@@ -947,6 +952,11 @@
             <element signature="e#1293#1316#0" />
             <element signature="e#1438#1540#0" />
             <element signature="e#1937#1960#0" />
+            <element signature="e#2082#2250#0" />
+            <element signature="e#2129#2711#0" />
+            <element signature="e#3018#3125#0" />
+            <element signature="e#2062#2378#0" />
+            <element signature="e#2099#2122#0" />
           </folding>
         </state>
       </provider>
