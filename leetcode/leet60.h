@@ -15,6 +15,16 @@ using namespace std;
 #define MAX_INT (pow(2, 31))
 #define MIN_INT (-pow(2, 31) - 1)
 
+class Interval {
+public:
+	Interval() : left(0), right(0) {}
+
+	Interval(int s, int e) : left(s), right(e) {}
+
+	int left;
+	int right;
+};
+
 // ============================== 题目41  数字字符串 乘法
 string strPlus(string &nums1, string &nums2) {
 	if (nums1.size() == 0)
@@ -200,6 +210,71 @@ double myPow(double x, int n) {
 
 void test_leet50() {
 	cout << myPow(2.5, 5544);
+}
+
+// ============================== 题目55
+bool canJump(vector<int> &nums) {
+	int n = nums.size();
+	if (n <= 0)
+		return false;
+
+}
+
+void test_leet55() {
+	vector<int> n = {2, 3, 1, 1, 4}; // 3,2,1,0,4
+	cout << canJump(n) << endl;
+}
+
+// ============================== 题目56 Merge intervals
+bool sortIntervals(const Interval &i1, const Interval &i2) {
+	return i1.left < i2.left; // 升序
+}
+
+vector<Interval> merge(vector<Interval> &intervals) {
+	// 1. 对 left排序 升序
+	// 2. 合并 -- 合并条件
+	int n = intervals.size();
+	vector<Interval> result;
+
+	if (n <= 0)
+		return result;
+
+	// 排序
+	sort(intervals.begin(), intervals.end(), sortIntervals);
+	// 合并
+	Interval tmp = intervals[0];
+	for (int i = 1; i < n; i++) {
+		if (intervals[i].left <= tmp.right) { // 合并
+			tmp.right = tmp.right > intervals[i].right ? tmp.right : intervals[i].right;
+		} else {
+			result.push_back(tmp); // 保存
+			tmp = intervals[i]; // 更新
+		}
+	}
+	return result;
+}
+
+void test_leet56() {
+	Interval i1(1, 3);
+	Interval i2(2, 6);
+	Interval i3(8, 10);
+	Interval i4(15, 18);
+
+	vector<Interval> v = {i1, i2, i3, i4};
+
+}
+
+// ============================== 题目60 全排列中第k个排列
+string getPermutation(int n, int k) {
+
+	if (n <= 0 || k <= 0)
+		return "";
+	if (n == 1 && k == 1)
+		return "1";
+
+	vector<int> nums;
+	for (int i = 1; i <= n; ++i)
+		nums.push_back(i);
 }
 
 #endif //INTERVIEW_CPP_LEET60_H
