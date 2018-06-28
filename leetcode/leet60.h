@@ -120,6 +120,30 @@ void test_leet46() {
 	permute(n);
 }
 
+// ============================== 题目48 矩阵顺时针旋转 90度
+void rotate(vector<vector<int>> &matrix) {
+	int n = matrix.size();
+
+	for (int i = 0; i < n / 2; i++) {
+
+		int low = i, high = n - i - 1;
+
+		for (int j = low; j < high; j++) {
+			int tmp = matrix[i][j];
+
+			// left to top
+			matrix[i][j] = matrix[n - j - 1][i];
+			// bottom to left
+			matrix[n - j - 1][i] = matrix[n - i - 1][n - j - 1];
+			// right to bottom
+			matrix[n - i - 1][n - j - 1] = matrix[j][n - i - 1];
+			// top to right
+			matrix[j][n - i - 1] = tmp;
+		}
+	}
+}
+
+
 // ============================== 题目49
 bool Anagrams(string &s1, string &s2) {
 	if (s1.size() != s2.size())
@@ -172,7 +196,6 @@ void test_leet49() {
 
 	groupAnagrams(s);
 }
-
 
 // ============================== 题目50 pow
 
@@ -275,6 +298,67 @@ string getPermutation(int n, int k) {
 	vector<int> nums;
 	for (int i = 1; i <= n; ++i)
 		nums.push_back(i);
+}
+
+// ============================== 题目61 旋转链表
+ListNode *rotateRight(ListNode *head, int k) {
+	if (head == nullptr || k <= 0)
+		return head;
+
+	ListNode *pNext = head;
+	ListNode *pMove = head;
+	ListNode *test = head;
+
+	// 统计 list length
+	int length = 0;
+	while (test != nullptr) {
+		length += 1;
+		test = test->m_pNext;
+	}
+
+	k = k % length;
+
+	while (k > 0) {
+		if (pNext == nullptr) {
+			return head; // k > length of list
+		}
+		pNext = pNext->m_pNext;
+		k--;
+	}
+
+	while (pNext->m_pNext != nullptr) {
+		pMove = pMove->m_pNext;
+		pNext = pNext->m_pNext;
+	}
+
+	pNext->m_pNext = head;
+	head = pMove->m_pNext;
+	pMove->m_pNext = nullptr;
+
+	return head;
+}
+
+void test_leet61() {
+	ListNode l1(1);
+	ListNode l2(2);
+	ListNode l3(3);
+	ListNode l4(4);
+	ListNode l5(5);
+	ListNode l6(6);
+	ListNode l7(7);
+	ListNode l8(8);
+	ListNode l9(9);
+	ConnectListNodes(&l1, &l2);
+	ConnectListNodes(&l2, &l3);
+	ConnectListNodes(&l3, &l4);
+	ConnectListNodes(&l4, &l5);
+	ConnectListNodes(&l5, &l6);
+	ConnectListNodes(&l6, &l7);
+	ConnectListNodes(&l7, &l8);
+	ConnectListNodes(&l8, &l9);
+
+	ListNode *result = rotateRight(&l1, 10);
+	PrintList(result);
 }
 
 #endif //INTERVIEW_CPP_LEET60_H
