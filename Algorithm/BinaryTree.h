@@ -15,7 +15,20 @@ struct BinaryTreeNode {
 	int value;
 	BinaryTreeNode *pLeft;
 	BinaryTreeNode *pRight;
+
+	BinaryTreeNode() : value(0), pLeft(nullptr), pRight(nullptr) {}
+
+	BinaryTreeNode(int x) : value(x), pLeft(nullptr), pRight(nullptr) {}
 };
+
+// 二叉人树结点的插入 --- 不用
+// 关键点 -- 根结点指针使用引用
+void insert(BinaryTreeNode *&root, int x) {
+	if (root == nullptr) {
+		root = CreateBinaryTreeNode(x);
+		return;
+	}
+}
 
 // 创建结点
 BinaryTreeNode *CreateBinaryTreeNode(int value) {
@@ -25,6 +38,18 @@ BinaryTreeNode *CreateBinaryTreeNode(int value) {
 	pNode->pRight = nullptr;
 
 	return pNode;
+}
+
+// 二叉树结点的查找、修改 -- 在二叉树中找到所有数据域为给定数据域的结点，并将它们修改为给定的数据
+void search(BinaryTreeNode *root, int x, int newdata) {
+	if (root == nullptr)
+		return; // base
+
+	if (root->value == x)
+		root->value = newdata; // 修改数据
+
+	search(root->pLeft, x, newdata); // 修改左子树
+	search(root->pRight, x, newdata); // 修改右子树
 }
 
 // 连接结点
@@ -55,17 +80,6 @@ void PrintTreeNode(const BinaryTreeNode *pNode) {
 	cout << endl;
 }
 
-// 打印树 -- 先序
-void PrintTree(const BinaryTreeNode *pRoot) {
-	if (pRoot != nullptr) {
-		if (pRoot->pLeft != nullptr)
-			PrintTree(pRoot->pLeft);
-
-		if (pRoot->pRight != nullptr)
-			PrintTree(pRoot->pRight);
-	}
-}
-
 // 删除树
 void DestroyTree(BinaryTreeNode *pRoot) {
 	if (pRoot != nullptr) {
@@ -80,10 +94,47 @@ void DestroyTree(BinaryTreeNode *pRoot) {
 	}
 }
 
+// 打印树 -- 先序  根-左-右
+void pre_oder(const BinaryTreeNode *pRoot) {
+	if (pRoot != nullptr) {
+
+		cout << pRoot->value << '\t';
+
+		if (pRoot->pLeft != nullptr)
+			pre_oder(pRoot->pLeft);
+
+		if (pRoot->pRight != nullptr)
+			pre_oder(pRoot->pRight);
+	}
+}
+
+// 中序  左-根-右
+void in_order(const BinaryTreeNode *pRoot) {
+	if (pRoot != nullptr) {
+		if (pRoot->pLeft != nullptr)
+			in_order(pRoot->pLeft);
+
+		cout << pRoot->value << '\t';
+
+		if (pRoot->pRight != nullptr)
+			in_order(pRoot->pRight);
+	}
+}
+
+// 后序 左-右-根
+void post_order(const BinaryTreeNode *pRoot) {
+	if (pRoot != nullptr) {
+		if (pRoot->pLeft != nullptr)
+			post_order(pRoot->pLeft);
+
+		if (pRoot->pRight != nullptr)
+			post_order(pRoot->pRight);
+
+		cout << pRoot->value << '\t';
+	}
+}
+
 // 同层，按照从左到右顺序. 队列辅助实现
-/*
- * 面试32：
- */
 void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 	if (pRoot == nullptr)
 		return;
@@ -96,6 +147,7 @@ void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 		dequeTreeNode.pop_front();
 
 		cout << "%d\t" << pNode->value;
+
 		if (pNode->pLeft)
 			dequeTreeNode.push_back(pNode->pLeft);
 
@@ -104,11 +156,33 @@ void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 	}
 }
 
+
+void test_BinaryTree() {
+	BinaryTreeNode b1 = BinaryTreeNode(1);
+	BinaryTreeNode b2 = BinaryTreeNode(2);
+	BinaryTreeNode b3 = BinaryTreeNode(3);
+	BinaryTreeNode b4 = BinaryTreeNode(4);
+	BinaryTreeNode b5 = BinaryTreeNode(5);
+	BinaryTreeNode b6 = BinaryTreeNode(6);
+
+	ConnectBinaryNodes(&b1, &b2, &b3);
+	ConnectBinaryNodes(&b2, &b4, nullptr);
+	ConnectBinaryNodes(&b3, &b6, &b5);
+	pre_oder(&b1);
+	cout << endl;
+	in_order(&b1);
+	cout << endl;
+	post_order(&b1);
+}
+
+// =====================================================================//
+// =====================================================================//
+
+
 // 序列化 / 反序列化 二叉树
 /*
  * 面试37：
  */
-
 bool ReadStream(istream &stream, int *number) {
 	if (stream.eof())
 		return false;
