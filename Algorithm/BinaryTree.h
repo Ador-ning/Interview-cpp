@@ -21,14 +21,6 @@ struct BinaryTreeNode {
 	BinaryTreeNode(int x) : value(x), pLeft(nullptr), pRight(nullptr) {}
 };
 
-// 二叉人树结点的插入 --- 不用
-// 关键点 -- 根结点指针使用引用
-void insert(BinaryTreeNode *&root, int x) {
-	if (root == nullptr) {
-		root = CreateBinaryTreeNode(x);
-		return;
-	}
-}
 
 // 创建结点
 BinaryTreeNode *CreateBinaryTreeNode(int value) {
@@ -153,6 +145,15 @@ void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 
 		if (pNode->pRight)
 			dequeTreeNode.push_back(pNode->pRight);
+	}
+}
+
+// 二叉人树结点的插入 --- 不用
+// 关键点 -- 根结点指针使用引用
+void insert(BinaryTreeNode *&root, int x) {
+	if (root == nullptr) {
+		root = CreateBinaryTreeNode(x);
+		return;
 	}
 }
 
