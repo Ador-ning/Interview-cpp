@@ -31,6 +31,6 @@ void test_ConvertBST() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
-	test_leet17();
+	test_BinaryTree();
 	return 0;
 }

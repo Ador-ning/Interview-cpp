@@ -83,7 +83,7 @@ void Test(char *testName, BinaryTreeNode *pRootOfTree) {
 	if (testName != nullptr)
 		printf("%s begins:\n", testName);
 
-	PrintTree(pRootOfTree);
+	pre_oder(pRootOfTree);
 
 	BinaryTreeNode *pHeadOfList = Convert(pRootOfTree);
 
