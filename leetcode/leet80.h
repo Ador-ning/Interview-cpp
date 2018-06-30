@@ -25,4 +25,25 @@ ListNode *deleteDuplicates(ListNode *head) {
 	return head;
 }
 
+// ============================== 题目86 分割链表
+ListNode *partition(ListNode *head, int x) {
+	if (head == nullptr)
+		return head;
+
+	// 头插法
+	ListNode *pMove = head->m_pNext;
+	ListNode *pPre = head;
+
+	while (pMove != nullptr) {
+		if (pMove->m_nKey < x) {
+			pPre->m_pNext = pMove->m_pNext; // 移动
+			pMove->m_pNext = head;
+			head = pMove;
+		}
+		pMove = pMove->m_pNext;
+		pPre = pPre->m_pNext;
+	}
+	return head;
+}
+
 #endif //INTERVIEW_CPP_LEET80_H
