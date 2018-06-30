@@ -3,7 +3,7 @@
 #include "Algorithm/List.h"
 #include "Algorithm/BinaryTree.h"
 //#include "./BaseCpp/oop.h"
-#include "Algorithm/ConvertBST.h"
+#include "Algorithm/BST.h"
 #include "Algorithm/StringUtils.h"
 #include "Algorithm/SortedArray.h"
 

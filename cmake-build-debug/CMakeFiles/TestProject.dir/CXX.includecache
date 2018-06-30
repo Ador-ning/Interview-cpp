@@ -16,6 +16,12 @@ cassert
 cstring
 -
 
+/Users/ning/Interview-cpp/Algorithm/BST.h
+iostream
+-
+BinaryTree.h
+/Users/ning/Interview-cpp/Algorithm/BinaryTree.h
+
 /Users/ning/Interview-cpp/Algorithm/BinaryTree.h
 iostream
 -
@@ -23,12 +29,6 @@ deque
 -
 fstream
 -
-
-/Users/ning/Interview-cpp/Algorithm/ConvertBST.h
-iostream
--
-BinaryTree.h
-/Users/ning/Interview-cpp/Algorithm/BinaryTree.h
 
 /Users/ning/Interview-cpp/Algorithm/List.h
 cstdio
@@ -91,8 +91,8 @@ Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 Algorithm/BinaryTree.h
 /Users/ning/Interview-cpp/Algorithm/BinaryTree.h
-Algorithm/ConvertBST.h
-/Users/ning/Interview-cpp/Algorithm/ConvertBST.h
+Algorithm/BST.h
+/Users/ning/Interview-cpp/Algorithm/BST.h
 Algorithm/StringUtils.h
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 Algorithm/SortedArray.h

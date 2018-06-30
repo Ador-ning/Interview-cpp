@@ -34,7 +34,10 @@
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Algorithm/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BinaryTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/ConvertBST.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/ConvertBST.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/ConvertBST.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BST.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -93,15 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="157" selection-start-line="157" selection-end-line="157" />
+            <state relative-caret-position="591">
+              <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#190#276#1" />
-                <element signature="e#416#572#0" />
                 <element signature="e#279#475#0" />
                 <element signature="e#482#555#0" />
                 <element signature="e#477#668#0" />
@@ -111,6 +113,7 @@
                 <element signature="e#2055#2263#0" />
                 <element signature="e#2298#2333#0" />
                 <element signature="e#2786#3268#0" />
+                <element signature="e#3111#3267#0" />
                 <element signature="e#2125#2153#0" />
                 <element signature="e#2184#2569#0" />
                 <element signature="e#2571#2793#0" />
@@ -125,13 +128,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertBST.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm/ConvertBST.h">
+      <file leaf-file-name="BST.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm/BST.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
               <folding>
                 <element signature="e#0#2#0" />
+                <element signature="e#156#255#0" />
+                <element signature="e#499#550#0" />
+                <element signature="e#768#800#0" />
+                <element signature="e#985#1041#0" />
+                <element signature="e#156#661#0" />
+                <element signature="e#663#992#0" />
+                <element signature="e#995#1513#0" />
+                <element signature="e#1515#1708#0" />
+                <element signature="e#1710#1948#0" />
+                <element signature="e#1951#2522#0" />
+                <element signature="e#2525#3029#0" />
+                <element signature="e#3032#3536#0" />
+                <element signature="e#3538#3664#0" />
+                <element signature="e#3666#3717#0" />
               </folding>
             </state>
           </provider>
@@ -181,6 +198,7 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/ConvertBST.h" />
         <option value="$PROJECT_DIR$/Algorithm/BinaryTree.h" />
+        <option value="$PROJECT_DIR$/Algorithm/BST.h" />
       </list>
     </option>
   </component>
@@ -220,6 +238,11 @@
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -257,12 +280,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="130295000" />
+      <workItem from="1527335577206" duration="132443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146472000" />
+    <option name="totallyTimeSpent" value="148620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,7 +312,7 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37016574" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33977902" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -852,6 +875,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#144#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -882,35 +916,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#144#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/ConvertBST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#2#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        <state relative-caret-position="591">
+          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#190#276#1" />
-            <element signature="e#416#572#0" />
             <element signature="e#279#475#0" />
             <element signature="e#482#555#0" />
             <element signature="e#477#668#0" />
@@ -920,6 +932,7 @@
             <element signature="e#2055#2263#0" />
             <element signature="e#2298#2333#0" />
             <element signature="e#2786#3268#0" />
+            <element signature="e#3111#3267#0" />
             <element signature="e#2125#2153#0" />
             <element signature="e#2184#2569#0" />
             <element signature="e#2571#2793#0" />
@@ -929,6 +942,30 @@
             <element signature="e#3460#3498#0" />
             <element signature="e#3460#3877#0" />
             <element signature="e#3879#4039#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#156#255#0" />
+            <element signature="e#499#550#0" />
+            <element signature="e#768#800#0" />
+            <element signature="e#985#1041#0" />
+            <element signature="e#156#661#0" />
+            <element signature="e#663#992#0" />
+            <element signature="e#995#1513#0" />
+            <element signature="e#1515#1708#0" />
+            <element signature="e#1710#1948#0" />
+            <element signature="e#1951#2522#0" />
+            <element signature="e#2525#3029#0" />
+            <element signature="e#3032#3536#0" />
+            <element signature="e#3538#3664#0" />
+            <element signature="e#3666#3717#0" />
           </folding>
         </state>
       </provider>
