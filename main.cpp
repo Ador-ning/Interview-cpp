@@ -10,6 +10,8 @@
 #include "leetcode/leet20.h"
 #include "leetcode/leet40.h"
 #include "leetcode/leet60.h"
+#include "leetcode/leet80.h"
+#include "leetcode/leet100.h"
 
 
 using namespace std;
