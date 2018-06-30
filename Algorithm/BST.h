@@ -8,6 +8,91 @@
 #include <iostream>
 #include "BinaryTree.h"
 
+// =========================== base operation =========================== //
+// BST 中查找
+void BST_search(BinaryTreeNode *pRoot, int x) {
+
+	if (pRoot == nullptr) { // 叶节点
+		cout << "Search failed\n";
+		return;
+	}
+
+	if (x == pRoot->value)
+		cout << pRoot->value << endl;
+	else if (x < pRoot->value)
+		BST_search(pRoot->pLeft, x);
+	else
+		BST_search(pRoot->pRight, x);
+}
+
+// BST 中插入结点
+void BST_insert(BinaryTreeNode *&pRoot, int x) {
+	if (pRoot == nullptr) {
+		pRoot = CreateBinaryTreeNode(x);
+		return;
+	}
+	if (x == pRoot->value)
+		return;
+	else if (x < pRoot->value)
+		BST_insert(pRoot->pLeft, x);
+	else
+		BST_insert(pRoot->pLeft, x);
+}
+
+// 构造 BST
+BinaryTreeNode *CreateBST(int data[], int n) {
+	BinaryTreeNode *pRoot = nullptr;
+
+	for (int i = 0; i < n; ++i)
+		BST_insert(pRoot, data[i]);
+	return pRoot;
+}
+
+// 查找到 BST 中最大权值的结点
+BinaryTreeNode *BST_findMax(BinaryTreeNode *pRoot) {
+	while (pRoot->pRight != nullptr)
+		pRoot = pRoot->pRight;
+	return pRoot;
+}
+
+// 查找到 BST 中最小权值的结点
+BinaryTreeNode *BST_findMin(BinaryTreeNode *pRoot) {
+	while (pRoot->pLeft != nullptr)
+		pRoot = pRoot->pLeft;
+	return pRoot;
+}
+
+// BST 删除结点
+void BST_DeleteNode(BinaryTreeNode *&pRoot, int x) {
+	if (pRoot == nullptr)
+		return; // base
+
+	if (pRoot->value == x) { // 找到结点
+
+		if (pRoot->pRight == nullptr && pRoot->pLeft == nullptr)
+			pRoot = nullptr; // 叶子结点
+		else if (pRoot->pLeft != nullptr) { // 左子树不为空
+			// 左子树中找最大，顶替 pRoot
+			BinaryTreeNode *pre = BST_findMax(pRoot->pLeft); // 找 pRoot 前缀
+			pRoot->value = pre->value; // 覆盖
+			BST_DeleteNode(pRoot->pLeft, pre->value); // 删除该结点
+		} else { // 右子树不为空
+			// 左子树中找最小，顶替 pRoot
+			BinaryTreeNode *next = BST_findMin(pRoot->pLeft); // 找 pRoot 前缀
+			pRoot->value = next->value;
+			BST_DeleteNode(pRoot->pRight, next->value);
+		}
+
+	} else if (pRoot->value > x)
+		BST_DeleteNode(pRoot->pLeft, x);
+	else
+		BST_DeleteNode(pRoot->pRight, x);
+
+}
+
+
+// =========================== Work =========================== //
+
 // 输入一个二叉搜索树，将该 BST 转换成一个排序的双向链接
 // 要求：不能创建任何新的结点，只能调整树中的指针
 void ConvertNode(BinaryTreeNode *pNode, BinaryTreeNode **pLastNodeList) {
