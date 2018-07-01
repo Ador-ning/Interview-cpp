@@ -56,7 +56,7 @@ void AvlSearch(AvlNode *pRoot, int x) {
 		AvlSearch(pRoot->rChild, x);
 }
 
-// 左旋操作 left rotation
+// 左旋操作 left rotation -- pRoot 右子树顶替 pRoot
 void L(AvlNode *&pRoot) {
 	AvlNode *tmp = pRoot->rChild;
 
@@ -68,7 +68,7 @@ void L(AvlNode *&pRoot) {
 	pRoot = tmp; // 步骤3
 }
 
-// 右旋操作 right rotation
+// 右旋操作 right rotation -- pRoot 左子树顶替 pRoot
 void R(AvlNode *&pRoot) {
 	AvlNode *tmp = pRoot->lChild;
 
@@ -78,6 +78,40 @@ void R(AvlNode *&pRoot) {
 	updateHeight(pRoot); // 更新结点 A 的高度
 	updateHeight(tmp); // 更新结点 B 的高度
 	pRoot = tmp; // 步骤3
+}
+
+// AVL 插入
+void Avl_insert(AvlNode *&pRoot, int x) {
+	if (pRoot == nullptr) {
+		pRoot = CreateBinaryTreeNode(x);
+		return;
+	}
+
+	if (x < pRoot->value) { // 比跟结点小
+		Avl_insert(pRoot->lChild, x);
+		updateHeight(pRoot);
+
+		if (getBalance(pRoot) == 2) {
+			if (getBalance(pRoot->lChild) == 1)
+				R(pRoot); // LL型
+			else if (getBalance(pRoot->lChild) == -1) {
+				L(pRoot->lChild);
+				R(pRoot);   // LR型-- 将 pRoot 左子树的右子结点 顶替 pRoot
+			}
+		}
+	} else { // 比根结点大
+		Avl_insert(pRoot->rChild, x);
+		updateHeight(pRoot);
+
+		if (getBalance(pRoot) == 2) {
+			if (getBalance(pRoot->rChild) == 1)
+				L(pRoot); // RR型
+			else if (getBalance(pRoot->rChild) == -1) {
+				R(pRoot->rChild);
+				L(pRoot);   // RL型  -- 将 pRoot 右子树的左子结点 顶替 pRoot
+			}
+		}
+	}
 }
 
 #endif //INTERVIEW_CPP_AVL_H
