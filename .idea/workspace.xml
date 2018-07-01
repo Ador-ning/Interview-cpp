@@ -32,9 +32,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Algorithm/AVL.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AVL.h" afterDir="false" />
-    </list>
+    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -154,8 +152,8 @@
       <file leaf-file-name="AVL.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithm/AVL.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+            <state relative-caret-position="587">
+              <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#144#156#1" />
@@ -165,6 +163,7 @@
                 <element signature="e#909#957#0" />
                 <element signature="e#1185#1235#0" />
                 <element signature="e#1426#1477#0" />
+                <element signature="e#1710#1739#0" />
               </folding>
             </state>
           </provider>
@@ -297,12 +296,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="136065000" />
+      <workItem from="1527335577206" duration="136977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152242000" />
+    <option name="totallyTimeSpent" value="153154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,7 +314,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1163" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.36325967" />
@@ -324,12 +322,12 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16462347" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16462347" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33977902" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23066299" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -381,7 +379,7 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="64" />
+      <option name="time" value="67" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -991,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/AVL.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        <state relative-caret-position="587">
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#144#156#1" />
@@ -1002,6 +1000,7 @@
             <element signature="e#909#957#0" />
             <element signature="e#1185#1235#0" />
             <element signature="e#1426#1477#0" />
+            <element signature="e#1710#1739#0" />
           </folding>
         </state>
       </provider>
