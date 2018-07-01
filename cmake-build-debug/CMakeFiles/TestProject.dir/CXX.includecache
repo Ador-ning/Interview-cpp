@@ -30,6 +30,10 @@ deque
 fstream
 -
 
+/Users/ning/Interview-cpp/Algorithm/Heap.h
+iostream
+-
+
 /Users/ning/Interview-cpp/Algorithm/List.h
 cstdio
 -
@@ -97,6 +101,8 @@ Algorithm/StringUtils.h
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 Algorithm/SortedArray.h
 /Users/ning/Interview-cpp/Algorithm/SortedArray.h
+Algorithm/Heap.h
+/Users/ning/Interview-cpp/Algorithm/Heap.h
 leetcode/leet20.h
 /Users/ning/Interview-cpp/leetcode/leet20.h
 leetcode/leet40.h

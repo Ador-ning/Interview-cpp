@@ -6,6 +6,7 @@
 #include "Algorithm/BST.h"
 #include "Algorithm/StringUtils.h"
 #include "Algorithm/SortedArray.h"
+#include "Algorithm/Heap.h"
 
 #include "leetcode/leet20.h"
 #include "leetcode/leet40.h"
