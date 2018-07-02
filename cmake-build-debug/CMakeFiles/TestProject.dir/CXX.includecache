@@ -85,6 +85,10 @@ stdlib.h
 -
 
 /Users/ning/Interview-cpp/leetcode/leet80.h
+iostream
+-
+../Algorithm/List.h
+/Users/ning/Interview-cpp/Algorithm/List.h
 
 /Users/ning/Interview-cpp/main.cpp
 iostream

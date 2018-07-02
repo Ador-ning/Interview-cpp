@@ -5,88 +5,138 @@
 #ifndef INTERVIEW_CPP_LEET80_H
 #define INTERVIEW_CPP_LEET80_H
 
+#include <iostream>
+#include "../Algorithm/List.h"
 
-// ============================== 题目83 删除链表中重复元素
-ListNode *deleteDuplicates(ListNode *head) {
+using namespace std;
 
-	if (head == nullptr)
+
+// ============================== 题目61 旋转链表
+ListNode *rotateRight(ListNode *head, int k) {
+	if (head == nullptr || k <= 0)
 		return head;
-	ListNode *p = head;
-	ListNode *pDelete = head->m_pNext;
 
-	while (pDelete->m_pNext != nullptr) {
-		if (p->m_nKey == pDelete->m_nKey) {
-			p->m_pNext = pDelete->m_pNext;
-		} else {
-			p = p->m_pNext;
-		}
-		pDelete = pDelete->m_pNext;
+	ListNode *pNext = head;
+	ListNode *pMove = head;
+	ListNode *test = head;
+
+	// 统计 list length
+	int length = 0;
+	while (test != nullptr) {
+		length += 1;
+		test = test->m_pNext;
 	}
+
+	k = k % length;
+
+	while (k > 0) {
+		if (pNext == nullptr) {
+			return head; // k > length of list
+		}
+		pNext = pNext->m_pNext;
+		k--;
+	}
+
+	while (pNext->m_pNext != nullptr) {
+		pMove = pMove->m_pNext;
+		pNext = pNext->m_pNext;
+	}
+
+	pNext->m_pNext = head;
+	head = pMove->m_pNext;
+	pMove->m_pNext = nullptr;
+
 	return head;
 }
 
-// ============================== 题目86 分割链表
-ListNode *partition(ListNode *head, int x) {
-	if (head == nullptr)
-		return head;
-
-	ListNode *pInsert;
-	bool ChangeHead = 0;
-	bool tag = 0;
-	int time = 1;
-
-	if (head->m_nKey < x) {
-		pInsert = head;
-	} else {
-		ListNode tmp(0); // 临时结点
-		tmp.m_pNext = head;
-
-		pInsert = &tmp;
-		ChangeHead = 1;
-		tag = 1;
-	}
-
-	ListNode *pMove = head->m_pNext;
-	ListNode *pPre = head;
-
-	while (pMove != nullptr) {
-		if (pMove->m_nKey < x && tag) {
-			pPre->m_pNext = pMove->m_pNext; // 1. 链接后面
-			pMove->m_pNext = pInsert->m_pNext; // 2. 插入第一步
-			pInsert->m_pNext = pMove; // 3. 插入第二步
-
-			// head = pMove;
-			if (ChangeHead == 1 && time == 1) {
-				head = pMove;
-				time -= 1;
-			}
-
-			pMove = pPre->m_pNext;
-			pInsert = pInsert->m_pNext;
-		} else {
-			if (pMove->m_nKey >= x)
-				tag = 1;
-			pMove = pMove->m_pNext;
-			pPre = pPre->m_pNext;
-		}
-	}
-	return head;
-}
-
-void test_leet86() {
-	ListNode l1(6);
-	ListNode l2(4);
+void test_leet61() {
+	ListNode l1(1);
+	ListNode l2(2);
 	ListNode l3(3);
-	ListNode l4(2);
+	ListNode l4(4);
 	ListNode l5(5);
-	ListNode l6(2);
+	ListNode l6(6);
+	ListNode l7(7);
+	ListNode l8(8);
+	ListNode l9(9);
 	ConnectListNodes(&l1, &l2);
 	ConnectListNodes(&l2, &l3);
 	ConnectListNodes(&l3, &l4);
 	ConnectListNodes(&l4, &l5);
 	ConnectListNodes(&l5, &l6);
+	ConnectListNodes(&l6, &l7);
+	ConnectListNodes(&l7, &l8);
+	ConnectListNodes(&l8, &l9);
 
-	PrintList(partition(&l1, 3));
+	ListNode *result = rotateRight(&l1, 10);
+	PrintList(result);
 }
+
+// ============================== 题目66 加1  [1,2,3]->[1,2,4]
+vector<int> plusOne(vector<int> &digits) {
+	int carry = 1;
+	vector<int> v;
+
+	while (digits.size() > 0) {
+		int x = digits.back();
+		digits.pop_back();
+		x = x + carry;
+		v.insert(v.begin(), x % 10);
+		carry = x / 10;
+	}
+	if (carry > 0)
+		v.insert(v.begin(), carry);
+	return v;
+}
+
+// ============================== 题目70 爬楼梯(一次 1阶 或 2阶) f(1)=1 f(2)=2, n>2 f(n)=f(n-1)+f(n-2)
+int climbStairs(int n) {
+	if (n <= 3)
+		return n;
+
+	int a[2] = {2, 3};
+	for (int i = 4; i <= n; i++) {
+		int t = a[0] + a[1];
+		a[0] = a[1];
+		a[1] = t;
+	}
+	return a[1];
+}
+
+// 递归版本
+int climbStairs2(int n) {
+	if (n <= 3)
+		return n;
+	return climbStairs2(n - 1) + climbStairs2(n - 2);
+}
+
+// ============================== 题目77 组合， 给定整数 n,k，返回1->n中所有可能的k个数的组合
+void getCombination(int n, int k, vector<int> &solution, vector<vector<int> > &result) {
+	if (k == 0) {
+		//sort to meet LeetCode requirement
+		vector<int> v = solution;
+		sort(v.begin(), v.end());
+		result.push_back(v);
+		return;
+	}
+	for (int i = n; i > 0; i--) {
+		solution.push_back(i);
+		getCombination(i - 1, k - 1, solution, result);
+		solution.pop_back();
+	}
+}
+
+// 递归版本
+vector<vector<int>> combine(int n, int k) {
+	vector<vector<int> > result;
+	vector<int> solution;
+	getCombination(n, k, solution, result);
+	return result;
+}
+
+void test_leet77() {
+	combine(4, 2);
+}
+
 
 #endif //INTERVIEW_CPP_LEET80_H
