@@ -70,6 +70,7 @@ void test_leet61() {
 
 	ListNode *result = rotateRight(&l1, 10);
 	PrintList(result);
+	//cout << ListLength(&l1);
 }
 
 // ============================== 题目66 加1  [1,2,3]->[1,2,4]
@@ -108,6 +109,33 @@ int climbStairs2(int n) {
 	if (n <= 3)
 		return n;
 	return climbStairs2(n - 1) + climbStairs2(n - 2);
+}
+
+// ============================== 题目75
+void sortColors(vector<int> &nums) {
+	if (nums.size() <= 0)
+		return;
+
+	int n1 = 0;
+	int n2 = 0;
+	int n3 = 0; // 统计
+	for (int i = 0; i < nums.size(); i++) {
+		if (nums[i] == 0)
+			n1 += 1;
+		else if (nums[i] == 1)
+			n2 += 1;
+		else
+			n3 += 1;
+	}
+
+	// 修改
+	for (int i = 0; i < n1; i++)
+		nums[i] = 0;
+	for (int i = n1; i < n1 + n2; i++)
+		nums[i] = 1;
+	for (int i = n1 + n2; i < n1 + n2 + n3; i++)
+		nums[i] = 2;
+
 }
 
 // ============================== 题目77 组合， 给定整数 n,k，返回1->n中所有可能的k个数的组合

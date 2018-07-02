@@ -284,7 +284,6 @@ void test_leet56() {
 	Interval i4(15, 18);
 
 	vector<Interval> v = {i1, i2, i3, i4};
-
 }
 
 // ============================== 题目60 全排列中第k个排列

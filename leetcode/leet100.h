@@ -93,5 +93,86 @@ void test_leet86() {
 	PrintList(partition(&l1, 3));
 }
 
+// ============================== 题目92 反转链表2 反转 m->n结点
+ListNode *reverseBetween(ListNode *head, int m, int n) {
+	if (m >= n || head == nullptr)
+		return head; // base
 
+	ListNode *pre;
+	ListNode *next = head;
+	bool ChangeHead = false;
+
+	// pre 指定 m上一个结点， next 指向n结点
+	if (m == 1) {
+		ListNode t(0);
+		pre = &t;
+		t.m_pNext = head;
+		ChangeHead = true;
+	} else {
+		pre = head;
+		m -= 1;
+	}
+	// 指针移动到指定位置
+	while (next->m_pNext != nullptr) {
+		if (m > 1) {
+			pre = pre->m_pNext;
+			m -= 1;
+		}
+		if (n > 1) {
+			n -= 1;
+			next = next->m_pNext;
+		} else
+			break;
+	}
+
+	if (ChangeHead == true)
+		head = next; //
+
+	ListNode *pMove = pre->m_pNext;
+	while (pMove != next) {
+		pre->m_pNext = pMove->m_pNext;
+		pMove->m_pNext = next->m_pNext;
+		next->m_pNext = pMove;
+		pMove = pre->m_pNext;
+	}
+	return head;
+}
+
+void test_leet92() {
+	ListNode l1(3);
+	ListNode l2(5);
+	//ListNode l3(3);
+	//ListNode l4(4);
+	//ListNode l5(5);
+
+	ConnectListNodes(&l1, &l2);
+	//ConnectListNodes(&l2, &l3);
+	//ConnectListNodes(&l3, &l4);
+	//ConnectListNodes(&l4, &l5);
+
+	PrintList(reverseBetween(&l1, 1, 2));
+}
+
+// ============================== 题目94 二叉树构建  [1,null,2,3]
+vector<int> inOrderTraversal(BinaryTreeNode *root) {
+	vector<BinaryTreeNode*> stack;
+	vector<int> v;
+
+	while(stack.size()>0 || root!=NULL){
+		if (root!=NULL){
+			stack.push_back(root);
+			root = root->pLeft;
+		}else{
+			if (stack.size()>0) {
+				root = stack.back();
+				stack.pop_back();
+				v.push_back(root->value);
+				root = root->pRight;
+			}
+		}
+	}
+	return v;
+}
+
+// ============================== 题目160
 #endif //INTERVIEW_CPP_LEET100_H

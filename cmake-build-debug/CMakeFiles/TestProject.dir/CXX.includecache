@@ -45,6 +45,10 @@ iostream
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 
 /Users/ning/Interview-cpp/leetcode/leet100.h
+iostream
+-
+../Algorithm/List.h
+/Users/ning/Interview-cpp/Algorithm/List.h
 
 /Users/ning/Interview-cpp/leetcode/leet20.h
 iostream
