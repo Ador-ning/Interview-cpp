@@ -170,6 +170,18 @@ void PrintListNode(ListNode *pNode) {
 		printf("The key in node is %d.\n", pNode->m_nKey);
 }
 
+// List length
+int ListLength(ListNode *head) {
+	if (head == nullptr)
+		return 0;
+	int i = 0;
+	while (head != nullptr) {
+		i += 1;
+		head = head->m_pNext;
+	}
+	return i;
+}
+
 // ============================ 剑指offer ====================
 // 反转链表
 /*
