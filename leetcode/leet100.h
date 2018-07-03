@@ -155,15 +155,15 @@ void test_leet92() {
 
 // ============================== 题目94 二叉树构建  [1,null,2,3]
 vector<int> inOrderTraversal(BinaryTreeNode *root) {
-	vector<BinaryTreeNode*> stack;
+	vector<BinaryTreeNode *> stack;
 	vector<int> v;
 
-	while(stack.size()>0 || root!=NULL){
-		if (root!=NULL){
+	while (stack.size() > 0 || root != NULL) {
+		if (root != NULL) {
 			stack.push_back(root);
 			root = root->pLeft;
-		}else{
-			if (stack.size()>0) {
+		} else {
+			if (stack.size() > 0) {
 				root = stack.back();
 				stack.pop_back();
 				v.push_back(root->value);
@@ -174,5 +174,91 @@ vector<int> inOrderTraversal(BinaryTreeNode *root) {
 	return v;
 }
 
-// ============================== 题目160
+// ============================== 题目125 验证回文串
+// 清除多余字符，保留 A->Z / a->z / 0->9
+string ClearStr(string s) {
+	// 删除
+	for (int i = 0; i < s.size(); i++) {
+		if ((s[i] - '0' >= 0 && s[i] - '9' <= 0) || (s[i] - 'a' >= 0 && s[i] - 'z' <= 0))
+			continue;
+		else if ((s[i] - 'A' >= 0 && s[i] - 'Z' <= 0)) {
+			s[i] += 'a' - 'A';
+		} else {
+			s.erase(i, 1);
+			i -= 1;
+		}
+	}
+	return s;
+}
+
+bool isPalindrome(string s) {
+
+	if (s.size() <= 0 || s.size() == 1)
+		return false;
+
+	string clearString = ClearStr(s); // 清除 转小写
+
+	// 判断回文
+	bool tag = false;
+	int n = clearString.size();
+
+
+	for (int i = 0; i < n / 2; i++) {
+		if (clearString[i] == clearString[n - 1 - i])
+			continue;
+		else {
+			return tag;
+		}
+	}
+	tag = true;
+	return tag;
+}
+
+void test_leet125() {
+	cout << isPalindrome("12521");
+}
+
+// ============================== 题目151 字符串中，按单词进行反转
+void reverseWords(string &s) {
+	bool wordStart = false;
+	vector<string> v;
+
+	const char *pHead = s.c_str();
+	const char *pStr, *pBegin, *pEnd;
+
+	for (pStr = pHead; *pStr != '\0'; pStr++) {
+
+		if (!isspace(*pStr) && wordStart == false) {
+			wordStart = true;
+			pBegin = pStr;
+			continue;
+		} // 词头
+
+		if (isspace(*pStr) && wordStart == true) {
+			wordStart = false;
+			pEnd = pStr;
+			v.insert(v.begin(), s.substr(pBegin - pHead, pEnd - pBegin));
+		} // 词尾， 字符串尾部插入
+	}
+
+	if (wordStart == true) {
+		pEnd = pStr;
+		v.insert(v.begin(), s.substr(pBegin - pHead, pEnd - pBegin));
+	}
+
+	if (v.size() > 0) {
+		s.clear();
+		char space = ' ';
+		vector<string>::iterator it;
+		for (it = v.begin(); it != v.end(); ++it) {
+			s = s + *it;
+			s.push_back(space);
+		}
+		s.erase(s.end() - 1);
+	} else {
+		s.clear();
+	}
+	cout << "[" << s << "]" << endl;
+}
+
 #endif //INTERVIEW_CPP_LEET100_H

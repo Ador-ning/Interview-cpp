@@ -10,6 +10,7 @@
 #include <map>
 #include <unordered_map>
 #include <cmath>
+#include <stack>
 #include "../Algorithm/List.h"
 
 using namespace std;
@@ -417,6 +418,28 @@ void test_leet19() {
 	ConnectListNodes(&l3, &l4);
 	//ConnectListNodes(&l4, &l5);
 	PrintList(RemoveNthFromEnd(&l1, 4));
+}
+
+// ============================== 题目20 括号匹配 () / {} / [] -- 利用栈
+bool isValid(string s) {
+	stack<char> st;
+
+	for (auto ch:s) {
+		if (ch == '{' || ch == '[' || ch == '(')
+			st.push(ch);
+		else if (ch == '}' || ch == ']' || ch == ')') {
+			if (st.empty())
+				return false;
+
+			char sch = st.top();
+			if ((ch == '}' && sch == '{') || (ch == ']' && sch == '[') || (ch == ')' && sch == '('))
+				st.pop();
+			else
+				return false;
+		} else
+			return false;
+	}
+	return st.empty();
 }
 
 #endif //INTERVIEW_CPP_TWOSUM_H
