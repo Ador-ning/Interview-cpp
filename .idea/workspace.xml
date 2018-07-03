@@ -32,16 +32,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet100.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet100.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet60.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet60.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet80.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet80.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +60,8 @@
       <file leaf-file-name="List.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
+            <state relative-caret-position="121">
+              <caret line="203" column="10" selection-start-line="189" selection-end-line="209" selection-end-column="1" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#118#291#1" />
@@ -86,7 +77,6 @@
                 <element signature="e#3073#3218#0" />
                 <element signature="e#3074#3134#0" />
                 <element signature="e#3143#3181#0" />
-                <element signature="e#3143#3664#0" />
                 <element signature="e#3357#3406#0" />
                 <element signature="e#3680#3698#0" />
                 <element signature="e#3680#4191#0" />
@@ -106,8 +96,8 @@
       <file leaf-file-name="leet100.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode/leet100.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="176" column="39" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
+            <state relative-caret-position="229">
+              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#179#562#0" />
@@ -124,7 +114,7 @@
       <file leaf-file-name="leet80.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode/leet80.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="-85">
               <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
               <folding>
                 <element signature="e#0#2#0" />
@@ -227,8 +217,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="11" />
+    <option name="x" value="38" />
     <option name="width" value="1062" />
     <option name="height" value="800" />
   </component>
@@ -305,12 +294,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="154968000" />
+      <workItem from="1527335577206" duration="156433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171145000" />
+    <option name="totallyTimeSpent" value="172610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +311,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="11" width="1062" height="800" extended-state="0" />
+    <frame x="38" y="0" width="1062" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
@@ -915,22 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/leet100.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="176" column="39" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#179#562#0" />
-            <element signature="e#564#1457#0" />
-            <element signature="e#1459#1760#0" />
-            <element signature="e#1762#2282#0" />
-            <element signature="e#2117#2140#0" />
-            <element signature="e#2842#2922#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -972,7 +945,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet80.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="-85">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
           <folding>
             <element signature="e#0#2#0" />
@@ -989,10 +962,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/leet100.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#179#562#0" />
+            <element signature="e#564#1457#0" />
+            <element signature="e#1459#1760#0" />
+            <element signature="e#1762#2282#0" />
+            <element signature="e#2117#2140#0" />
+            <element signature="e#2842#2922#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
+        <state relative-caret-position="121">
+          <caret line="203" column="10" selection-start-line="189" selection-end-line="209" selection-end-column="1" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#118#291#1" />
@@ -1008,7 +997,6 @@
             <element signature="e#3073#3218#0" />
             <element signature="e#3074#3134#0" />
             <element signature="e#3143#3181#0" />
-            <element signature="e#3143#3664#0" />
             <element signature="e#3357#3406#0" />
             <element signature="e#3680#3698#0" />
             <element signature="e#3680#4191#0" />
