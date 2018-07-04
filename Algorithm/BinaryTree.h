@@ -148,13 +148,20 @@ void PrintTreeTopBottom(const BinaryTreeNode *pRoot) {
 	}
 }
 
-// 二叉人树结点的插入 --- 不用
-// 关键点 -- 根结点指针使用引用
-void insert(BinaryTreeNode *&root, int x) {
-	if (root == nullptr) {
-		root = CreateBinaryTreeNode(x);
-		return;
-	}
+// 二叉树所有 根->叶子 路径和为 sum
+
+// 二叉树深度
+/*
+ * 面试55：输入一棵二叉树的根结点，求该树的深度
+ * 从根结点到叶结点一次经过的结点（含根、叶结点）形成树的一条路径，最长路径为其深度
+ */
+int TreeDepth(const BinaryTreeNode *pRoot) {
+	if (pRoot == nullptr)   // 空树 或者 叶结点
+		return 0;
+
+	int nLeft = TreeDepth(pRoot->pLeft);
+	int nRight = TreeDepth(pRoot->pRight);
+	return (nLeft > nRight) ? (nLeft + 1) : (nRight + 1);
 }
 
 
@@ -232,20 +239,6 @@ void Deserialize(BinaryTreeNode **pRoot, istream &stream) {
 		Deserialize(&((*pRoot)->pLeft), stream);
 		Deserialize(&((*pRoot)->pRight), stream);
 	}
-}
-
-// 二叉树深度
-/*
- * 面试55：输入一棵二叉树的根结点，求该树的深度
- * 从根结点到叶结点一次经过的结点（含根、叶结点）形成树的一条路径，最长路径为其深度
- */
-int TreeDepth(const BinaryTreeNode *pRoot) {
-	if (pRoot == nullptr)   // 空树 或者 叶结点
-		return 0;
-
-	int nLeft = TreeDepth(pRoot->pLeft);
-	int nRight = TreeDepth(pRoot->pRight);
-	return (nLeft > nRight) ? (nLeft + 1) : (nRight + 1);
 }
 
 // BST树 -- 二叉搜索树的第K个结点
