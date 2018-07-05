@@ -32,12 +32,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/120.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BinaryTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-    </list>
+    <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,10 +96,11 @@
       <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+            <state relative-caret-position="252">
+              <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
               <folding>
                 <element signature="e#0#2#0" />
+                <element signature="e#190#413#1" />
                 <element signature="e#417#613#0" />
                 <element signature="e#615#910#0" />
                 <element signature="e#912#1103#0" />
@@ -114,6 +110,7 @@
                 <element signature="e#2142#2381#0" />
                 <element signature="e#2383#2627#0" />
                 <element signature="e#2629#3109#0" />
+                <element signature="e#3111#3134#0" />
                 <element signature="e#3120#3197#0" />
                 <element signature="e#3120#3428#0" />
                 <element signature="e#3270#3729#0" />
@@ -277,8 +274,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="width" value="1191" />
+    <option name="x" value="-27" />
+    <option name="width" value="940" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -349,12 +346,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="167759000" />
+      <workItem from="1527335577206" duration="168417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183936000" />
+    <option name="totallyTimeSpent" value="184594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,7 +363,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="0" width="1191" height="800" extended-state="0" />
+    <frame x="-27" y="0" width="940" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
@@ -376,7 +373,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0042735045" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0054406966" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1053,10 +1050,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
           <folding>
             <element signature="e#0#2#0" />
+            <element signature="e#190#413#1" />
             <element signature="e#417#613#0" />
             <element signature="e#615#910#0" />
             <element signature="e#912#1103#0" />
@@ -1066,6 +1064,7 @@
             <element signature="e#2142#2381#0" />
             <element signature="e#2383#2627#0" />
             <element signature="e#2629#3109#0" />
+            <element signature="e#3111#3134#0" />
             <element signature="e#3120#3197#0" />
             <element signature="e#3120#3428#0" />
             <element signature="e#3270#3729#0" />
