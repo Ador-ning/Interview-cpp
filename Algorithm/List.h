@@ -170,7 +170,7 @@ void PrintListNode(ListNode *pNode) {
 		printf("The key in node is %d.\n", pNode->m_nKey);
 }
 
-// List length
+// 求链表长度 List length
 int ListLength(ListNode *head) {
 	if (head == nullptr)
 		return 0;
@@ -182,11 +182,52 @@ int ListLength(ListNode *head) {
 	return i;
 }
 
-// ============================ 剑指offer ====================
+// 合并链表(非有序) 有序-升序
+ListNode *mergeTwoLists(ListNode *head1, ListNode *head2) {
+	ListNode *p1 = head1;
+	ListNode *p2 = head2;
+
+	static ListNode dummy(0); // 做临时头结点
+	ListNode *tail = &dummy;
+
+	while (p1 && p2) {
+		if (p1->m_nKey < p2->m_nKey) {
+			tail->m_pNext = p1;
+			p1 = p1->m_pNext;
+		} else {
+			tail->m_pNext = p2;
+			p2 = p2->m_pNext;
+		}
+		tail = tail->m_pNext;
+	}
+	if (p1)
+		tail->m_pNext = p1;
+	if (p2)
+		tail->m_pNext = p2;
+
+	return dummy.m_pNext;
+}
+
+// 链表排序 O(n*logn)
+ListNode *sortList(ListNode *head) {
+	if (head == nullptr || head->m_pNext == nullptr)
+		return head;
+
+	// 找链表中间结点
+	ListNode *p1 = head, *p2 = head;
+	while (p2 && p2->m_pNext) {
+		p1 = p1->m_pNext;
+		p2 = p2->m_pNext->m_pNext;
+	}
+
+	p2 = p1->m_pNext;
+	p1->m_pNext = nullptr; // 分割成两个链表
+
+	// 进行递归
+	return mergeTwoLists(sortList(head), sortList(p2));
+}
+
 // 反转链表
-/*
- * 面试第24题 -- 输入链表头结点，反转该链表并输出
- * */
 ListNode *ReverseList(ListNode *pHead) {
 	ListNode *pReversedHead = nullptr; // 反转后的头结点指针
 	ListNode *pNode = pHead; // 用于指向调整的结点
@@ -210,9 +251,6 @@ ListNode *ReverseList(ListNode *pHead) {
 }
 
 // 链表中倒数第K个结点
-/*
- * 面试第22题
- * */
 ListNode *FindKthToTail(ListNode *pHead, unsigned int k) {
 	if (pHead == nullptr || k == 0)
 		return nullptr;
@@ -237,9 +275,6 @@ ListNode *FindKthToTail(ListNode *pHead, unsigned int k) {
 }
 
 // 合并两个排序的链表
-/*
- * 面试题 25
- * */
 ListNode *Merge(ListNode *pHead1, ListNode *pHead2) {
 	if (pHead1 == nullptr)
 		return pHead2;
