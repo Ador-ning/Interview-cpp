@@ -6,6 +6,7 @@
 #define INTERVIEW_CPP_120_H
 
 #include <iostream>
+#include <sstream>
 #include <deque>
 #include <queue>
 
@@ -20,7 +21,7 @@ struct TreeNode {
 };
 
 
-class solution {
+class Solution {
 public:
 	Solution() {
 		srand(time(NULL));
@@ -120,6 +121,56 @@ vector<vector<int>> LevelOrder(TreeNode *root) {
 		i += 1;
 	}
 	return result;
+}
+
+// ============================== 题目165 版本号比较 --- 切割字符串
+vector<int> &split(const string &s, char delim, vector<int> &elems) {
+	istringstream iss(s);  // 流
+	string item;
+	while (getline(iss, item, delim)) {
+		cout << item << '\t';
+		elems.push_back(atoi(item.c_str()));
+	}
+	return elems;
+}
+
+vector<int> split(const string &s, char delim) {
+	vector<int> elems;
+	split(s, delim, elems);
+	return elems;
+}
+
+void rightTrimZero(vector<int> &v) {
+	while (v.back() == 0)
+		v.pop_back();
+}
+
+int compareVersion(string version1, string version2) {
+	vector<int> v1 = split(version1, '.');
+	vector<int> v2 = split(version2, '.');
+
+	rightTrimZero(v1); // 去掉尾部为 0
+	rightTrimZero(v2);
+
+	// 同长度部分
+	for (int i = 0; i < v1.size() && i < v2.size(); i++) {
+		if (v1[i] < v2[i])
+			return -1;
+		else if (v1[i] > v2[i])
+			return 1;
+	}
+
+	if (v1.size() > v2.size())
+		return 1;
+	else if (v1.size() < v2.size())
+		return -1;
+
+	return 0;
+}
+
+void test_leet165() {
+	string s1 = "0.0.11.3";
+	split(s1, '.');
 }
 
 
