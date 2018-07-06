@@ -33,11 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/120.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet120.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -123,8 +122,8 @@
       <file leaf-file-name="leet120.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/leet120.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+            <state relative-caret-position="260">
+              <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#96#115#0" expanded="true" />
@@ -229,8 +228,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="width" value="1160" />
+    <option name="width" value="825" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -306,12 +304,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="171413000" />
+      <workItem from="1527335577206" duration="171687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187590000" />
+    <option name="totallyTimeSpent" value="187864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,11 +325,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.48480663" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.48480663" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2845304" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122914836" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
@@ -1018,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet120.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+        <state relative-caret-position="260">
+          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#96#115#0" expanded="true" />

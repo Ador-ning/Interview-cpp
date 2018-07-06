@@ -13,6 +13,7 @@
 #include "leetcode/leet60.h"
 #include "leetcode/leet80.h"
 #include "leetcode/leet100.h"
+#include "leetcode/leet120.h"
 
 
 using namespace std;
@@ -32,6 +33,6 @@ void test_ConvertBST() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
-	test_leet125();
+	test_leet165();
 	return 0;
 }

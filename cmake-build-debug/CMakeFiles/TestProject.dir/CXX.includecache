@@ -50,6 +50,16 @@ iostream
 ../Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 
+/Users/ning/Interview-cpp/leetcode/leet120.h
+iostream
+-
+sstream
+-
+deque
+-
+queue
+-
+
 /Users/ning/Interview-cpp/leetcode/leet20.h
 iostream
 -
@@ -123,4 +133,6 @@ leetcode/leet80.h
 /Users/ning/Interview-cpp/leetcode/leet80.h
 leetcode/leet100.h
 /Users/ning/Interview-cpp/leetcode/leet100.h
+leetcode/leet120.h
+/Users/ning/Interview-cpp/leetcode/leet120.h
 
