@@ -9,6 +9,7 @@
 #include <sstream>
 #include <deque>
 #include <queue>
+#include <stack>
 
 using namespace std;
 
@@ -123,7 +124,60 @@ vector<vector<int>> LevelOrder(TreeNode *root) {
 	return result;
 }
 
-// ============================== 题目165 版本号比较 --- 切割字符串
+// ============================== 题目129 Sum Root to Leaf -- 本质：根结点到叶节点遍历
+// 方法1
+int sumNumbers(TreeNode *root) {
+	if (root == nullptr)
+		return 0;
+
+	int sum = 0;
+	vector<TreeNode *> v;
+	v.push_back(root);
+
+	while (v.size() > 0) {
+		TreeNode *node = v.back();
+		v.pop_back();
+
+		if (node->left) {
+			node->left->val += (10 * node->val);
+			v.push_back(node->left);
+		}
+
+		if (node->right) {
+			node->right->val += (10 * node->val);
+			v.push_back(node->right);
+		}
+
+		if (node->right == nullptr && node->left == nullptr)
+			sum += node->val;
+	}
+
+	return sum;
+}
+
+// 方法2 -- 先序遍历 递归
+vector<vector<int>> allPath(TreeNode *root) {
+	if (root != nullptr) {
+		// 根
+
+		// 左
+		if (root->left != nullptr)
+			allPath(root->left);
+
+		// 右
+		if (root->right != nullptr)
+			allPath(root->right);
+
+		// 叶子结点
+		if (root->right == nullptr && root->left == nullptr) {
+			//
+		}
+
+	}
+}
+
+
+// ============================== 题目165 版本号比较 --- 切割字符串 -- streamstring
 vector<int> &split(const string &s, char delim, vector<int> &elems) {
 	istringstream iss(s);  // 流
 	string item;
