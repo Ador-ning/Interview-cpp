@@ -7,6 +7,7 @@
 #include "Algorithm/StringUtils.h"
 #include "Algorithm/SortedArray.h"
 #include "Algorithm/Heap.h"
+#include "Algorithm/Graph.h"
 
 #include "leetcode/leet20.h"
 #include "leetcode/leet40.h"
