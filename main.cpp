@@ -34,6 +34,5 @@ int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
 	// test_leet165();
-	cout << ('0' <= '8' <= '9') << endl;
 	return 0;
 }

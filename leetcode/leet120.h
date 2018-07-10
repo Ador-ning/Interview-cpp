@@ -177,7 +177,7 @@ vector<vector<int>> allPath(TreeNode *root) {
 }
 
 
-// ============================== 题目165 版本号比较 --- 切割字符串 -- streamstring
+// ============================== 题目165 版本号比较 --- 切割字符串 -- streamstring  --- sort
 vector<int> &split(const string &s, char delim, vector<int> &elems) {
 	istringstream iss(s);  // 流
 	string item;
@@ -225,6 +225,41 @@ int compareVersion(string version1, string version2) {
 void test_leet165() {
 	string s1 = "0.0.11.3";
 	split(s1, '.');
+}
+
+// ============================== 题目402 Remove K Digits -- 剩余最小
+string removeKdigits(string &num, int k) {
+	if (num.size() <= k)
+		return "0";
+
+	int left_len = num.size() - k;
+	int idx = 0;
+	for (int i = 0; i < k; i++) {
+		int len = num.size();
+		for (int j = 0; j < num.size() - 1; j++) {
+			if (num[j] > num[j + 1]) {
+				num.erase(j, 1);
+				idx = j;
+				break;  // always pick the smaller one number
+			}
+		}
+	}
+
+	for (int i = 0; i < num.size(); i++) {
+		if (num[i] != '0' || i == num.size()) {
+			num.erase(0, i);
+			break;
+		}
+	}
+
+	// 升序情况
+	if (num.size() > left_len) {
+		num.erase(num.begin() + left_len, num.end());
+	}
+
+	if (num.empty())
+		num = "0";
+	return num;
 }
 
 
