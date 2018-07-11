@@ -13,6 +13,7 @@ using namespace std;
 #define N 15
 
 class Node {
+public:
 	int v;  // 连接点编号
 	int w;  // 权值
 
@@ -71,5 +72,45 @@ void BfsTrave() {
 }
 
 // ======================= 最短路径 ======================= //
+// Dijkstra
+const int MAXV = 1000;
+const int INF = 1000000000;
+
+vector<Node> Adj2[MAXV]; //
+int n; // 顶点数
+int d[MAXV]; // 起点到达各点的最短路径
+bool visit2[MAXV] = {false};
+
+void Dijkstra(int s) {
+	fill(d, d + MAXV, INF); // INF填充
+	d[s] = 0; // 到达自身距离
+	for (int i = 0; i < n; i++) {
+		int u = -1; // u 使 d[u]最小，MIN 存放该最小的 d[u]
+		int MIN = INF;
+
+		for (int j = 0; j < n; j++) { // 找到未访问的顶点中 d[] 最小的
+			if (visit2[j] == false && d[j] < MIN) {
+				u = j;
+				MIN = d[j];
+			}
+		}
+
+		// 找不到小于 INF 的 d[u], 说明剩下的顶点和 s 不连通
+		if (u == -1)
+			return;
+
+		visit2[u] = true;   // 标记 u 已访问
+
+		for (int j = 0; j < Adj2[u].size(); j++) {
+			int v = Adj2[u][j].v;    // 通过邻接表直接获取 u 能到达的顶点 v
+
+			if (visit2[v] == false && d[u] + Adj2[u][j].w < d[v]) {
+				// v未访问  // u 为中介可以使 d[v]更优
+				d[v] = d[u] + Adj2[u][j].w;
+			}
+		}
+	}
+}
+
 
 #endif //INTERVIEW_CPP_GRAP_H
