@@ -35,5 +35,6 @@ int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
 	// test_leet165();
+	cout << 1 / 26 << '\t' << 1 % 26;
 	return 0;
 }

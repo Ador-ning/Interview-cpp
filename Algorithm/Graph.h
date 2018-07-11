@@ -21,10 +21,9 @@ class Node {
 	Node(int i, int j) : v(i), w(j) {}
 };
 
-vector<Node> Adj[N]; // 图邻接表存储
-
-bool visit[N] = {false}; // 访问标志
-bool inq[N] = {false}; // 入队列标志
+vector<int> Adj[N]; // 图邻接表存储  N 个结点
+bool visit[N] = {false}; // 访问标志    DFS
+bool inq[N] = {false}; // 入队列标志    BFS
 
 // ======================= 图遍历 ======================= //
 void DFS(int u, int depth) {
