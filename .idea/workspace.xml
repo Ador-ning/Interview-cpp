@@ -33,14 +33,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Algorithm/GraphUsing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithm/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,28 +59,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graph.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Graph.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="-178">
+              <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
               <folding>
                 <element signature="e#0#2#0" />
-                <element signature="e#172#281#1" />
+                <element signature="e#382#613#0" />
+                <element signature="e#615#707#0" />
+                <element signature="e#708#977#0" />
+                <element signature="e#979#1079#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphUsing.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GraphUsing.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+            <state relative-caret-position="509">
+              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
               <folding>
-                <element signature="e#111#125#0" expanded="true" />
+                <element signature="e#0#2#0" />
+                <element signature="e#187#420#0" />
                 <element signature="e#705#898#0" />
                 <element signature="e#1175#1195#0" />
+                <element signature="e#1477#1505#0" />
+                <element signature="e#1738#1758#0" />
               </folding>
             </state>
           </provider>
@@ -172,14 +171,14 @@
         <option value="$PROJECT_DIR$/leetcode/120.h" />
         <option value="$PROJECT_DIR$/leetcode/leet120.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Algorithm/Graph.h" />
         <option value="$PROJECT_DIR$/Algorithm/GraphUsing.h" />
+        <option value="$PROJECT_DIR$/Algorithm/Graph.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="16" />
+    <option name="x" value="8" />
     <option name="width" value="1175" />
     <option name="height" value="800" />
   </component>
@@ -261,12 +260,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="188348000" />
+      <workItem from="1527335577206" duration="189658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204525000" />
+    <option name="totallyTimeSpent" value="205835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,7 +277,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="16" width="1175" height="800" extended-state="0" />
+    <frame x="8" y="0" width="1175" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
@@ -288,7 +287,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27816293" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2036395" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -980,25 +979,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
+    <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="509">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#172#281#1" />
+            <element signature="e#187#420#0" />
+            <element signature="e#705#898#0" />
+            <element signature="e#1175#1195#0" />
+            <element signature="e#1477#1505#0" />
+            <element signature="e#1738#1758#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
+    <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        <state relative-caret-position="-178">
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
           <folding>
-            <element signature="e#111#125#0" expanded="true" />
-            <element signature="e#705#898#0" />
-            <element signature="e#1175#1195#0" />
+            <element signature="e#0#2#0" />
+            <element signature="e#382#613#0" />
+            <element signature="e#615#707#0" />
+            <element signature="e#708#977#0" />
+            <element signature="e#979#1079#0" />
           </folding>
         </state>
       </provider>
