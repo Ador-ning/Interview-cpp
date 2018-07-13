@@ -33,7 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Algorithm/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Graph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/DP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +52,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="-13">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#144#170#0" expanded="true" />
@@ -59,63 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graph.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
+      <file leaf-file-name="DP.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/DP.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-178">
-              <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#382#613#0" />
-                <element signature="e#615#707#0" />
-                <element signature="e#708#977#0" />
-                <element signature="e#979#1079#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphUsing.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#187#420#0" />
-                <element signature="e#705#898#0" />
-                <element signature="e#1175#1195#0" />
-                <element signature="e#1477#1505#0" />
-                <element signature="e#1738#1758#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leet120.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode/leet120.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#209#328#1" />
-                <element signature="e#332#1406#1" />
-                <element signature="e#358#394#0" />
-                <element signature="e#397#514#0" />
-                <element signature="e#517#649#0" />
-                <element signature="e#652#903#0" />
-                <element signature="e#906#1404#0" />
-                <element signature="e#1409#2263#0" />
-                <element signature="e#2265#2824#0" />
-                <element signature="e#2826#3128#0" />
-                <element signature="e#3131#3445#0" />
-                <element signature="e#3447#3557#0" />
-                <element signature="e#3559#3636#0" />
-                <element signature="e#3638#4069#0" />
-                <element signature="e#4071#4136#0" />
-                <element signature="e#4138#4811#0" />
-              </folding>
+            <state relative-caret-position="-139">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -169,17 +120,18 @@
         <option value="$PROJECT_DIR$/Algorithm/BinaryTree.h" />
         <option value="$PROJECT_DIR$/Algorithm/List.h" />
         <option value="$PROJECT_DIR$/leetcode/120.h" />
-        <option value="$PROJECT_DIR$/leetcode/leet120.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Algorithm/GraphUsing.h" />
         <option value="$PROJECT_DIR$/Algorithm/Graph.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet120.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/leetcode/DP.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="width" value="1175" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="width" value="1142" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -212,11 +164,6 @@
             <path>
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
@@ -260,12 +207,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="189658000" />
+      <workItem from="1527335577206" duration="194371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205835000" />
+    <option name="totallyTimeSpent" value="210548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,22 +224,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="0" width="1175" height="800" extended-state="0" />
+    <frame x="10" y="0" width="1270" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.48480663" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.60497236" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2845304" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2845304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2036395" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.069655724" />
       <window_info anchor="bottom" id="TeamCity" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29558012" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.49723756" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -339,17 +286,72 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="75" />
+      <option name="time" value="77" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="arr" language="ObjectiveC" />
+        <watch expression="arr[4]" language="ObjectiveC" />
+        <watch expression="arr[5]" language="ObjectiveC" />
+        <watch expression="arr[6]" language="ObjectiveC" />
+        <watch expression="arr[1]" language="ObjectiveC" />
+        <watch expression="arr[2]" language="ObjectiveC" />
+        <watch expression="arr[3]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>arr[3]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[2]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[6]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[5]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[4]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>arr</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[2]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -942,10 +944,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#187#420#0" />
+            <element signature="e#705#898#0" />
+            <element signature="e#1175#1195#0" />
+            <element signature="e#1477#1505#0" />
+            <element signature="e#1738#1758#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet120.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+        <state relative-caret-position="257">
+          <caret line="230" column="41" selection-start-line="230" selection-start-column="41" selection-end-line="230" selection-end-column="41" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#209#328#1" />
@@ -968,10 +985,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#172#281#1" />
+            <element signature="e#382#613#0" />
+            <element signature="e#615#707#0" />
+            <element signature="e#708#977#0" />
+            <element signature="e#979#1079#0" />
+            <element signature="e#1323#1343#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="-13">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#144#170#0" expanded="true" />
@@ -979,32 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
+    <entry file="file://$PROJECT_DIR$/leetcode/DP.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#187#420#0" />
-            <element signature="e#705#898#0" />
-            <element signature="e#1175#1195#0" />
-            <element signature="e#1477#1505#0" />
-            <element signature="e#1738#1758#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#382#613#0" />
-            <element signature="e#615#707#0" />
-            <element signature="e#708#977#0" />
-            <element signature="e#979#1079#0" />
-          </folding>
+        <state relative-caret-position="-139">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
         </state>
       </provider>
     </entry>

@@ -15,6 +15,7 @@
 #include "leetcode/leet80.h"
 #include "leetcode/leet100.h"
 #include "leetcode/leet120.h"
+#include "leetcode/DP.h"
 
 
 using namespace std;
@@ -31,10 +32,15 @@ void test_ConvertBST() {
 	Test5();
 }
 
+
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 	// test_twoSum();
 	// test_leet165();
-	cout << 1 / 26 << '\t' << 1 % 26;
+
+	// 异或操作
+	// cout << "二进制运算: " << endl;
+	// cout << (2 ^ 2) << '\t' << (2 ^ 0);  // 相同 == 0， 不相同 按位运算
+	dp1();
 	return 0;
 }
