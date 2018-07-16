@@ -49,5 +49,66 @@ void dp1() {
 	}
 }
 
+// ============================== 一个序列有N个数：A[1],A[2],…,A[N]，求出最长非降子序列的长度.  Longest increasing sub-sequence  -- LIS问题
+// 递推关系来将状态联系起来  ===========  初级问题
+// d(i) = max{1, d(j) + 1}, j<i , A[j] < A[i]
+void dp_lis() {
+	vector<int> nums = {5, 3, 4, 8, 6, 7};
+
+	int *d = new int[nums.size()];  // 存数据
+	int len = 1; // 记录长度
+
+	for (int i = 0; i < nums.size(); i++) {
+		d[i] = 1; // 初始
+
+		for (int j = 0; j < i; j++) {
+			if (nums[j] <= nums[i] && d[j] + 1 > d[i]) // 递推关系
+				d[i] = d[j] + 1;
+		}
+
+		if (d[i] > len)
+			len = d[i]; // 更新
+	}
+
+	delete[] d;
+
+	for (int i = 0; i < nums.size(); i++)
+		cout << d[i] << '\t';
+	cout << endl;
+
+	cout << "LIS length: " << len << endl;
+}
+
+// ============================== 二维DP  N * M 格子，每个格子中放着一定数量的苹果
+// 递推公式： S[i][j] = A[i][j] + max{S[i-1][j], S[i][j-1]} // 不越界
+void MostAppleCollected(int **A, int n, int m) {
+	int **s = new int *[n];
+	for (int i = 0; i < n; i++)
+		s[i] = new int[m]; // 辅助记录
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			int left = 0;
+			int up = 0;
+
+			if (i > 0)
+				up = s[i - 1][j];
+			if (j > 0)
+				left = s[i][j - 1];
+			int neighbor = left >= up ? left : up;
+			s[i][j] = neighbor + A[i][j];
+		}
+	}
+	int result = s[n - 1][m - 1];
+
+	for (int i = 0; i < n; i++)
+		delete[]s[i];
+	delete[]s;
+	cout << result << endl;
+}
+
+// ============================== 带额外条件的DP问题
+
+
 
 #endif //INTERVIEW_CPP_DP_H
