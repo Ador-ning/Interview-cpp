@@ -41,6 +41,7 @@ int main(int argc, char **argv) {
 	// 异或操作
 	// cout << "二进制运算: " << endl;
 	// cout << (2 ^ 2) << '\t' << (2 ^ 0);  // 相同 == 0， 不相同 按位运算
-	dp1();
+	// dp1();
+	dp_lis();
 	return 0;
 }
