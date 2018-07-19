@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <queue>
+#include <math.h>
 
 using namespace std;
 
@@ -77,7 +78,7 @@ const int MAXV = 1000;
 const int INF = pow(2, 31) - 1;
 
 vector<Node> Adj2[MAXV];
-int n; // 顶点数
+static int n; // 顶点数
 int d[MAXV]; // 起点到达各点的最短路径
 bool visit2[MAXV] = {false};    // 访问标志
 
@@ -148,7 +149,7 @@ void Ford() {
 	d[s] = 0;
 
 	// n 轮
-	for (k = 1; k <= n; k++)
+	for (int k = 1; k <= n; k++)
 		for (int j = 1; j <= num; j++) {
 			if (dis[u[j]] < INF && dis[v[j]] > dis[u[j]] + w[j])
 				dis[v[j]] = dis[u[j]] + w[j];

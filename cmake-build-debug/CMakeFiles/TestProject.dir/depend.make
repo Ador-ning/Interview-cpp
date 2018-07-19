@@ -6,6 +6,7 @@ CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/BST.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/BinaryTree.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/Graph.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/Heap.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/KMP.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/List.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/SortedArray.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/StringUtils.h
