@@ -44,7 +44,8 @@ int main(int argc, char **argv) {
 	// cout << "二进制运算: " << endl;
 	// cout << (2 ^ 2) << '\t' << (2 ^ 0);  // 相同 == 0， 不相同 按位运算
 
-	test_prefix();
-
+	// test_prefix();
+	string s = "andbc v";
+	cout << s.find('n', 5);
 	return 0;
 }
