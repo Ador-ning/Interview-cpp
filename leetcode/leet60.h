@@ -86,7 +86,7 @@ void test_leet41() {
 }
 
 // ============================== 题目46 全排列1，候选数字不重复
-vector<vector<int>> permute(vector<int> &num) {
+vector<vector<int>> permute_alg(vector<int> &num) {
 	vector<vector<int>> vv;
 	vv.push_back(num);
 

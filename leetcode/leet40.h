@@ -10,6 +10,7 @@
 #include <map>
 #include <unordered_map>
 #include <cmath>
+#include <algorithm>
 #include "../Algorithm/List.h"
 
 using namespace std;
@@ -543,6 +544,98 @@ void test_leet39() {
 	printMatrix(vv);
 
 	return;
+}
+
+
+// ============================== 题目46 全排列  -- 递归
+// STL 算法库
+vector<vector<int>> permute(vector<int> &num) {
+	vector<vector<int>> result;
+	sort(num.begin(), num.end());
+	do {
+		result.push_back(num);
+	} while (next_permutation(num.begin(), num.end()));
+	return result;
+}
+
+// 递归 方式
+void swap(vector<int> &o, int i, int j) {
+	if (o.size() <= 1 || i > (o.size() - 1) || j > (o.size() - 1))
+		return;
+	int temp = o[i];
+	o[i] = o[j];
+	o[j] = temp;
+}
+
+void PrintVector(vector<int> v) {
+	if (v.size() <= 0)
+		return;
+
+	vector<int>::iterator it;
+	for (it = v.begin(); it != v.end(); it++)
+		cout << *it << '\t';
+	cout << endl;
+	return;
+}
+
+bool isSwap(vector<int> n, int index) {
+	for (int i = index + 1; i < n.size(); i++)
+		if (n[index] == n[i])
+			return false;
+	return true;
+}
+
+int sum = 0;
+
+void permute_recursive(vector<int> &num, int index) {
+	if (index == num.size() - 1) {  // 全排列结束
+		sum++;
+		PrintVector(num);
+	} else {
+		for (int i = index; i < num.size(); i++) {
+			if (isSwap(num, i)) {   // 判断 相同数字
+				swap(num, index, i);   // 交换
+				permute_recursive(num, index + 1); // 递归剩余
+				swap(num, index, i); // 交换回来
+			}
+		}
+	}
+	return;
+}
+
+// 非递归方式
+void nextPermutation(vector<int> &nums) {
+	if (nums.size() <= 1)
+		return;
+
+	for (int i = nums.size() - 1; i >= 0; i++) {
+		if (nums[i - 1] < nums[i]) {    // find first nums[i-1] < nums[i],  [n-1 -> 0]
+			int j = nums.size() - 1;
+			while (nums[i - 1] >= nums[j])    // find first nums[i-1] < nums[j], j  [n-1 -> i]
+				j--; // pass
+
+			// swap
+			int tmp = nums[i - 1];
+			nums[i - 1] = nums[j];
+			nums[j] = tmp;
+
+			// reverse i -> n-1
+			reverse(nums.begin() + i, nums.end());
+			return;
+		}
+
+
+		if (i == 1) {   // 4 3 2 1
+			reverse(nums.begin(), nums.end());
+			return;
+		}
+	}
+}
+
+
+void test46() {
+	vector<int> n = {1, 2, 3};
+	nextPermutation(n);
 }
 
 #endif //INTERVIEW_CPP_40_H

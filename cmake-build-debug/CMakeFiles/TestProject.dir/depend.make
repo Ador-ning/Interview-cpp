@@ -10,6 +10,8 @@ CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/KMP.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/List.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/SortedArray.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/StringUtils.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../campus/bd.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../campus/tx.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/DP.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/Pack.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/leet100.h

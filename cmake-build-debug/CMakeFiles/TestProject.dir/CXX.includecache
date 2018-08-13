@@ -58,6 +58,24 @@ iostream
 
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 
+/Users/ning/Interview-cpp/campus/bd.h
+iostream
+-
+vector
+-
+algorithm
+-
+string
+-
+
+/Users/ning/Interview-cpp/campus/tx.h
+iostream
+-
+string
+-
+algorithm
+-
+
 /Users/ning/Interview-cpp/leetcode/DP.h
 iostream
 -
@@ -115,6 +133,8 @@ unordered_map
 -
 cmath
 -
+algorithm
+-
 ../Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 
@@ -136,6 +156,12 @@ iostream
 
 /Users/ning/Interview-cpp/main.cpp
 iostream
+-
+algorithm
+-
+cmath
+-
+sstream
 -
 ./BaseCpp/mystrings.h
 /Users/ning/Interview-cpp/./BaseCpp/mystrings.h
@@ -171,4 +197,8 @@ leetcode/Pack.h
 /Users/ning/Interview-cpp/leetcode/Pack.h
 Algorithm/KMP.h
 /Users/ning/Interview-cpp/Algorithm/KMP.h
+campus/tx.h
+/Users/ning/Interview-cpp/campus/tx.h
+campus/bd.h
+/Users/ning/Interview-cpp/campus/bd.h
 
