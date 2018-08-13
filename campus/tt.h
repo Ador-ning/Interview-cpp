@@ -32,8 +32,31 @@ void tt1() {
 
 void tt5() {
 	int n, m;
-	cin >> n >> m;
+	cin >> n;
+	cin >> m;
 
+	vector<int> vi;
+	vi.resize(2 * n);
+	for (int i = 0; i < 2 * n; i++)
+		cin >> vi[i];
+
+	int endTime = vi[1];
+	int count = 1;
+	for (int i = 2; i < 2 * n;) {
+		if (vi[i] > vi[i + 1])
+			break;
+
+		if (vi[i] >= endTime)
+			count++;
+		else {
+			i += 2;
+		}
+
+		if ((i + 1) < 2 * n)
+			endTime = vi[i + 1];
+		i += 2;
+	}
+	cout << count;
 }
 
 

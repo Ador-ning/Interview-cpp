@@ -41,16 +41,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/campus/bd.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campus/tt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/campus/tx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet40.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet40.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leet60.h" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leet60.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm/DFS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/tt.h" beforeDir="false" afterPath="$PROJECT_DIR$/campus/tt.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -67,9 +59,10 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
+            <state relative-caret-position="1372">
+              <caret line="242" column="33" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
               <folding>
+                <element signature="e#203#229#0" expanded="true" />
                 <element signature="e#622#685#0" />
                 <element signature="e#687#763#0" />
                 <element signature="e#765#1209#0" />
@@ -88,51 +81,10 @@
       <file leaf-file-name="tt.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/campus/tt.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="51">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding>
                 <element signature="e#95#114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leet60.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode/leet60.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#403#944#0" />
-                <element signature="e#946#1540#0" />
-                <element signature="e#1542#1636#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1494">
-              <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#2#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tx.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/campus/tx.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#636#1227#0" />
-                <element signature="e#1229#1249#0" />
               </folding>
             </state>
           </provider>
@@ -196,6 +148,7 @@
         <option value="$PROJECT_DIR$/leetcode/leet40.h" />
         <option value="$PROJECT_DIR$/campus/bd.h" />
         <option value="$PROJECT_DIR$/campus/tx.h" />
+        <option value="$PROJECT_DIR$/Algorithm/DFS.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/campus/tt.h" />
       </list>
@@ -203,8 +156,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="266" />
-    <option name="width" value="896" />
+    <option name="x" value="3" />
+    <option name="y" value="45" />
+    <option name="width" value="847" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -241,7 +195,7 @@
             <path>
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="campus" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,12 +235,12 @@
       <workItem from="1525783009480" duration="166000" />
       <workItem from="1525789410232" duration="491000" />
       <workItem from="1525794474004" duration="13723000" />
-      <workItem from="1527335577206" duration="290173000" />
+      <workItem from="1527335577206" duration="294850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306350000" />
+    <option name="totallyTimeSpent" value="311027000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -298,7 +252,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="380" y="0" width="896" height="800" extended-state="0" />
+    <frame x="3" y="45" width="847" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
@@ -307,9 +261,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50104165" side_tool="true" weight="0.35359117" />
       <window_info anchor="right" x="0" y="0" width="232" height="600" id="Documentation" side_tool="true" weight="0.32966024" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.110497236" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.50414366" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23887588" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10310559" />
       <window_info anchor="bottom" id="TeamCity" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -366,7 +320,7 @@
           <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="101" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -431,13 +385,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1679">
-          <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/ReplaceBlank.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1042,25 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
-          <folding>
-            <element signature="e#622#685#0" />
-            <element signature="e#687#763#0" />
-            <element signature="e#765#1209#0" />
-            <element signature="e#1211#1402#0" />
-            <element signature="e#1404#1612#0" />
-            <element signature="e#1614#2053#0" />
-            <element signature="e#2055#2452#0" />
-            <element signature="e#2478#2504#0" />
-            <element signature="e#2873#3171#0" />
-            <element signature="e#3092#3270#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/leet60.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1086,10 +1014,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/DFS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#97#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1372">
+          <caret line="242" column="33" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
+          <folding>
+            <element signature="e#203#229#0" expanded="true" />
+            <element signature="e#622#685#0" />
+            <element signature="e#687#763#0" />
+            <element signature="e#765#1209#0" />
+            <element signature="e#1211#1402#0" />
+            <element signature="e#1404#1612#0" />
+            <element signature="e#1614#2053#0" />
+            <element signature="e#2055#2452#0" />
+            <element signature="e#2478#2504#0" />
+            <element signature="e#2873#3171#0" />
+            <element signature="e#3092#3270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/campus/tt.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="51">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="e#95#114#0" expanded="true" />
           </folding>
