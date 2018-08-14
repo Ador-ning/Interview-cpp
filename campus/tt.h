@@ -20,13 +20,74 @@ public:
 
 	Interval_t(int i, int j) : l(i), r(j) {}
 
-private:
 	int l;
 	int r;
 };
 
 // dfs
 void tt1() {
+
+}
+
+// 区间合并
+/*
+ 3
+ 1,10;32,45
+ 78,94;5,16
+ 80,100;200,220;16,32
+ * */
+bool comp(Interval_t *a, Interval_t *b) {
+	if (a->l > b->l)
+		return false;
+	return true;
+}
+
+void tt2() {
+	int nums;
+	cin >> nums;
+
+	vector<int> vi;
+	while (nums--) {
+		string line;
+		cin >> line;
+		int i_begin = 0;
+		int number;
+		for (int i = 0; i < line.size(); i++) {
+			if (line[i] == ',' || line[i] == ';') {
+				string s = line.substr(i_begin, i - i_begin);
+				number = stoi(s);
+				if ((i + 1) < line.size())
+					i_begin = i + 1;
+				vi.push_back(number);
+			}
+		}
+		string s = line.substr(i_begin, line.size() - i_begin);
+		number = stoi(s);
+		vi.push_back(number);
+	}
+
+	vector<Interval_t *> vv;
+	for (int i = 0; i < vi.size(); i += 2) {
+		Interval_t *tmp = new Interval_t(vi[i], vi[i + 1]);
+		vv.push_back(tmp);
+	}
+
+	sort(vv.begin(), vv.end(), comp);
+
+	vector<Interval_t *>::iterator it = vv.begin();
+	it = it + 1;
+	for (; it != vv.end();) {
+		if ((*it)->l <= (*(it - 1))->r) { // 合并
+			(*(it - 1))->r = (*it)->r;
+			vv.erase(it);
+		} else {
+			it++;
+		}
+	}
+
+	for (it = vv.begin(); it != vv.end(); it++) {
+		cout << (*it)->l << ' ' << (*it)->r << endl;
+	}
 
 }
 

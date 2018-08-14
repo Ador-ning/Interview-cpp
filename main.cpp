@@ -240,6 +240,7 @@ int f1(int n) {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 
-	longestValidParentheses();
+	tt2();
+
 	return 0;
 }
