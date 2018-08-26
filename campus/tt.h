@@ -24,12 +24,12 @@ public:
 	int r;
 };
 
-// dfs
+// DFS / BFS
 void tt1() {
 
 }
 
-// 区间合并
+// 区间合并 --- 排序合并
 /*
  3
  1,10;32,45
@@ -91,7 +91,7 @@ void tt2() {
 
 }
 
-
+// 贪心
 void tt5() {
 	int n, m;
 	cin >> n;

@@ -134,113 +134,131 @@ string ReverseSentence(string str) {
 	return res;
 }
 
+// 0-1背包 -- 逆向输出选择物品
+void bag() {
+	int num, bag; // 商品数量 背包容量
+	cin >> num >> bag;
 
-// 求约数 -- 不含 1 和 本身
-vector<int> YNumber(int n) {
-	vector<int> res;
-	if (n <= 3)
-		return res;
+	vector<pair<int, int>> vp; // 重量 价值
 
-	for (int i = 2; i <= sqrt(n); i++) {
-		if ((n % i) == 0) {
-			res.push_back(i);
-			res.push_back(n / i);
+	int m1, m2;
+	for (int i = 0; i < num; i++) {
+		cin >> m1 >> m2;
+		vp.push_back(make_pair(m1, m2));
+	}
+
+	int dp[200][2000]; // index bag
+
+	for (int j = 1; j <= bag; j++) {
+		if (vp[vp.size() - 1].first <= j)
+			dp[vp.size() - 1][j] = vp[vp.size() - 1].second;
+
+		for (int i = vp.size() - 2; i >= 0; i--) {
+			if (j < vp[i].first)
+				dp[i][j] = dp[i + 1][j];
+			else
+				dp[i][j] = max(dp[i + 1][j - vp[i].first] + vp[i].second, dp[i + 1][j]);
 		}
 	}
 
-	return res;
-}
-
-// 如何知道最少次数
-static int M = pow(2, 31) - 1;
-
-void helper(int n, int m, int count) {
-	if (m == n) {
-		if (count < M)
-			M = count;
+	cout << dp[0][bag] << endl;
+	if (dp[0][bag] == 0) {
+		cout << "No";
 		return;
 	}
 
-	if (m < n)
-		return; // 越过
-
-	if (n < m) { // 递归其 约数
-		vector<int> v = YNumber(n);
-		if (v.size() <= 0) // 不能前进
-			return;
-		count++;
-		for (int i = 0; i < v.size(); i++)
-			helper(n + v[i], m, count);
+	int k = bag;
+	for (int i = 0; i < vp.size(); i++) {
+		if (dp[i][k] > dp[i + 1][k]) {
+			cout << i + 1 << ' ';
+			k -= vp[i].first;
+		}
 	}
 }
 
-// 求最大 奇数 约数
-int f1(int n) {
-	int maxJ = 1;
-	for (int i = 2; i < sqrt(n);) {
-		if ((n % i) == 0) {
-			// n / i -- 是 奇数
-			if ((n / i) % 2 == 1 && (n / i) > maxJ)
-				maxJ = (n / i);
-			else if ((i % 2 == 1)) // n / i 不是奇数
-				maxJ = i;
-		}
-		i += 2;
+/*
+helloworld
+hdlrowolle
+2
+helloworld
+worldhello
+2
+abcde
+acbde
+*/
+bool helper(string s1, string s2) {
+	if (s1.size() != s2.size())
+		return false;
+
+	for (int i = 0; i < s1.size(); i++) {
+		// 1. 顺时针
+		string res1 = s1.substr(i, s1.size() - 1) + s1.substr(0, i - 0);
+		if (res1 == s2)
+			return true;
+
+		// 2. 逆时针
+		string t = s1.substr(i, s1.size() - 1);
+		reverse(t.begin(), t.end());
+		string res2 = s1.substr(0, i - 0) + t;
+		if (res2 == s2)
+			return true;
 	}
-	return maxJ;
 }
 
-/*
- * 10,10
-0,0,0,0,0,0,0,0,0,0
-0,0,0,1,1,0,1,0,0,0
-0,1,0,0,0,0,0,1,0,1
-1,0,0,0,0,0,0,0,1,1
-0,0,0,1,1,1,0,0,0,1
-0,0,0,0,0,0,1,0,1,1
-0,1,1,0,0,0,0,0,0,0
-0,0,0,1,0,1,0,0,0,0
-0,0,1,0,0,1,0,0,0,0
-0,1,0,0,0,0,0,0,0,0
- *
- *
- *
- * */
+void parse1(string s) {
+	int index1;
+	int index2;
 
-/*
- * string line;
-	vector<int> t;
-	cin >> line;
-	t = stringToIntVector(line);
-	if (t.size() != 2)
-		return 0;
-	int m = t[0];
-	int n = t[1];
-	if (m <= 0 || m >= 1000 || n <= 0 || n >= 1000)
-		return 0;
-	vector<vector<int>> mn;
-	mn.resize(m * n);
-	for (int i = 0; i < m; i++) {
-		cin >> line;
-		t = stringToIntVector(line);
-		mn.push_back(t);
+	for (int i = 0; i < s.size(); i++) {
+		if (s[i] == '-')
+			index1 = i;
+		else if (s[i] == '=')
+			index2 = i;
 	}
 
-	for(int i = 0; i < m; i++){
-		for(int j = 0; j < n; j++){
+	string c1 = s.substr(0, 1);
+	cout << index1 << endl;
+	string c2 = s.substr(index1 + 1, 1);
+	cout << index2 << endl;
+	string cn = s.substr(index2 + 2, index1 - 1 - index2 - 2);
 
-		}
-	}
- *
- *
- *
- *
- * */
+	cout << c1 << "x " << c2 << " " << cn << endl;
+
+}
+
+
+
 
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 
-	tt2();
+	int times;
+	cin >> times;
+
+	vector<string> in;
+	while (times--) {
+		int numbers;
+		cin >> numbers;
+
+		for (int i = 0; i < numbers; i++) {
+			string t;
+			cin >> t;
+			in.push_back(t);
+		} // 输入结束
+
+		int tag = false;
+		for (int i = 1; i < in.size(); i++) {
+			if (helper(in[0], in[i])) {
+				cout << "Yeah" << endl;
+				cout << in[0] << ' ' << in[i] << endl;
+				tag = true;
+				break;
+			}
+		}
+		if (!tag)
+			cout << "Sad" << endl;
+		in.clear();
+	}
 
 	return 0;
 }
