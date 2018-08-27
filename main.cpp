@@ -27,6 +27,7 @@
 #include "campus/tx.h"
 #include "campus/bd.h"
 #include "campus/tt.h"
+#include "campus/tt2.h"
 
 using namespace std;
 
@@ -176,89 +177,14 @@ void bag() {
 	}
 }
 
-/*
-helloworld
-hdlrowolle
-2
-helloworld
-worldhello
-2
-abcde
-acbde
-*/
-bool helper(string s1, string s2) {
-	if (s1.size() != s2.size())
-		return false;
-
-	for (int i = 0; i < s1.size(); i++) {
-		// 1. 顺时针
-		string res1 = s1.substr(i, s1.size() - 1) + s1.substr(0, i - 0);
-		if (res1 == s2)
-			return true;
-
-		// 2. 逆时针
-		string t = s1.substr(i, s1.size() - 1);
-		reverse(t.begin(), t.end());
-		string res2 = s1.substr(0, i - 0) + t;
-		if (res2 == s2)
-			return true;
-	}
-}
-
-void parse1(string s) {
-	int index1;
-	int index2;
-
-	for (int i = 0; i < s.size(); i++) {
-		if (s[i] == '-')
-			index1 = i;
-		else if (s[i] == '=')
-			index2 = i;
-	}
-
-	string c1 = s.substr(0, 1);
-	cout << index1 << endl;
-	string c2 = s.substr(index1 + 1, 1);
-	cout << index2 << endl;
-	string cn = s.substr(index2 + 2, index1 - 1 - index2 - 2);
-
-	cout << c1 << "x " << c2 << " " << cn << endl;
-
-}
-
-
-
-
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 
-	int times;
-	cin >> times;
+	string line1, line2;
+	getline(cin, line1);
+	getline(cin, line2);
 
-	vector<string> in;
-	while (times--) {
-		int numbers;
-		cin >> numbers;
-
-		for (int i = 0; i < numbers; i++) {
-			string t;
-			cin >> t;
-			in.push_back(t);
-		} // 输入结束
-
-		int tag = false;
-		for (int i = 1; i < in.size(); i++) {
-			if (helper(in[0], in[i])) {
-				cout << "Yeah" << endl;
-				cout << in[0] << ' ' << in[i] << endl;
-				tag = true;
-				break;
-			}
-		}
-		if (!tag)
-			cout << "Sad" << endl;
-		in.clear();
-	}
+	helper(line1, line2);
 
 	return 0;
 }
