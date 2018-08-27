@@ -14,6 +14,7 @@ CMakeFiles/TestProject.dir/main.cpp.o: ../campus/bd.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../campus/tt.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../campus/tt2.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../campus/tx.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../learn/l1.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/DP.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/Pack.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../leetcode/leet100.h

@@ -13,6 +13,7 @@
 #include "Algorithm/SortedArray.h"
 #include "Algorithm/Heap.h"
 #include "Algorithm/Graph.h"
+#include "Algorithm/Sort.h"
 
 #include "leetcode/leet20.h"
 #include "leetcode/leet40.h"
@@ -28,6 +29,8 @@
 #include "campus/bd.h"
 #include "campus/tt.h"
 #include "campus/tt2.h"
+
+#include "learn/l1.h"
 
 using namespace std;
 
@@ -180,11 +183,6 @@ void bag() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 
-	string line1, line2;
-	getline(cin, line1);
-	getline(cin, line2);
-
-	helper(line1, line2);
 
 	return 0;
 }

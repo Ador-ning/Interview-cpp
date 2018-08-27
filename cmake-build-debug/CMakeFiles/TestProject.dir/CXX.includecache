@@ -104,6 +104,14 @@ string
 algorithm
 -
 
+/Users/ning/Interview-cpp/learn/l1.h
+iostream
+-
+vector
+-
+string
+-
+
 /Users/ning/Interview-cpp/leetcode/DP.h
 iostream
 -
@@ -233,4 +241,6 @@ campus/tt.h
 /Users/ning/Interview-cpp/campus/tt.h
 campus/tt2.h
 /Users/ning/Interview-cpp/campus/tt2.h
+learn/l1.h
+/Users/ning/Interview-cpp/learn/l1.h
 
