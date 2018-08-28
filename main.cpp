@@ -182,7 +182,8 @@ void bag() {
 
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
-
-	testBucketSort();
+	string line;
+	getline(cin, line);
+	cout << maxLengthString(line);
 	return 0;
 }
