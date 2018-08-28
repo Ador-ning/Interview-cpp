@@ -322,31 +322,30 @@ void countSort(vector<int> &arr, int exp) {
 
 	// 将数据出现的次数存储
 	for (int i = 0; i < arr.size(); ++i) {
-		buckets[(a[i] / exp) % 10]++;
+		buckets[(arr[i] / exp) % 10]++;
 	}
 
 	for (i = 1; i < arr.size(); ++i)
 		buckets[i] += buckets[i - 1];
 
 	for (int i = arr.size() - 1; i >= 0; --i) {
-		output[buckets[(a[i] / exp) % 10] - 1] = a[i];
-		buckets[(a[i] / exp) % 10]--;
+		output[buckets[(arr[i] / exp) % 10] - 1] = arr[i];
+		buckets[(arr[i] / exp) % 10]--;
 	}
 
 	for (i = 0; i < arr.size(); ++i)
-		a[i] = output[i];
+		arr[i] = output[i];
 
 }
 
 void radixSort(vector<int> &arr) {
-	vector<int> res;
 	if (arr.size() <= 0)
-		return res;
+		return;
 
 	int exp; // exp = 1 10 100
 	int maxValue = getMax(arr);
 
-	for (exp = 1; max / exp > 0; exp *= 10)
+	for (exp = 1; maxValue / exp > 0; exp *= 10)
 		countSort(arr, exp);
 }
 
