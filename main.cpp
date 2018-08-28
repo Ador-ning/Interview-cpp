@@ -183,6 +183,6 @@ void bag() {
 int main(int argc, char **argv) {
 	cout << "Project Interview-cpp: leetcode" << endl;
 
-
+	testBucketSort();
 	return 0;
 }

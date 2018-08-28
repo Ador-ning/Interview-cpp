@@ -79,7 +79,7 @@ int p_(vector<int> arr, int i, int j) {
 }
 
 // 题2：判断括号有效性
-bool isValid(const string s) {
+bool isValid1(const string s) {
 	if (s.size() <= 0)
 		return false;
 	int status = 0;

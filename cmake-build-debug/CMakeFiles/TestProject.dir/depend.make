@@ -8,6 +8,7 @@ CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/Graph.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/Heap.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/KMP.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/List.h
+CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/Sort.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/SortedArray.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../Algorithm/StringUtils.h
 CMakeFiles/TestProject.dir/main.cpp.o: ../campus/bd.h
