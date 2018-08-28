@@ -96,19 +96,26 @@ bool isValid1(const string s) {
 }
 
 // 进阶：返回 最长有效括号长度 -- dp解  ()(()())
+/*
+i    0  1   2   3   4   5   6   7
+     (  )   (   (   )   (   )   )
+dp[] 0  2   0   0   2   0   4   (6+2)
+ */
 int maxLengthString(string s) {
 	if (s.size() <= 0)
 		return 0;
-	vector<int> dp(s.size(), 0);
+	vector<int> dp(s.size(), 0); // '(' -> 0
 	int pre = 0;
 	int res = 0;
 
+	cout << "Test: " << endl;
 	for (int i = 0; i < s.size(); i++) {
 		if (s[i] == ')') { // 情况 配对
-			pre = i - dp[i - 1] - 1;
+			pre = i - dp[i - 1] - 1; // pre --> dp[i-1] -- 指定匹配的 '('位置
 			if (pre >= 0 && s[pre] == '(') {
-				dp[i] = dp[i - 1] + 2 + (pre > 0 ? dp[pre - 1] : 0);
+				dp[i] = dp[i - 1] + 2 + (pre > 0 ? dp[pre - 1] : 0); //
 			}
+			cout << "i: " << i << " pre: " << pre << " dp[i] " << dp[i] << endl;
 		}
 		res = max(dp[i], res);
 	}
