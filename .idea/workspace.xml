@@ -41,10 +41,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/Sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Sort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/l1.h" beforeDir="false" afterPath="$PROJECT_DIR$/learn/l1.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -58,11 +54,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="186" column="23" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
+            <state relative-caret-position="240">
+              <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
               <folding>
                 <element signature="e#730#793#0" />
                 <element signature="e#795#871#0" />
@@ -90,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="l1.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="l1.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn/l1.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="-409">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#282#430#0" />
@@ -177,15 +173,17 @@
         <option value="$PROJECT_DIR$/campus/tt.h" />
         <option value="$PROJECT_DIR$/campus/tt2.h" />
         <option value="$PROJECT_DIR$/Algorithm/Sort.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/learn/l1.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1388" />
-    <option name="height" value="1047" />
+    <option name="x" value="604" />
+    <option name="y" value="30" />
+    <option name="width" value="1102" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -263,12 +261,12 @@
       <workItem from="1525794474004" duration="13723000" />
       <workItem from="1527335577206" duration="311728000" />
       <workItem from="1534644569243" duration="15663000" />
-      <workItem from="1535268865640" duration="25785000" />
+      <workItem from="1535268865640" duration="32884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369353000" />
+    <option name="totallyTimeSpent" value="376452000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -280,17 +278,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1388" height="1047" extended-state="0" />
+    <frame x="604" y="30" width="1102" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.5283213" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.6892265" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5032189" side_tool="true" weight="0.3107735" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4967811" visible="true" weight="0.33264676" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4967811" visible="true" weight="0.3480663" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13679591" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03237743" />
       <window_info anchor="bottom" id="TeamCity" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -851,27 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="186" column="23" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
-          <folding>
-            <element signature="e#730#793#0" />
-            <element signature="e#795#871#0" />
-            <element signature="e#873#1317#0" />
-            <element signature="e#1319#1510#0" />
-            <element signature="e#1512#1720#0" />
-            <element signature="e#1722#2161#0" />
-            <element signature="e#2163#2560#0" />
-            <element signature="e#2562#3358#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn/l1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="-409">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#282#430#0" />
@@ -882,6 +863,23 @@
             <element signature="e#1723#2029#0" />
             <element signature="e#2066#2077#0" />
             <element signature="e#2066#2453#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="184" column="13" lean-forward="true" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+          <folding>
+            <element signature="e#730#793#0" />
+            <element signature="e#795#871#0" />
+            <element signature="e#873#1317#0" />
+            <element signature="e#1319#1510#0" />
+            <element signature="e#1512#1720#0" />
+            <element signature="e#1722#2161#0" />
+            <element signature="e#2163#2560#0" />
+            <element signature="e#2562#3358#0" />
           </folding>
         </state>
       </provider>
