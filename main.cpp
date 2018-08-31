@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <sstream>
-
+#include <math.h>
 
 #include "./BaseCpp/mystrings.h"
 #include "Algorithm/List.h"
@@ -180,7 +180,39 @@ void bag() {
 	}
 }
 
+/*
+
+	 0 0 0 0 0 0 0 0 0
+	 0 1 1 0 0 1 1 1 0
+	 0 1 1 1 0 0 0 1 0
+	 0 1 1 0 0 0 0 0 0
+	 0 0 0 0 0 1 1 0 0
+	 0 0 0 0 1 1 1 0 0
+	 0 0 0 0 0 0 0 0 0
+
+int rows = 7;
+vector<vector<int>> arr;
+string line;
+vector<int> in;
+while (rows--) {
+getline(cin, line);
+in = stringToIntVector1(line);
+arr.push_back(in);
+line.clear();
+in.clear();
+}
+
+for (int i = 0; i < arr.size(); ++i) {
+for (int j = 0; j < arr[i].size(); ++j)
+cout << arr[i][j] << ' ';
+cout << endl;
+}
+ */
+
 int main(int argc, char **argv) {
 	cout << "Test Cpp Project: " << endl;
+
+
+
 	return 0;
 }
