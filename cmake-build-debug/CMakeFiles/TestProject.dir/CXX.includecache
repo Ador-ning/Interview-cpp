@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/ning/Interview-cpp/./BaseCpp/mystrings.h
-iostream
--
-stdio.h
--
-cassert
--
-cstring
--
-
 /Users/ning/Interview-cpp/Algorithm/BST.h
 iostream
 -
@@ -67,6 +57,16 @@ iostream
 -
 
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
+
+/Users/ning/Interview-cpp/BaseCpp/mystrings.h
+iostream
+-
+stdio.h
+-
+cassert
+-
+cstring
+-
 
 /Users/ning/Interview-cpp/campus/bd.h
 iostream
@@ -211,8 +211,8 @@ sstream
 -
 math.h
 -
-./BaseCpp/mystrings.h
-/Users/ning/Interview-cpp/./BaseCpp/mystrings.h
+BaseCpp/mystrings.h
+/Users/ning/Interview-cpp/BaseCpp/mystrings.h
 Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 Algorithm/BinaryTree.h
@@ -229,6 +229,8 @@ Algorithm/Graph.h
 /Users/ning/Interview-cpp/Algorithm/Graph.h
 Algorithm/Sort.h
 /Users/ning/Interview-cpp/Algorithm/Sort.h
+Algorithm/KMP.h
+/Users/ning/Interview-cpp/Algorithm/KMP.h
 leetcode/leet20.h
 /Users/ning/Interview-cpp/leetcode/leet20.h
 leetcode/leet40.h
@@ -245,8 +247,6 @@ leetcode/DP.h
 /Users/ning/Interview-cpp/leetcode/DP.h
 leetcode/Pack.h
 /Users/ning/Interview-cpp/leetcode/Pack.h
-Algorithm/KMP.h
-/Users/ning/Interview-cpp/Algorithm/KMP.h
 campus/tx.h
 /Users/ning/Interview-cpp/campus/tx.h
 campus/bd.h

@@ -4,16 +4,17 @@
 #include <sstream>
 #include <math.h>
 
-#include "./BaseCpp/mystrings.h"
+#include "BaseCpp/mystrings.h"
+
 #include "Algorithm/List.h"
 #include "Algorithm/BinaryTree.h"
-//#include "./BaseCpp/oop.h"
 #include "Algorithm/BST.h"
 #include "Algorithm/StringUtils.h"
 #include "Algorithm/SortedArray.h"
 #include "Algorithm/Heap.h"
 #include "Algorithm/Graph.h"
 #include "Algorithm/Sort.h"
+#include "Algorithm/KMP.h"
 
 #include "leetcode/leet20.h"
 #include "leetcode/leet40.h"
@@ -23,7 +24,6 @@
 #include "leetcode/leet120.h"
 #include "leetcode/DP.h"
 #include "leetcode/Pack.h"
-#include "Algorithm/KMP.h"
 
 #include "campus/tx.h"
 #include "campus/bd.h"
@@ -180,39 +180,31 @@ void bag() {
 	}
 }
 
-/*
-
-	 0 0 0 0 0 0 0 0 0
-	 0 1 1 0 0 1 1 1 0
-	 0 1 1 1 0 0 0 1 0
-	 0 1 1 0 0 0 0 0 0
-	 0 0 0 0 0 1 1 0 0
-	 0 0 0 0 1 1 1 0 0
-	 0 0 0 0 0 0 0 0 0
-
-int rows = 7;
-vector<vector<int>> arr;
-string line;
-vector<int> in;
-while (rows--) {
-getline(cin, line);
-in = stringToIntVector1(line);
-arr.push_back(in);
-line.clear();
-in.clear();
+char &get_val(string &s, string::size_type ix) {
+	return s[ix];
 }
 
-for (int i = 0; i < arr.size(); ++i) {
-for (int j = 0; j < arr[i].size(); ++j)
-cout << arr[i][j] << ' ';
-cout << endl;
-}
- */
+bool helper(vector<pair<int, int>> arr, int i, int users, int count) {
+	if (arr.size() <= 0)
+		return false;
 
+	int start = 0;
+	for (; start < arr.size(); ++start) {
+		if (i == arr[start].first)
+			break;
+	}
+
+	helper(arr, arr[start].second, users, count + 1);
+
+	if (count == users)
+		return true;
+	return false;
+}
+
+
+// /Users/ning/Interview-cpp/cmake-build-debug/TestProject -d -o -i
 int main(int argc, char **argv) {
 	cout << "Test Cpp Project: " << endl;
-
-
 
 	return 0;
 }
