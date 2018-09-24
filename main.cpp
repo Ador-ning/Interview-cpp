@@ -3,6 +3,7 @@
 #include <cmath>
 #include <sstream>
 #include <math.h>
+#include <stdio.h>
 
 #include "BaseCpp/mystrings.h"
 
@@ -32,11 +33,10 @@
 
 #include "learn/l1.h"
 
+#include "BaseCpp/myRegex.h"
+
 using namespace std;
 
-void test_BaseCpp() {
-	cout << "Begin test BaseCpp:" << endl;
-}
 
 void test_ConvertBST() {
 	Test1();
@@ -201,10 +201,9 @@ bool helper(vector<pair<int, int>> arr, int i, int users, int count) {
 	return false;
 }
 
-
 // /Users/ning/Interview-cpp/cmake-build-debug/TestProject -d -o -i
 int main(int argc, char **argv) {
 	cout << "Test Cpp Project: " << endl;
-
+	
 	return 0;
 }
