@@ -123,6 +123,32 @@ TestProject/fast:
 	$(MAKE) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/build
 .PHONY : TestProject/fast
 
+#=============================================================================
+# Target rules for targets named leptjson_test
+
+# Build rule for target.
+leptjson_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leptjson_test
+.PHONY : leptjson_test
+
+# fast build rule for target.
+leptjson_test/fast:
+	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson_test.dir/build.make JSON/tutorial01/CMakeFiles/leptjson_test.dir/build
+.PHONY : leptjson_test/fast
+
+#=============================================================================
+# Target rules for targets named leptjson
+
+# Build rule for target.
+leptjson: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leptjson
+.PHONY : leptjson
+
+# fast build rule for target.
+leptjson/fast:
+	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson.dir/build.make JSON/tutorial01/CMakeFiles/leptjson.dir/build
+.PHONY : leptjson/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +185,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TestProject"
+	@echo "... leptjson_test"
+	@echo "... leptjson"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

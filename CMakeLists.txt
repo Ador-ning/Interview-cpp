@@ -7,6 +7,9 @@ project(interview-cpp)
 # 编译标准
 set(CMAKE_CXX_STANDARD 11)
 
+add_subdirectory(JSON)
+
+
 # 源文件
 set(SRC_FILE main.cpp)
 

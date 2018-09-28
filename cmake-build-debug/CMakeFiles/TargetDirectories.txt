@@ -1,3 +1,9 @@
 /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles/TestProject.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01/CMakeFiles/leptjson_test.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01/CMakeFiles/leptjson.dir
