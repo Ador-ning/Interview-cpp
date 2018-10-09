@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ning/Interview-cpp/JSON/tutorial01/leptjson.c" "/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01/CMakeFiles/leptjson.dir/leptjson.c.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
