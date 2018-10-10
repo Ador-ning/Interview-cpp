@@ -59,9 +59,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/JSON/tutorial01/leptjson.c" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/tutorial01/leptjson.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/tutorial01/leptjson.h" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/tutorial01/leptjson.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/tutorial01/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/tutorial01/test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recipes/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Recipes/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/JSON/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/JSON/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/JSON/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/JSON/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/JSON/leptjson_test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/JSON/leptjson_test.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/JSON/tutorial01/cmake-build-debug/" />
@@ -75,60 +86,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="leptjson.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON/tutorial01/leptjson.h">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSON/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#115#205#0" />
-                <element signature="e#226#253#0" />
-                <element signature="e#243#256#1" />
-                <element signature="e#253#269#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leptjson.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JSON/tutorial01/leptjson.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-              <folding>
-                <element signature="e#110#129#0" expanded="true" />
-                <element signature="e#187#216#0" />
-                <element signature="e#622#687#0" />
-                <element signature="e#1007#1071#0" />
-                <element signature="e#232#415#0" />
-                <element signature="e#1210#1501#0" />
-                <element signature="e#1610#1943#0" />
-                <element signature="e#1945#2349#0" />
-                <element signature="e#3621#4075#0" />
-                <element signature="e#1150#1235#0" />
-                <element signature="e#4982#5091#0" />
-                <element signature="e#5093#5194#0" />
-                <element signature="e#4713#4766#0" />
-                <element signature="e#4771#4823#0" />
-                <element signature="e#5687#5946#0" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON/tutorial01/test.c">
+        <entry file="file://$PROJECT_DIR$/JSON/test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+            <state relative-caret-position="5451">
+              <caret line="238" column="13" lean-forward="true" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#39#57#0" expanded="true" />
-                <element signature="e#633#678#0" />
-                <element signature="e#798#848#0" />
-                <element signature="e#1116#1168#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSON/src/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -157,9 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algorithm/PrintListInReversedOrder.cpp" />
-        <option value="$PROJECT_DIR$/Algorithm/ReplaceBlank.cpp" />
-        <option value="$PROJECT_DIR$/Algorithm/List.cpp" />
         <option value="$PROJECT_DIR$/BaseCpp/mystrings.h" />
         <option value="$PROJECT_DIR$/Algorithm/Tree.h" />
         <option value="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" />
@@ -201,19 +187,24 @@
         <option value="$PROJECT_DIR$/Algorithm/Sort.h" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/test.cpp" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/JSON/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.h" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/test.c" />
         <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.c" />
+        <option value="$PROJECT_DIR$/Recipes/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/JSON/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/JSON/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/JSON/test.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1518" />
+    <option name="x" value="45" />
+    <option name="y" value="91" />
+    <option name="width" value="1519" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -247,17 +238,6 @@
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="JSON" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorial01" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -289,6 +269,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JSON" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -303,11 +288,11 @@
   </component>
   <component name="RunManager" selected="Application.leptjson_test">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="interview-cpp" TARGET_NAME="leptjson_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="interview-cpp" RUN_TARGET_NAME="leptjson_test" TEST_MODE="SUITE_TEST" />
-    <configuration name="TestProject" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="interview-cpp" TARGET_NAME="TestProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="interview-cpp" RUN_TARGET_NAME="TestProject" />
+    <configuration name="TestProject" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="interview-cpp" TARGET_NAME="TestProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="interview-cpp" RUN_TARGET_NAME="leptjson_test" />
     <configuration name="leptjson_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="interview-cpp" TARGET_NAME="leptjson_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="interview-cpp" RUN_TARGET_NAME="leptjson_test" />
     <list>
-      <item itemvalue="Application.leptjson_test" />
       <item itemvalue="Application.TestProject" />
+      <item itemvalue="Application.leptjson_test" />
     </list>
   </component>
   <component name="TaskManager">
@@ -323,12 +308,12 @@
       <workItem from="1525794474004" duration="13723000" />
       <workItem from="1527335577206" duration="311728000" />
       <workItem from="1534644569243" duration="15663000" />
-      <workItem from="1535268865640" duration="131169000" />
+      <workItem from="1535268865640" duration="132963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474737000" />
+    <option name="totallyTimeSpent" value="476531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,19 +325,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1518" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="45" y="91" width="1519" height="1047" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285273" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" weight="0.48197734" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" weight="0.62409884" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3285273" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.502338" side_tool="true" weight="0.48197734" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285273" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49658704" visible="true" weight="0.36560246" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49658704" visible="true" weight="0.36560246" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13092852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028037" />
       <window_info anchor="bottom" id="TeamCity" order="7" weight="0.3285273" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872927" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.60350156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5252317" />
@@ -463,57 +447,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithm/DP.h" />
-    <entry file="file://$PROJECT_DIR$/Algorithm/BST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/AVL.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/leet80.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/leet100.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="261" column="1" lean-forward="true" selection-start-line="261" selection-start-column="1" selection-end-line="261" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/DP2.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#303#323#0" />
-            <element signature="e#508#808#0" />
-            <element signature="e#810#898#0" />
-            <element signature="e#1228#2066#0" />
-            <element signature="e#1228#2084#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -718,35 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn/l1.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#174#189#0" />
-            <element signature="e#282#430#0" />
-            <element signature="e#432#567#0" />
-            <element signature="e#569#812#0" />
-            <element signature="e#814#1425#0" />
-            <element signature="e#1427#1721#0" />
-            <element signature="e#1723#2029#0" />
-            <element signature="e#2066#2077#0" />
-            <element signature="e#2066#2453#0" />
-            <element signature="e#2692#3098#0" />
-            <element signature="e#3288#3409#0" />
-            <element signature="e#3745#3756#0" />
-            <element signature="e#3979#4137#0" />
-            <element signature="e#3341#3491#0" />
-            <element signature="e#3638#3674#0" />
-            <element signature="e#3909#3959#0" />
-            <element signature="e#5013#5023#0" />
-            <element signature="e#4377#4430#0" />
-            <element signature="e#4493#4511#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BaseCpp/oop.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -900,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/assert.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1892" />
@@ -1001,20 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/tutorial01/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1040,38 +923,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/tutorial01/leptjson.h">
+    <entry file="file://$PROJECT_DIR$/learn/l1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="1569">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#115#205#0" />
-            <element signature="e#226#253#0" />
-            <element signature="e#243#256#1" />
-            <element signature="e#253#269#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/tutorial01/test.c">
+    <entry file="file://$PROJECT_DIR$/JSON/src/leptjson.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#39#57#0" expanded="true" />
-            <element signature="e#633#678#0" />
-            <element signature="e#798#848#0" />
-            <element signature="e#1116#1168#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/tutorial01/leptjson.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+        <state relative-caret-position="491">
+          <caret line="218" column="81" selection-start-line="218" selection-start-column="81" selection-end-line="218" selection-end-column="81" />
           <folding>
             <element signature="e#110#129#0" expanded="true" />
             <element signature="e#187#216#0" />
@@ -1091,6 +956,85 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/src/leptjson.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#115#205#0" />
+            <element signature="e#226#253#0" />
+            <element signature="e#243#256#1" />
+            <element signature="e#253#269#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/tpc/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/thread/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/src/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="176" column="63" selection-start-line="176" selection-start-column="63" selection-end-line="176" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/string/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5451">
+          <caret line="238" column="13" lean-forward="true" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

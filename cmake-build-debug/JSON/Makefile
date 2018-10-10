@@ -110,6 +110,48 @@ depend:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+JSON/CMakeFiles/leptjson_test.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 JSON/CMakeFiles/leptjson_test.dir/rule
+.PHONY : JSON/CMakeFiles/leptjson_test.dir/rule
+
+# Convenience name for target.
+leptjson_test: JSON/CMakeFiles/leptjson_test.dir/rule
+
+.PHONY : leptjson_test
+
+# fast build rule for target.
+leptjson_test/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/build
+.PHONY : leptjson_test/fast
+
+test.o: test.c.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.c.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/test.c.o
+.PHONY : test.c.o
+
+test.i: test.c.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... leptjson_test"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

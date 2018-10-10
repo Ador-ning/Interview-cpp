@@ -8,7 +8,7 @@ project(interview-cpp)
 set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(JSON)
-
+add_subdirectory(Recipes)
 
 # 源文件
 set(SRC_FILE main.cpp)

@@ -100,113 +100,191 @@ clean: CMakeFiles/TestProject.dir/clean
 # Directory level rules for directory JSON
 
 # Convenience name for "all" pass in the directory.
-JSON/all: JSON/tutorial01/all
+JSON/all: JSON/CMakeFiles/leptjson_test.dir/all
+JSON/all: JSON/src/all
 
 .PHONY : JSON/all
 
 # Convenience name for "clean" pass in the directory.
-JSON/clean: JSON/tutorial01/clean
+JSON/clean: JSON/CMakeFiles/leptjson_test.dir/clean
+JSON/clean: JSON/src/clean
 
 .PHONY : JSON/clean
 
 # Convenience name for "preinstall" pass in the directory.
-JSON/preinstall: JSON/tutorial01/preinstall
+JSON/preinstall: JSON/src/preinstall
 
 .PHONY : JSON/preinstall
 
 #=============================================================================
-# Directory level rules for directory JSON/tutorial01
-
-# Convenience name for "all" pass in the directory.
-JSON/tutorial01/all: JSON/tutorial01/CMakeFiles/leptjson_test.dir/all
-JSON/tutorial01/all: JSON/tutorial01/CMakeFiles/leptjson.dir/all
-
-.PHONY : JSON/tutorial01/all
-
-# Convenience name for "clean" pass in the directory.
-JSON/tutorial01/clean: JSON/tutorial01/CMakeFiles/leptjson_test.dir/clean
-JSON/tutorial01/clean: JSON/tutorial01/CMakeFiles/leptjson.dir/clean
-
-.PHONY : JSON/tutorial01/clean
-
-# Convenience name for "preinstall" pass in the directory.
-JSON/tutorial01/preinstall:
-
-.PHONY : JSON/tutorial01/preinstall
-
-#=============================================================================
-# Target rules for target JSON/tutorial01/CMakeFiles/leptjson_test.dir
+# Target rules for target JSON/CMakeFiles/leptjson_test.dir
 
 # All Build rule for target.
-JSON/tutorial01/CMakeFiles/leptjson_test.dir/all: JSON/tutorial01/CMakeFiles/leptjson.dir/all
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson_test.dir/build.make JSON/tutorial01/CMakeFiles/leptjson_test.dir/depend
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson_test.dir/build.make JSON/tutorial01/CMakeFiles/leptjson_test.dir/build
+JSON/CMakeFiles/leptjson_test.dir/all: JSON/src/CMakeFiles/leptjson.dir/all
+	$(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/depend
+	$(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target leptjson_test"
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson_test.dir/all
+.PHONY : JSON/CMakeFiles/leptjson_test.dir/all
 
 # Include target in all.
-all: JSON/tutorial01/CMakeFiles/leptjson_test.dir/all
+all: JSON/CMakeFiles/leptjson_test.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-JSON/tutorial01/CMakeFiles/leptjson_test.dir/rule: cmake_check_build_system
+JSON/CMakeFiles/leptjson_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 JSON/tutorial01/CMakeFiles/leptjson_test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 JSON/CMakeFiles/leptjson_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson_test.dir/rule
+.PHONY : JSON/CMakeFiles/leptjson_test.dir/rule
 
 # Convenience name for target.
-leptjson_test: JSON/tutorial01/CMakeFiles/leptjson_test.dir/rule
+leptjson_test: JSON/CMakeFiles/leptjson_test.dir/rule
 
 .PHONY : leptjson_test
 
 # clean rule for target.
-JSON/tutorial01/CMakeFiles/leptjson_test.dir/clean:
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson_test.dir/build.make JSON/tutorial01/CMakeFiles/leptjson_test.dir/clean
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson_test.dir/clean
+JSON/CMakeFiles/leptjson_test.dir/clean:
+	$(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/clean
+.PHONY : JSON/CMakeFiles/leptjson_test.dir/clean
 
 # clean rule for target.
-clean: JSON/tutorial01/CMakeFiles/leptjson_test.dir/clean
+clean: JSON/CMakeFiles/leptjson_test.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target JSON/tutorial01/CMakeFiles/leptjson.dir
+# Directory level rules for directory JSON/src
+
+# Convenience name for "all" pass in the directory.
+JSON/src/all: JSON/src/CMakeFiles/leptjson.dir/all
+
+.PHONY : JSON/src/all
+
+# Convenience name for "clean" pass in the directory.
+JSON/src/clean: JSON/src/CMakeFiles/leptjson.dir/clean
+
+.PHONY : JSON/src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+JSON/src/preinstall:
+
+.PHONY : JSON/src/preinstall
+
+#=============================================================================
+# Target rules for target JSON/src/CMakeFiles/leptjson.dir
 
 # All Build rule for target.
-JSON/tutorial01/CMakeFiles/leptjson.dir/all:
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson.dir/build.make JSON/tutorial01/CMakeFiles/leptjson.dir/depend
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson.dir/build.make JSON/tutorial01/CMakeFiles/leptjson.dir/build
+JSON/src/CMakeFiles/leptjson.dir/all:
+	$(MAKE) -f JSON/src/CMakeFiles/leptjson.dir/build.make JSON/src/CMakeFiles/leptjson.dir/depend
+	$(MAKE) -f JSON/src/CMakeFiles/leptjson.dir/build.make JSON/src/CMakeFiles/leptjson.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target leptjson"
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson.dir/all
+.PHONY : JSON/src/CMakeFiles/leptjson.dir/all
 
 # Include target in all.
-all: JSON/tutorial01/CMakeFiles/leptjson.dir/all
+all: JSON/src/CMakeFiles/leptjson.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-JSON/tutorial01/CMakeFiles/leptjson.dir/rule: cmake_check_build_system
+JSON/src/CMakeFiles/leptjson.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 JSON/tutorial01/CMakeFiles/leptjson.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 JSON/src/CMakeFiles/leptjson.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson.dir/rule
+.PHONY : JSON/src/CMakeFiles/leptjson.dir/rule
 
 # Convenience name for target.
-leptjson: JSON/tutorial01/CMakeFiles/leptjson.dir/rule
+leptjson: JSON/src/CMakeFiles/leptjson.dir/rule
 
 .PHONY : leptjson
 
 # clean rule for target.
-JSON/tutorial01/CMakeFiles/leptjson.dir/clean:
-	$(MAKE) -f JSON/tutorial01/CMakeFiles/leptjson.dir/build.make JSON/tutorial01/CMakeFiles/leptjson.dir/clean
-.PHONY : JSON/tutorial01/CMakeFiles/leptjson.dir/clean
+JSON/src/CMakeFiles/leptjson.dir/clean:
+	$(MAKE) -f JSON/src/CMakeFiles/leptjson.dir/build.make JSON/src/CMakeFiles/leptjson.dir/clean
+.PHONY : JSON/src/CMakeFiles/leptjson.dir/clean
 
 # clean rule for target.
-clean: JSON/tutorial01/CMakeFiles/leptjson.dir/clean
+clean: JSON/src/CMakeFiles/leptjson.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Recipes
+
+# Convenience name for "all" pass in the directory.
+Recipes/all: Recipes/string/all
+Recipes/all: Recipes/tpc/all
+Recipes/all: Recipes/thread/all
+
+.PHONY : Recipes/all
+
+# Convenience name for "clean" pass in the directory.
+Recipes/clean: Recipes/string/clean
+Recipes/clean: Recipes/tpc/clean
+Recipes/clean: Recipes/thread/clean
+
+.PHONY : Recipes/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Recipes/preinstall: Recipes/string/preinstall
+Recipes/preinstall: Recipes/tpc/preinstall
+Recipes/preinstall: Recipes/thread/preinstall
+
+.PHONY : Recipes/preinstall
+
+#=============================================================================
+# Directory level rules for directory Recipes/string
+
+# Convenience name for "all" pass in the directory.
+Recipes/string/all:
+
+.PHONY : Recipes/string/all
+
+# Convenience name for "clean" pass in the directory.
+Recipes/string/clean:
+
+.PHONY : Recipes/string/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Recipes/string/preinstall:
+
+.PHONY : Recipes/string/preinstall
+
+#=============================================================================
+# Directory level rules for directory Recipes/tpc
+
+# Convenience name for "all" pass in the directory.
+Recipes/tpc/all:
+
+.PHONY : Recipes/tpc/all
+
+# Convenience name for "clean" pass in the directory.
+Recipes/tpc/clean:
+
+.PHONY : Recipes/tpc/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Recipes/tpc/preinstall:
+
+.PHONY : Recipes/tpc/preinstall
+
+#=============================================================================
+# Directory level rules for directory Recipes/thread
+
+# Convenience name for "all" pass in the directory.
+Recipes/thread/all:
+
+.PHONY : Recipes/thread/all
+
+# Convenience name for "clean" pass in the directory.
+Recipes/thread/clean:
+
+.PHONY : Recipes/thread/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Recipes/thread/preinstall:
+
+.PHONY : Recipes/thread/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -196,6 +196,12 @@ Project_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug
 Project_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp
 
 //Value Computed by CMake
+Recipes_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug/Recipes
+
+//Value Computed by CMake
+Recipes_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp/Recipes
+
+//Value Computed by CMake
 interview-cpp_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug
 
 //Value Computed by CMake
@@ -205,10 +211,10 @@ interview-cpp_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp
 leptjson_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-leptjson_test_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug/JSON/tutorial01
+leptjson_test_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug/JSON/src
 
 //Value Computed by CMake
-leptjson_test_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp/JSON/tutorial01
+leptjson_test_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp/JSON/src
 
 
 ########################
@@ -309,7 +315,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

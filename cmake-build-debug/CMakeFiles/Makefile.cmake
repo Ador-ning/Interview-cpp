@@ -32,7 +32,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "../JSON/CMakeLists.txt"
-  "../JSON/tutorial01/CMakeLists.txt"
+  "../JSON/src/CMakeLists.txt"
+  "../Recipes/CMakeLists.txt"
+  "../Recipes/string/CMakeLists.txt"
+  "../Recipes/thread/CMakeLists.txt"
+  "../Recipes/tpc/CMakeLists.txt"
   "CMakeFiles/3.10.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.3/CMakeSystem.cmake"
@@ -48,12 +52,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "JSON/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "JSON/tutorial01/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "JSON/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Recipes/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Recipes/string/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Recipes/tpc/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Recipes/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TestProject.dir/DependInfo.cmake"
-  "JSON/tutorial01/CMakeFiles/leptjson_test.dir/DependInfo.cmake"
-  "JSON/tutorial01/CMakeFiles/leptjson.dir/DependInfo.cmake"
+  "JSON/CMakeFiles/leptjson_test.dir/DependInfo.cmake"
+  "JSON/src/CMakeFiles/leptjson.dir/DependInfo.cmake"
   )

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles /Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/CMakeFiles/progress.marks
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Recipes/thread/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Recipes/thread/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Recipes/thread/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Recipes/thread/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named TestProject
-
-# Build rule for target.
-TestProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestProject
-.PHONY : TestProject
-
-# fast build rule for target.
-TestProject/fast:
-	$(MAKE) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/build
-.PHONY : TestProject/fast
-
-#=============================================================================
-# Target rules for targets named leptjson_test
-
-# Build rule for target.
-leptjson_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 leptjson_test
-.PHONY : leptjson_test
-
-# fast build rule for target.
-leptjson_test/fast:
-	$(MAKE) -f JSON/CMakeFiles/leptjson_test.dir/build.make JSON/CMakeFiles/leptjson_test.dir/build
-.PHONY : leptjson_test/fast
-
-#=============================================================================
-# Target rules for targets named leptjson
-
-# Build rule for target.
-leptjson: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 leptjson
-.PHONY : leptjson
-
-# fast build rule for target.
-leptjson/fast:
-	$(MAKE) -f JSON/src/CMakeFiles/leptjson.dir/build.make JSON/src/CMakeFiles/leptjson.dir/build
-.PHONY : leptjson/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -184,12 +118,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TestProject"
-	@echo "... leptjson_test"
-	@echo "... leptjson"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
@@ -201,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/Interview-cpp/JSON/src/leptjson.c
+crtdbg.h
+-
+assert.h
+-
+stdlib.h
+-
+errno.h
+-
+math.h
+-
+string.h
+-
+leptjson.h
+/Users/ning/Interview-cpp/JSON/src/leptjson.h
+
+/Users/ning/Interview-cpp/JSON/src/leptjson.h
+
