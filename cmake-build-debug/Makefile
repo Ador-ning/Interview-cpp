@@ -149,6 +149,19 @@ leptjson/fast:
 	$(MAKE) -f JSON/src/CMakeFiles/leptjson.dir/build.make JSON/src/CMakeFiles/leptjson.dir/build
 .PHONY : leptjson/fast
 
+#=============================================================================
+# Target rules for targets named thread_src
+
+# Build rule for target.
+thread_src: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread_src
+.PHONY : thread_src
+
+# fast build rule for target.
+thread_src/fast:
+	$(MAKE) -f Recipes/thread/src/CMakeFiles/thread_src.dir/build.make Recipes/thread/src/CMakeFiles/thread_src.dir/build
+.PHONY : thread_src/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -187,6 +200,7 @@ help:
 	@echo "... TestProject"
 	@echo "... leptjson_test"
 	@echo "... leptjson"
+	@echo "... thread_src"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libthread_src.a  CMakeFiles/thread_src.dir/Except.cpp.o CMakeFiles/thread_src.dir/Thread.cpp.o CMakeFiles/thread_src.dir/ThreadPool.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libthread_src.a

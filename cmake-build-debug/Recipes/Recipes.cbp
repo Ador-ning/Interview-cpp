@@ -5,7 +5,7 @@
 		<Option title="Recipes"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\JSON\;CMake Files\JSON\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Recipes"/>
@@ -17,7 +17,93 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="thread_src">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/libthread_src.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 thread_src"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread_src/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/libthread_src.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 thread_src/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Atomic.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/BlockingQueue.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/BoundedBlockingQueue.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Callback.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Condition.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Except.cpp">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Except.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Mutex.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Thread.cpp">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/Thread.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/ThreadLocal.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/ThreadLocalSingleton.h">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/ThreadPool.cpp">
+			<Option target="thread_src"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/ThreadPool.h">
+			<Option target="thread_src"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -32,6 +118,9 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Recipes\thread\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\thread\src\"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\JSON\"/>

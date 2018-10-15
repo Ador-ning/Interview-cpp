@@ -5,7 +5,7 @@
 		<Option title="leptjson_test"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\JSON\;CMake Files\JSON\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/JSON"/>
@@ -129,6 +129,9 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Recipes\thread\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\thread\src\"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\JSON\"/>

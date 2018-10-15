@@ -36,6 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Recipes/CMakeLists.txt"
   "../Recipes/string/CMakeLists.txt"
   "../Recipes/thread/CMakeLists.txt"
+  "../Recipes/thread/src/CMakeLists.txt"
   "../Recipes/tpc/CMakeLists.txt"
   "CMakeFiles/3.10.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.3/CMakeCXXCompiler.cmake"
@@ -57,6 +58,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Recipes/string/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Recipes/tpc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Recipes/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Recipes/thread/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -64,4 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TestProject.dir/DependInfo.cmake"
   "JSON/CMakeFiles/leptjson_test.dir/DependInfo.cmake"
   "JSON/src/CMakeFiles/leptjson.dir/DependInfo.cmake"
+  "Recipes/thread/src/CMakeFiles/thread_src.dir/DependInfo.cmake"
   )

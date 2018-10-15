@@ -272,19 +272,74 @@ Recipes/tpc/preinstall:
 # Directory level rules for directory Recipes/thread
 
 # Convenience name for "all" pass in the directory.
-Recipes/thread/all:
+Recipes/thread/all: Recipes/thread/src/all
 
 .PHONY : Recipes/thread/all
 
 # Convenience name for "clean" pass in the directory.
-Recipes/thread/clean:
+Recipes/thread/clean: Recipes/thread/src/clean
 
 .PHONY : Recipes/thread/clean
 
 # Convenience name for "preinstall" pass in the directory.
-Recipes/thread/preinstall:
+Recipes/thread/preinstall: Recipes/thread/src/preinstall
 
 .PHONY : Recipes/thread/preinstall
+
+#=============================================================================
+# Directory level rules for directory Recipes/thread/src
+
+# Convenience name for "all" pass in the directory.
+Recipes/thread/src/all: Recipes/thread/src/CMakeFiles/thread_src.dir/all
+
+.PHONY : Recipes/thread/src/all
+
+# Convenience name for "clean" pass in the directory.
+Recipes/thread/src/clean: Recipes/thread/src/CMakeFiles/thread_src.dir/clean
+
+.PHONY : Recipes/thread/src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Recipes/thread/src/preinstall:
+
+.PHONY : Recipes/thread/src/preinstall
+
+#=============================================================================
+# Target rules for target Recipes/thread/src/CMakeFiles/thread_src.dir
+
+# All Build rule for target.
+Recipes/thread/src/CMakeFiles/thread_src.dir/all:
+	$(MAKE) -f Recipes/thread/src/CMakeFiles/thread_src.dir/build.make Recipes/thread/src/CMakeFiles/thread_src.dir/depend
+	$(MAKE) -f Recipes/thread/src/CMakeFiles/thread_src.dir/build.make Recipes/thread/src/CMakeFiles/thread_src.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10 "Built target thread_src"
+.PHONY : Recipes/thread/src/CMakeFiles/thread_src.dir/all
+
+# Include target in all.
+all: Recipes/thread/src/CMakeFiles/thread_src.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Recipes/thread/src/CMakeFiles/thread_src.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 Recipes/thread/src/CMakeFiles/thread_src.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : Recipes/thread/src/CMakeFiles/thread_src.dir/rule
+
+# Convenience name for target.
+thread_src: Recipes/thread/src/CMakeFiles/thread_src.dir/rule
+
+.PHONY : thread_src
+
+# clean rule for target.
+Recipes/thread/src/CMakeFiles/thread_src.dir/clean:
+	$(MAKE) -f Recipes/thread/src/CMakeFiles/thread_src.dir/build.make Recipes/thread/src/CMakeFiles/thread_src.dir/clean
+.PHONY : Recipes/thread/src/CMakeFiles/thread_src.dir/clean
+
+# clean rule for target.
+clean: Recipes/thread/src/CMakeFiles/thread_src.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
