@@ -11,13 +11,12 @@ CMakeFiles/TestProject.dir/main.cpp.o
  /Users/ning/Interview-cpp/Algorithm/Sort.h
  /Users/ning/Interview-cpp/Algorithm/SortedArray.h
  /Users/ning/Interview-cpp/Algorithm/StringUtils.h
- /Users/ning/Interview-cpp/BaseCpp/myRegex.h
- /Users/ning/Interview-cpp/BaseCpp/mystrings.h
  /Users/ning/Interview-cpp/campus/bd.h
  /Users/ning/Interview-cpp/campus/tt.h
  /Users/ning/Interview-cpp/campus/tt2.h
  /Users/ning/Interview-cpp/campus/tx.h
- /Users/ning/Interview-cpp/learn/l1.h
+ /Users/ning/Interview-cpp/hierarchical_mutex.cpp
+ /Users/ning/Interview-cpp/hierarchical_mutex.h
  /Users/ning/Interview-cpp/leetcode/DP.h
  /Users/ning/Interview-cpp/leetcode/Pack.h
  /Users/ning/Interview-cpp/leetcode/leet100.h
@@ -27,3 +26,4 @@ CMakeFiles/TestProject.dir/main.cpp.o
  /Users/ning/Interview-cpp/leetcode/leet60.h
  /Users/ning/Interview-cpp/leetcode/leet80.h
  /Users/ning/Interview-cpp/main.cpp
+ /Users/ning/Interview-cpp/thread_test.h

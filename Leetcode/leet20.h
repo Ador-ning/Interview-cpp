@@ -14,7 +14,7 @@
 #include "../Algorithm/List.h"
 
 using namespace std;
-
+using namespace Algorithm;
 // ==============================   题目1
 /*
  * 在进行迭代并将元素插入到表中的同时，我们还会回过头来检查表中是否已经存在当前元素所对应的目标元素

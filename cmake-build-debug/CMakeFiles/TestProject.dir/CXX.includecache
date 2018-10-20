@@ -58,24 +58,6 @@ iostream
 
 /Users/ning/Interview-cpp/Algorithm/StringUtils.h
 
-/Users/ning/Interview-cpp/BaseCpp/myRegex.h
-regex
--
-string
--
-iostream
--
-
-/Users/ning/Interview-cpp/BaseCpp/mystrings.h
-iostream
--
-stdio.h
--
-cassert
--
-cstring
--
-
 /Users/ning/Interview-cpp/campus/bd.h
 iostream
 -
@@ -122,12 +104,16 @@ string
 algorithm
 -
 
-/Users/ning/Interview-cpp/learn/l1.h
+/Users/ning/Interview-cpp/hierarchical_mutex.cpp
 iostream
 -
-vector
+mutex
 -
-string
+hierarchical_mutex.h
+/Users/ning/Interview-cpp/hierarchical_mutex.h
+
+/Users/ning/Interview-cpp/hierarchical_mutex.h
+thread
 -
 
 /Users/ning/Interview-cpp/leetcode/DP.h
@@ -221,8 +207,6 @@ math.h
 -
 stdio.h
 -
-BaseCpp/mystrings.h
-/Users/ning/Interview-cpp/BaseCpp/mystrings.h
 Algorithm/List.h
 /Users/ning/Interview-cpp/Algorithm/List.h
 Algorithm/BinaryTree.h
@@ -265,8 +249,16 @@ campus/tt.h
 /Users/ning/Interview-cpp/campus/tt.h
 campus/tt2.h
 /Users/ning/Interview-cpp/campus/tt2.h
-learn/l1.h
-/Users/ning/Interview-cpp/learn/l1.h
-BaseCpp/myRegex.h
-/Users/ning/Interview-cpp/BaseCpp/myRegex.h
+thread_test.h
+/Users/ning/Interview-cpp/thread_test.h
+hierarchical_mutex.h
+/Users/ning/Interview-cpp/hierarchical_mutex.h
+hierarchical_mutex.cpp
+/Users/ning/Interview-cpp/hierarchical_mutex.cpp
+
+/Users/ning/Interview-cpp/thread_test.h
+thread
+-
+iostream
+-
 

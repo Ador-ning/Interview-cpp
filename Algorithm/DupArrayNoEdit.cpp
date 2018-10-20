@@ -6,7 +6,6 @@
 长度为 n+1 数组中所有数字范围为 1->n，数组中至少有一个数字是重复的
 找出数组中重复的数字，但是不能修改输入的数组
 */
-
 int countRange(const int *numbers, int length, int start, int end) {
 	if (numbers == NULL)
 		return 0;

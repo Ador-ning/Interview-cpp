@@ -5,8 +5,6 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "BaseCpp/mystrings.h"
-
 #include "Algorithm/List.h"
 #include "Algorithm/BinaryTree.h"
 #include "Algorithm/BST.h"
@@ -31,12 +29,11 @@
 #include "campus/tt.h"
 #include "campus/tt2.h"
 
-#include "learn/l1.h"
-
-#include "BaseCpp/myRegex.h"
+#include "Concurrent/thread_test.h"
+#include "Concurrent/hierarchical_mutex.h"
+#include "Concurrent/hierarchical_mutex.cpp"
 
 using namespace std;
-
 
 void test_ConvertBST() {
 	Test1();
@@ -206,7 +203,7 @@ bool helper(vector<pair<int, int>> arr, int i, int users, int count) {
 int main(int argc, char **argv) {
 	cout << "Test Cpp Project: " << endl;
 
-
+	// test_thread();
 
 	return 0;
 }

@@ -60,41 +60,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Atomic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/BlockingQueue.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/BoundedBlockingQueue.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Callback.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Condition.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Except.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Except.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Mutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Thread.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/Thread.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/ThreadLocal.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/ThreadLocalSingleton.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/ThreadPool.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recipes/thread/src/ThreadPool.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrent/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrent/hierarchical_mutex.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrent/hierarchical_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrent/thread_test.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recipes/thread/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Recipes/thread/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/AVL.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/AVL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BST.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BST.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/BinaryTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/ComplexList.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/ComplexList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/DFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DFS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/GraphUsing.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/GraphUsing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Heap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/KMP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/KMP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Sort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/SortedArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/SortedArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/StringUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/StringUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/Tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseCpp/myRegex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseCpp/mystrings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/bd.h" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/bd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/tt.h" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/tt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/tt2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/tt2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/tx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Campus/tx.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TestProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/JSON/leptjson_test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/JSON/leptjson_test.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Recipes/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Recipes/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Recipes/Recipes.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Recipes/Recipes.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TestProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TestProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/l1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/DP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/DP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/DP2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/DP2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/Pack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/Pack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet100.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet100.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet120.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet120.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet40.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet40.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet60.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet60.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leet80.h" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/leet80.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/JSON/tutorial01/cmake-build-debug/" />
@@ -108,56 +125,59 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipes/thread/src/CMakeLists.txt">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="6" column="206" selection-start-line="6" selection-start-column="206" selection-end-line="6" selection-end-column="206" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Callback.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Callback.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="63">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
-                <element signature="e#108#129#0" expanded="true" />
-                <element signature="e#178#212#0" expanded="true" />
+                <element signature="e#818#894#0" />
+                <element signature="e#896#1340#0" />
+                <element signature="e#1342#1533#0" />
+                <element signature="e#1535#1743#0" />
+                <element signature="e#1745#2184#0" />
+                <element signature="e#2186#2583#0" />
+                <element signature="e#2585#3381#0" />
+                <element signature="e#3409#3474#0" />
+                <element signature="e#3450#3762#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockingQueue.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipes/thread/src/BlockingQueue.h">
+      <file leaf-file-name="thread_test.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Concurrent/thread_test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="460">
+              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
               <folding>
                 <element signature="e#0#2#0" />
-                <element signature="e#232#282#0" />
-                <element signature="e#274#317#1" />
-                <element signature="e#393#422#0" />
-                <element signature="e#502#519#0" />
-                <element signature="e#700#729#0" />
+                <element signature="e#154#223#0" />
+                <element signature="e#226#305#0" />
+                <element signature="e#311#517#1" />
+                <element signature="e#382#496#0" />
+                <element signature="e#559#818#1" />
+                <element signature="e#658#711#0" />
+                <element signature="e#821#846#0" />
+                <element signature="e#892#966#0" />
+                <element signature="e#822#846#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoundedBlockingQueue.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Recipes/thread/src/BoundedBlockingQueue.h">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-              <folding>
-                <element signature="e#132#154#0" expanded="true" />
-                <element signature="e#296#308#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Concurrent/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -184,45 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algorithm/GraphUsing.h" />
-        <option value="$PROJECT_DIR$/leetcode/leet120.h" />
-        <option value="$PROJECT_DIR$/leetcode/DP.h" />
-        <option value="$PROJECT_DIR$/leetcode/DP2.h" />
-        <option value="$PROJECT_DIR$/Algorithm/Graph.h" />
-        <option value="$PROJECT_DIR$/Algorithm/KMP.h" />
-        <option value="$PROJECT_DIR$/leetcode/leet60.h" />
-        <option value="$PROJECT_DIR$/leetcode/leet40.h" />
-        <option value="$PROJECT_DIR$/campus/bd.h" />
-        <option value="$PROJECT_DIR$/campus/tx.h" />
-        <option value="$PROJECT_DIR$/Algorithm/DFS.h" />
-        <option value="$PROJECT_DIR$/leetcode/Pack.h" />
-        <option value="$PROJECT_DIR$/campus/tt.h" />
-        <option value="$PROJECT_DIR$/campus/tt2.h" />
-        <option value="$PROJECT_DIR$/learn/l1.h" />
-        <option value="$PROJECT_DIR$/BaseCpp/myRegex.h" />
-        <option value="$PROJECT_DIR$/back.cpp" />
-        <option value="$PROJECT_DIR$/Algorithm/Sort.h" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/test.cpp" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.cpp" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.h" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/test.c" />
-        <option value="$PROJECT_DIR$/JSON/tutorial01/leptjson.c" />
-        <option value="$PROJECT_DIR$/JSON/src/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Recipes/thread/README.md" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Expection.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Expect.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Expect.h" />
-        <option value="$PROJECT_DIR$/JSON/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/JSON/test.c" />
-        <option value="$PROJECT_DIR$/Recipes/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Except.cpp" />
-        <option value="$PROJECT_DIR$/Recipes/thread/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Except.h" />
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Atomic.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/Thread.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/Thread.cpp" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/Mutex.h" />
@@ -235,11 +216,52 @@
         <option value="$PROJECT_DIR$/Recipes/thread/src/BlockingQueue.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/BoundedBlockingQueue.h" />
+        <option value="$PROJECT_DIR$/thread_test.h" />
+        <option value="$PROJECT_DIR$/hierarhical_mutex.cpp" />
+        <option value="$PROJECT_DIR$/hierarchical_mutex.h" />
+        <option value="$PROJECT_DIR$/Algorithm/AVL.h" />
+        <option value="$PROJECT_DIR$/Algorithm/BinaryTree.h" />
+        <option value="$PROJECT_DIR$/Algorithm/BST.h" />
+        <option value="$PROJECT_DIR$/Algorithm/ComplexList.h" />
+        <option value="$PROJECT_DIR$/Algorithm/DFS.h" />
+        <option value="$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp" />
+        <option value="$PROJECT_DIR$/Algorithm/Graph.h" />
+        <option value="$PROJECT_DIR$/Algorithm/GraphUsing.h" />
+        <option value="$PROJECT_DIR$/Algorithm/Heap.h" />
+        <option value="$PROJECT_DIR$/Algorithm/KMP.h" />
+        <option value="$PROJECT_DIR$/Algorithm/List.h" />
+        <option value="$PROJECT_DIR$/Algorithm/queue.h" />
+        <option value="$PROJECT_DIR$/Algorithm/Sort.h" />
+        <option value="$PROJECT_DIR$/Algorithm/SortedArray.h" />
+        <option value="$PROJECT_DIR$/Algorithm/StringUtils.h" />
+        <option value="$PROJECT_DIR$/Algorithm/SubStructureInTree.h" />
+        <option value="$PROJECT_DIR$/Algorithm/Tree.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet20.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/hierarchical_mutex.cpp" />
+        <option value="$PROJECT_DIR$/campus/bd.h" />
+        <option value="$PROJECT_DIR$/campus/tt.h" />
+        <option value="$PROJECT_DIR$/campus/tt2.h" />
+        <option value="$PROJECT_DIR$/campus/tx.h" />
+        <option value="$PROJECT_DIR$/leetcode/DP.h" />
+        <option value="$PROJECT_DIR$/leetcode/DP2.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet60.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet40.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet80.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet100.h" />
+        <option value="$PROJECT_DIR$/leetcode/leet120.h" />
+        <option value="$PROJECT_DIR$/leetcode/Pack.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Concurrent/hierarchical_mutex.h" />
+        <option value="$PROJECT_DIR$/Concurrent/hierarchical_mutex.cpp" />
+        <option value="$PROJECT_DIR$/Concurrent/thread_test.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="396" />
+    <option name="y" value="33" />
     <option name="width" value="1095" />
     <option name="height" value="1080" />
   </component>
@@ -277,20 +299,7 @@
             <path>
               <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipes" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview-cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipes" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,6 +334,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Concurrent" />
       <recent name="$PROJECT_DIR$/JSON" />
     </key>
   </component>
@@ -366,12 +376,12 @@
       <workItem from="1534644569243" duration="15663000" />
       <workItem from="1535268865640" duration="133790000" />
       <workItem from="1539176051831" duration="14000" />
-      <workItem from="1539176086697" duration="13828000" />
+      <workItem from="1539176086697" duration="24465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="491200000" />
+    <option name="totallyTimeSpent" value="501837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,16 +393,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1095" height="1080" extended-state="0" />
+    <frame x="396" y="33" width="1095" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13314712" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24487896" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285273" />
-      <window_info active="true" anchor="bottom" id="CMake" order="7" visible="true" weight="0.32768923" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" weight="0.26494023" />
+      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.32768923" />
       <window_info anchor="bottom" id="TeamCity" order="7" weight="0.3285273" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.502338" side_tool="true" weight="0.48197734" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285273" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49658704" weight="0.36560246" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49658704" weight="0.36553785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -402,7 +413,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" weight="0.62409884" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.60350156" />
@@ -437,13 +447,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/leetcode/leet40.h</url>
-          <line>333</line>
+          <url>file://$PROJECT_DIR$/Leetcode/leet40.h</url>
+          <line>334</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/leetcode/leet40.h</url>
-          <line>509</line>
+          <url>file://$PROJECT_DIR$/Leetcode/leet40.h</url>
+          <line>510</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
@@ -507,328 +517,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BaseCpp/mystrings.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="147" column="37" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaseCpp/myRegex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/Sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/Pack.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists11.txt" />
-    <entry file="file:///usr/include/assert.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1892" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/sys/cdefs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="330" column="8" lean-forward="true" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/stdlib.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/math.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn/l1.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1569">
-          <caret line="249" selection-start-line="249" selection-end-line="249" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/src/leptjson.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/src/cmake-build-debug/CMakeCache.txt" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Expection.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Expection.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/src/leptjson.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="326" column="79" lean-forward="true" selection-start-line="326" selection-start-column="79" selection-end-line="326" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#686#764#0" />
-            <element signature="e#780#1163#0" />
-            <element signature="e#1165#1290#0" />
-            <element signature="e#1292#1414#0" />
-            <element signature="e#1496#1706#0" />
-            <element signature="e#1708#2538#0" />
-            <element signature="e#2540#2902#0" />
-            <element signature="e#2904#3268#0" />
-            <element signature="e#3270#3772#0" />
-            <element signature="e#3774#5541#0" />
-            <element signature="e#5543#5994#0" />
-            <element signature="e#5996#6478#0" />
-            <element signature="e#6560#6666#0" />
-            <element signature="e#6668#6777#0" />
-            <element signature="e#6779#6880#0" />
-            <element signature="e#6882#7028#0" />
-            <element signature="e#7030#7131#0" />
-            <element signature="e#7133#7249#0" />
-            <element signature="e#7251#7371#0" />
-            <element signature="e#7373#7632#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Expect.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#818#894#0" />
-            <element signature="e#896#1340#0" />
-            <element signature="e#1342#1533#0" />
-            <element signature="e#1535#1743#0" />
-            <element signature="e#1745#2184#0" />
-            <element signature="e#2186#2583#0" />
-            <element signature="e#2585#3381#0" />
-            <element signature="e#3383#3448#0" />
-            <element signature="e#3450#3762#0" />
-            <element signature="e#3765#3921#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/AVL.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Expect.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/tpc/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Atomic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#185#879#0" />
-            <element signature="e#179#233#0" />
-            <element signature="e#224#274#1" />
-            <element signature="e#319#343#0" />
-            <element signature="e#452#479#0" />
-            <element signature="e#525#552#0" />
-            <element signature="e#525#555#0" />
-            <element signature="e#638#662#0" />
-            <element signature="e#681#708#0" />
-            <element signature="e#732#766#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/boost/core/noncopyable.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Except.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#64#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Except.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#41#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Thread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#2#0" />
-            <element signature="e#215#290#0" />
-            <element signature="e#236#288#0" />
-            <element signature="e#317#576#0" />
-            <element signature="e#365#386#0" />
-            <element signature="e#441#464#0" />
-            <element signature="e#540#574#2" />
-            <element signature="e#571#603#0" />
-            <element signature="e#742#766#1" />
-            <element signature="e#889#1237#0" />
-            <element signature="e#1240#1267#0" />
-            <element signature="e#1674#1814#0" />
-            <element signature="e#1843#1873#0" />
-            <element signature="e#1950#1989#0" />
-            <element signature="e#2013#2053#0" />
-            <element signature="e#2116#2142#0" />
-            <element signature="e#2349#2374#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Mutex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding>
-            <element signature="e#102#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/sys/_pthread/_pthread_cond_t.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/sys/_types/_timespec.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Thread.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -897,20 +585,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/BoundedBlockingQueue.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="6" column="206" selection-start-line="6" selection-start-column="206" selection-end-line="6" selection-end-column="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Callback.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="1416">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding>
-            <element signature="e#108#129#0" expanded="true" />
-            <element signature="e#178#212#0" expanded="true" />
+            <element signature="e#132#154#0" expanded="true" />
+            <element signature="e#296#308#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,13 +611,676 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/BoundedBlockingQueue.h">
+    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/Callback.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        <state relative-caret-position="590">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
-            <element signature="e#132#154#0" expanded="true" />
-            <element signature="e#296#308#0" expanded="true" />
+            <element signature="e#108#129#0" expanded="true" />
+            <element signature="e#178#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="6" column="206" selection-start-line="6" selection-start-column="206" selection-end-line="6" selection-end-column="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hierarhical_mutex.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include/limits.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__mutex_base">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaseCpp/myRegex.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/AVL.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
+          <folding>
+            <element signature="e#144#2549#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="271" column="1" selection-start-line="271" selection-start-column="1" selection-end-line="271" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#190#413#1" />
+            <element signature="e#417#613#0" />
+            <element signature="e#615#910#0" />
+            <element signature="e#912#1103#0" />
+            <element signature="e#1105#1647#0" />
+            <element signature="e#1649#1891#0" />
+            <element signature="e#1893#2140#0" />
+            <element signature="e#2142#2381#0" />
+            <element signature="e#2383#2627#0" />
+            <element signature="e#2629#3109#0" />
+            <element signature="e#3111#3134#0" />
+            <element signature="e#3145#3222#0" />
+            <element signature="e#3145#3453#0" />
+            <element signature="e#3456#3915#0" />
+            <element signature="e#3917#3991#0" />
+            <element signature="e#4087#4102#0" />
+            <element signature="e#4087#4471#0" />
+            <element signature="e#4473#4695#0" />
+            <element signature="e#4697#5018#0" />
+            <element signature="e#5043#5081#0" />
+            <element signature="e#5043#5460#0" />
+            <element signature="e#5462#5622#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="246" column="1" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#156#522#0" />
+            <element signature="e#524#790#0" />
+            <element signature="e#792#959#0" />
+            <element signature="e#961#1109#0" />
+            <element signature="e#1111#1257#0" />
+            <element signature="e#1259#2018#0" />
+            <element signature="e#2089#2594#0" />
+            <element signature="e#2596#2925#0" />
+            <element signature="e#2928#3446#0" />
+            <element signature="e#3448#3641#0" />
+            <element signature="e#3643#3880#0" />
+            <element signature="e#3883#4454#0" />
+            <element signature="e#4457#4961#0" />
+            <element signature="e#4964#5468#0" />
+            <element signature="e#5470#5596#0" />
+            <element signature="e#5598#5649#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/ComplexList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#134#244#1" />
+            <element signature="e#247#415#0" />
+            <element signature="e#417#593#0" />
+            <element signature="e#595#1010#0" />
+            <element signature="e#1023#1037#0" />
+            <element signature="e#1023#1348#0" />
+            <element signature="e#1350#1611#0" />
+            <element signature="e#1613#2106#0" />
+            <element signature="e#2108#2238#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/DFS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#226#722#0" />
+            <element signature="e#724#898#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/DupArrayNoEdit.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#39#110#0" />
+            <element signature="e#39#346#0" />
+            <element signature="e#348#916#0" />
+            <element signature="e#402#420#0" />
+            <element signature="e#918#943#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#190#307#1" />
+            <element signature="e#427#658#0" />
+            <element signature="e#660#752#0" />
+            <element signature="e#754#1022#0" />
+            <element signature="e#1024#1124#0" />
+            <element signature="e#1369#2075#0" />
+            <element signature="e#2077#2928#0" />
+            <element signature="e#2930#2989#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/GraphUsing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#187#416#0" />
+            <element signature="e#735#1186#0" />
+            <element signature="e#1188#1488#0" />
+            <element signature="e#1490#1749#0" />
+            <element signature="e#1751#2205#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Heap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#207#553#0" />
+            <element signature="e#555#774#0" />
+            <element signature="e#776#857#0" />
+            <element signature="e#859#957#0" />
+            <element signature="e#959#1028#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/KMP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#220#305#0" />
+            <element signature="e#220#826#0" />
+            <element signature="e#828#1470#0" />
+            <element signature="e#1472#1680#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/queue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#215#345#0" />
+            <element signature="e#346#1028#0" />
+            <element signature="e#1059#1872#1" />
+            <element signature="e#1127#1405#0" />
+            <element signature="e#1408#1609#0" />
+            <element signature="e#1612#1731#0" />
+            <element signature="e#1743#1792#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="351" column="1" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#193#697#0" />
+            <element signature="e#699#832#0" />
+            <element signature="e#833#1712#0" />
+            <element signature="e#1374#1697#0" />
+            <element signature="e#1714#2051#0" />
+            <element signature="e#2053#2401#0" />
+            <element signature="e#2403#2743#0" />
+            <element signature="e#2745#2962#0" />
+            <element signature="e#2964#3197#0" />
+            <element signature="e#3209#3415#0" />
+            <element signature="e#3416#3832#0" />
+            <element signature="e#3834#3974#0" />
+            <element signature="e#3976#4332#0" />
+            <element signature="e#4334#4550#0" />
+            <element signature="e#4552#4977#0" />
+            <element signature="e#4979#5099#0" />
+            <element signature="e#5111#5190#0" />
+            <element signature="e#5111#6053#0" />
+            <element signature="e#6055#6180#0" />
+            <element signature="e#6182#6345#0" />
+            <element signature="e#6347#6820#0" />
+            <element signature="e#6822#7018#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/SortedArray.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="181" column="1" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#183#216#0" />
+            <element signature="e#217#761#0" />
+            <element signature="e#763#1285#0" />
+            <element signature="e#1288#1593#0" />
+            <element signature="e#1595#1859#0" />
+            <element signature="e#1861#1978#0" />
+            <element signature="e#1988#2067#0" />
+            <element signature="e#1988#2507#0" />
+            <element signature="e#2517#2582#0" />
+            <element signature="e#2517#2972#0" />
+            <element signature="e#2974#3007#0" />
+            <element signature="e#3026#3091#0" />
+            <element signature="e#3026#3577#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/StringUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#113#317#0" />
+            <element signature="e#339#377#0" />
+            <element signature="e#339#685#0" />
+            <element signature="e#687#777#0" />
+            <element signature="e#779#942#0" />
+            <element signature="e#944#1154#0" />
+            <element signature="e#1165#1227#0" />
+            <element signature="e#1165#1677#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/SubStructureInTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#183#218#0" />
+            <element signature="e#183#358#0" />
+            <element signature="e#360#661#0" />
+            <element signature="e#663#1022#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/Tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#161#250#1" />
+            <element signature="e#253#368#0" />
+            <element signature="e#370#496#0" />
+            <element signature="e#498#920#0" />
+            <element signature="e#922#1164#0" />
+            <element signature="e#1166#1404#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet20.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#818#894#0" />
+            <element signature="e#896#1340#0" />
+            <element signature="e#1342#1533#0" />
+            <element signature="e#1535#1743#0" />
+            <element signature="e#1745#2184#0" />
+            <element signature="e#2186#2583#0" />
+            <element signature="e#2585#3381#0" />
+            <element signature="e#3409#3474#0" />
+            <element signature="e#3450#3762#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campus/bd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campus/tt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#227#345#1" />
+            <element signature="e#348#376#0" />
+            <element signature="e#395#452#0" />
+            <element signature="e#395#544#0" />
+            <element signature="e#546#1523#0" />
+            <element signature="e#1525#2088#0" />
+            <element signature="e#2090#2884#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campus/tt2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#229#357#0" />
+            <element signature="e#229#809#0" />
+            <element signature="e#811#1277#0" />
+            <element signature="e#1279#1622#0" />
+            <element signature="e#1624#1676#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campus/tx.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#175#2989#0" />
+            <element signature="e#176#634#0" />
+            <element signature="e#636#1227#0" />
+            <element signature="e#1310#1770#0" />
+            <element signature="e#1772#2970#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/DP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#138#909#0" />
+            <element signature="e#911#1578#0" />
+            <element signature="e#1580#2206#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/DP2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#140#2891#0" />
+            <element signature="e#328#510#0" />
+            <element signature="e#512#816#0" />
+            <element signature="e#818#1187#0" />
+            <element signature="e#1228#2059#0" />
+            <element signature="e#1228#2803#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet60.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#203#5607#0" />
+            <element signature="e#267#400#1" />
+            <element signature="e#403#944#0" />
+            <element signature="e#946#1540#0" />
+            <element signature="e#1542#1636#0" />
+            <element signature="e#1638#2155#0" />
+            <element signature="e#2157#2220#0" />
+            <element signature="e#2222#2747#0" />
+            <element signature="e#2750#3018#0" />
+            <element signature="e#3020#3687#0" />
+            <element signature="e#3689#3795#0" />
+            <element signature="e#3841#4237#0" />
+            <element signature="e#4239#4288#0" />
+            <element signature="e#4290#4416#0" />
+            <element signature="e#4418#4516#0" />
+            <element signature="e#4518#4668#0" />
+            <element signature="e#4670#5201#0" />
+            <element signature="e#5203#5349#0" />
+            <element signature="e#5351#5584#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet40.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="636" column="4" lean-forward="true" selection-start-line="636" selection-start-column="4" selection-end-line="636" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#285#727#0" />
+            <element signature="e#729#1065#0" />
+            <element signature="e#1067#1927#0" />
+            <element signature="e#1929#2427#0" />
+            <element signature="e#2429#2988#0" />
+            <element signature="e#2990#3532#0" />
+            <element signature="e#3534#4061#0" />
+            <element signature="e#4063#4844#0" />
+            <element signature="e#4846#5020#0" />
+            <element signature="e#5022#5769#0" />
+            <element signature="e#5771#5878#0" />
+            <element signature="e#5880#6215#0" />
+            <element signature="e#6217#6330#0" />
+            <element signature="e#6436#7080#0" />
+            <element signature="e#7082#7144#0" />
+            <element signature="e#7146#8391#0" />
+            <element signature="e#8393#8482#0" />
+            <element signature="e#8484#8841#0" />
+            <element signature="e#8843#9658#0" />
+            <element signature="e#9660#9727#0" />
+            <element signature="e#9788#9990#0" />
+            <element signature="e#9992#10127#0" />
+            <element signature="e#10129#10654#0" />
+            <element signature="e#10656#10958#0" />
+            <element signature="e#10960#11239#0" />
+            <element signature="e#11242#11512#0" />
+            <element signature="e#11514#11686#0" />
+            <element signature="e#11688#11871#0" />
+            <element signature="e#11873#12013#0" />
+            <element signature="e#12029#12382#0" />
+            <element signature="e#12384#12978#0" />
+            <element signature="e#12981#13047#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet80.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#178#822#0" />
+            <element signature="e#824#1322#0" />
+            <element signature="e#1324#1662#0" />
+            <element signature="e#1664#1928#0" />
+            <element signature="e#1930#2041#0" />
+            <element signature="e#2043#2497#0" />
+            <element signature="e#2499#2937#0" />
+            <element signature="e#2939#3102#0" />
+            <element signature="e#3104#3142#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet100.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="262" column="1" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#179#562#0" />
+            <element signature="e#564#1457#0" />
+            <element signature="e#1459#1760#0" />
+            <element signature="e#1762#2562#0" />
+            <element signature="e#2564#2840#0" />
+            <element signature="e#2842#3283#0" />
+            <element signature="e#3285#3665#0" />
+            <element signature="e#3667#4011#0" />
+            <element signature="e#4013#4068#0" />
+            <element signature="e#4070#4962#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/leet120.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="263" column="1" selection-start-line="263" selection-start-column="1" selection-end-line="263" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#209#328#1" />
+            <element signature="e#332#1406#1" />
+            <element signature="e#358#394#0" />
+            <element signature="e#397#514#0" />
+            <element signature="e#517#649#0" />
+            <element signature="e#652#903#0" />
+            <element signature="e#906#1404#0" />
+            <element signature="e#1409#2263#0" />
+            <element signature="e#2265#2824#0" />
+            <element signature="e#2826#3128#0" />
+            <element signature="e#3131#3445#0" />
+            <element signature="e#3447#3557#0" />
+            <element signature="e#3559#3636#0" />
+            <element signature="e#3638#4069#0" />
+            <element signature="e#4071#4136#0" />
+            <element signature="e#4138#4811#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leetcode/Pack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#201#856#0" />
+            <element signature="e#858#1534#0" />
+            <element signature="e#1580#1696#0" />
+            <element signature="e#1698#1815#0" />
+            <element signature="e#1817#2208#0" />
+            <element signature="e#2210#2705#0" />
+            <element signature="e#2707#3184#0" />
+            <element signature="e#3186#3580#0" />
+            <element signature="e#3582#4179#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/hierarchical_mutex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#147#1340#0" />
+            <element signature="e#129#1108#1" />
+            <element signature="e#330#485#0" />
+            <element signature="e#488#628#0" />
+            <element signature="e#746#849#0" />
+            <element signature="e#852#954#0" />
+            <element signature="e#957#1105#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/hierarchical_mutex.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#181#210#0" />
+            <element signature="e#209#234#0" />
+            <element signature="e#374#418#0" />
+            <element signature="e#351#465#0" />
+            <element signature="e#501#521#0" />
+            <element signature="e#708#770#0" />
+            <element signature="e#837#898#0" />
+            <element signature="e#644#664#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/thread_test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" />
+            <element signature="e#154#223#0" />
+            <element signature="e#226#305#0" />
+            <element signature="e#311#517#1" />
+            <element signature="e#382#496#0" />
+            <element signature="e#559#818#1" />
+            <element signature="e#658#711#0" />
+            <element signature="e#821#846#0" />
+            <element signature="e#892#966#0" />
+            <element signature="e#822#846#0" />
           </folding>
         </state>
       </provider>

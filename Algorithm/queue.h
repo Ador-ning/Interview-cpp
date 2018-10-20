@@ -12,6 +12,7 @@
 
 using namespace std;
 
+namespace Algorithm {
 //面试52：队列的最大值
 
 /*
@@ -20,82 +21,82 @@ using namespace std;
  * 滑动窗口，它们的最大值分别为{4, 4, 6, 6, 6, 5}
  */
 // 解法1
-vector<int> MaxInWindows(const vector<int> &num, unsigned int size) {
-	vector<int> maxInWindows;
+	vector<int> MaxInWindows(const vector<int> &num, unsigned int size) {
+		vector<int> maxInWindows;
 
-	if (num.size() >= size && size >= 1) {
-		deque<int> index;
+		if (num.size() >= size && size >= 1) {
+			deque<int> index;
 
-		for (unsigned int i = 0; i < size; ++i) {
-			while (!index.empty() && num[i] >= num[index.back()])
-				index.pop_back();
+			for (unsigned int i = 0; i < size; ++i) {
+				while (!index.empty() && num[i] >= num[index.back()])
+					index.pop_back();
 
-			index.push_back(i);
-		}
+				index.push_back(i);
+			}
 
-		for (unsigned int i = size; i < num.size(); i++) {
+			for (unsigned int i = size; i < num.size(); i++) {
+				maxInWindows.push_back(num[index.front()]);
+
+				while (!index.empty() && num[i] >= num[index.back()])
+					index.pop_back();
+				if (!index.empty() && index.front() <= (int) (i - size))
+					index.pop_front();
+
+				index.push_back(i);
+			}
 			maxInWindows.push_back(num[index.front()]);
-
-			while (!index.empty() && num[i] >= num[index.back()])
-				index.pop_back();
-			if (!index.empty() && index.front() <= (int) (i - size))
-				index.pop_front();
-
-			index.push_back(i);
 		}
-		maxInWindows.push_back(num[index.front()]);
-	}
 
-	return maxInWindows;
-}
+		return maxInWindows;
+	}
 
 
 // 解法2
-template<typename T>
-class QueueWithMax {
-public:
-	QueueWithMax() : currentIndex(0) {}
+	template<typename T>
+	class QueueWithMax {
+	public:
+		QueueWithMax() : currentIndex(0) {}
 
-	// push bach
-	void push_back(T number) {
-		//
-		while (!maximums.empty() && number >= maximums.back().number)
-			maximums.pop_back();
+		// push bach
+		void push_back(T number) {
+			//
+			while (!maximums.empty() && number >= maximums.back().number)
+				maximums.pop_back();
 
-		InternalData internalData = {number, currentIndex};
-		data.push_back(internalData);
-		maximums.push_back(internalData);
+			InternalData internalData = {number, currentIndex};
+			data.push_back(internalData);
+			maximums.push_back(internalData);
 
-		++currentIndex;
-	}
+			++currentIndex;
+		}
 
-	// pop front
-	void pop_front() {
-		if (maximums.empty())
-			throw new exception("queue is empty.");
+		// pop front
+		void pop_front() {
+			if (maximums.empty())
+				throw new exception("queue is empty.");
 
-		if (maximums.front().index == data.front().index)
-			maximums.pop_front();
+			if (maximums.front().index == data.front().index)
+				maximums.pop_front();
 
-		data.pop_front();
-	}
+			data.pop_front();
+		}
 
-	T max() const {
-		if (maximums.empty())
-			throw new exception("queue is empty.");
-		return maximums.front().number;
-	}
+		T max() const {
+			if (maximums.empty())
+				throw new exception("queue is empty.");
+			return maximums.front().number;
+		}
 
-private:
-	struct InternalData {
-		T number;
-		int index;
+	private:
+		struct InternalData {
+			T number;
+			int index;
+		};
+		deque<InternalData> data;
+		deque<InternalData> maximums;
+		int currentIndex;
 	};
-	deque<InternalData> data;
-	deque<InternalData> maximums;
-	int currentIndex;
-};
 
 // Test
-
+}
 #endif //INTERVIEW_CPP_QUEUE_H

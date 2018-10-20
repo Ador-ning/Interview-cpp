@@ -342,6 +342,24 @@ clean: Recipes/thread/src/CMakeFiles/thread_src.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory Concurrent
+
+# Convenience name for "all" pass in the directory.
+Concurrent/all:
+
+.PHONY : Concurrent/all
+
+# Convenience name for "clean" pass in the directory.
+Concurrent/clean:
+
+.PHONY : Concurrent/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Concurrent/preinstall:
+
+.PHONY : Concurrent/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
