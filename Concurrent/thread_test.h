@@ -24,7 +24,7 @@ namespace Concurrent {
 
 		void operator()() const { // operator ovveride
 			for (unsigned j = 0; j < 100; ++j) {
-				do_something(i++);
+				do_something(j++);
 			}
 		}
 

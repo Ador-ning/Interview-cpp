@@ -162,6 +162,32 @@ thread_src/fast:
 	$(MAKE) -f Recipes/thread/src/CMakeFiles/thread_src.dir/build.make Recipes/thread/src/CMakeFiles/thread_src.dir/build
 .PHONY : thread_src/fast
 
+#=============================================================================
+# Target rules for targets named thread
+
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	$(MAKE) -f Concurrent/CMakeFiles/thread.dir/build.make Concurrent/CMakeFiles/thread.dir/build
+.PHONY : thread/fast
+
+#=============================================================================
+# Target rules for targets named thread_test
+
+# Build rule for target.
+thread_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread_test
+.PHONY : thread_test
+
+# fast build rule for target.
+thread_test/fast:
+	$(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/build
+.PHONY : thread_test/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -201,6 +227,8 @@ help:
 	@echo "... leptjson_test"
 	@echo "... leptjson"
 	@echo "... thread_src"
+	@echo "... thread"
+	@echo "... thread_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/Interview-cpp/Concurrent/one-off_event.h
+future
+-
+iostream
+-
+
+/Users/ning/Interview-cpp/Concurrent/test.cpp
+iostream
+-
+one-off_event.h
+/Users/ning/Interview-cpp/Concurrent/one-off_event.h
+

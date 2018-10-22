@@ -243,6 +243,9 @@ leptjson_test_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp/JSON/src
 //Value Computed by CMake
 thread_BINARY_DIR:STATIC=/Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src
 
+//Dependencies for target
+thread_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 thread_SOURCE_DIR:STATIC=/Users/ning/Interview-cpp/Recipes/thread/src
 

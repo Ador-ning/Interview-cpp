@@ -20,3 +20,5 @@
 /Users/ning/Interview-cpp/cmake-build-debug/Recipes/thread/src/CMakeFiles/thread_src.dir
 /Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/rebuild_cache.dir
 /Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/thread.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/thread_test.dir

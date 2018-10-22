@@ -110,6 +110,90 @@ depend:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Concurrent/CMakeFiles/thread.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Concurrent/CMakeFiles/thread.dir/rule
+.PHONY : Concurrent/CMakeFiles/thread.dir/rule
+
+# Convenience name for target.
+thread: Concurrent/CMakeFiles/thread.dir/rule
+
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread.dir/build.make Concurrent/CMakeFiles/thread.dir/build
+.PHONY : thread/fast
+
+# Convenience name for target.
+Concurrent/CMakeFiles/thread_test.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Concurrent/CMakeFiles/thread_test.dir/rule
+.PHONY : Concurrent/CMakeFiles/thread_test.dir/rule
+
+# Convenience name for target.
+thread_test: Concurrent/CMakeFiles/thread_test.dir/rule
+
+.PHONY : thread_test
+
+# fast build rule for target.
+thread_test/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/build
+.PHONY : thread_test/fast
+
+hierarchical_mutex.o: hierarchical_mutex.cpp.o
+
+.PHONY : hierarchical_mutex.o
+
+# target to build an object file
+hierarchical_mutex.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread.dir/build.make Concurrent/CMakeFiles/thread.dir/hierarchical_mutex.cpp.o
+.PHONY : hierarchical_mutex.cpp.o
+
+hierarchical_mutex.i: hierarchical_mutex.cpp.i
+
+.PHONY : hierarchical_mutex.i
+
+# target to preprocess a source file
+hierarchical_mutex.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread.dir/build.make Concurrent/CMakeFiles/thread.dir/hierarchical_mutex.cpp.i
+.PHONY : hierarchical_mutex.cpp.i
+
+hierarchical_mutex.s: hierarchical_mutex.cpp.s
+
+.PHONY : hierarchical_mutex.s
+
+# target to generate assembly for a file
+hierarchical_mutex.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread.dir/build.make Concurrent/CMakeFiles/thread.dir/hierarchical_mutex.cpp.s
+.PHONY : hierarchical_mutex.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +202,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... thread"
+	@echo "... thread_test"
+	@echo "... hierarchical_mutex.o"
+	@echo "... hierarchical_mutex.i"
+	@echo "... hierarchical_mutex.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
