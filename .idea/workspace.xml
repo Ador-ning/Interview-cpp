@@ -62,20 +62,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01c3fb04-7db5-4005-8fb0-253259ed5105" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Concurrent/one-off_event.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrent/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrent/WaitTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Concurrent/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrent/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrent/thread_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrent/thread_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Concurrent/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Concurrent/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Concurrent/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Concurrent/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/src/CMakeFiles/thread_src.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Recipes/thread/src/CMakeFiles/thread_src.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/interview-cpp.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -94,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/Concurrent/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
+              <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -111,30 +100,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one-off_event.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Concurrent/one-off_event.h">
+      <file leaf-file-name="WaitTime.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Concurrent/WaitTime.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="187" column="2" selection-start-line="187" selection-start-column="2" selection-end-line="187" selection-end-column="2" />
+            <state relative-caret-position="841">
+              <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
               <folding>
-                <element signature="e#0#2#0" />
-                <element signature="e#118#135#0" expanded="true" />
-                <element signature="e#228#2579#0" />
-                <element signature="e#157#170#1" />
-                <element signature="e#169#210#0" />
-                <element signature="e#261#304#0" />
-                <element signature="e#357#377#1" />
-                <element signature="e#368#400#0" />
-                <element signature="e#489#518#1" />
-                <element signature="e#720#737#0" />
-                <element signature="e#249#279#0" />
-                <element signature="e#1675#1909#1" />
-                <element signature="e#1976#2079#0" />
-                <element signature="e#2082#2225#0" />
-                <element signature="e#2228#2530#0" />
-                <element signature="e#2574#2826#0" />
-                <element signature="e#3019#3771#0" />
-                <element signature="e#3774#3839#0" />
+                <element signature="e#108#124#0" expanded="true" />
+                <element signature="e#245#3370#0" />
+                <element signature="e#208#234#0" />
+                <element signature="e#208#702#0" />
+                <element signature="e#536#699#0" />
+                <element signature="e#1169#1192#0" />
+                <element signature="e#1512#1524#0" expanded="true" />
+                <element signature="e#1519#1603#0" />
+                <element signature="e#2245#2257#0" expanded="true" />
+                <element signature="e#2236#2300#0" />
+                <element signature="e#3013#3035#0" />
               </folding>
             </state>
           </provider>
@@ -164,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Recipes/thread/src/Condition.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/ThreadLocal.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/ThreadLocalSingleton.h" />
         <option value="$PROJECT_DIR$/Recipes/thread/src/ThreadPool.h" />
@@ -212,17 +193,18 @@
         <option value="$PROJECT_DIR$/Concurrent/hierarchical_mutex.h" />
         <option value="$PROJECT_DIR$/Concurrent/hierarchical_mutex.cpp" />
         <option value="$PROJECT_DIR$/Concurrent/thread_test.h" />
-        <option value="$PROJECT_DIR$/Concurrent/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Concurrent/test.cpp" />
         <option value="$PROJECT_DIR$/Concurrent/one-off_event.h" />
+        <option value="$PROJECT_DIR$/Concurrent/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Concurrent/WaitTime.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="740" />
-    <option name="y" value="49" />
-    <option name="width" value="1240" />
+    <option name="x" value="985" />
+    <option name="y" value="12" />
+    <option name="width" value="902" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -245,7 +227,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -279,7 +261,12 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="tutorial01" type="cbb8eebc:String" user="tutorial01" />
+              <item name="Interview-cpp" type="cbb8eebc:String" user="Interview-cpp" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Interview-cpp" type="cbb8eebc:String" user="Interview-cpp" />
+              <item name="Concurrent" type="cbb8eebc:String" user="Concurrent" />
             </path>
           </expand>
           <select />
@@ -340,12 +327,12 @@
       <workItem from="1534644569243" duration="15663000" />
       <workItem from="1535268865640" duration="133790000" />
       <workItem from="1539176051831" duration="14000" />
-      <workItem from="1539176086697" duration="33337000" />
+      <workItem from="1539176086697" duration="38653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510709000" />
+    <option name="totallyTimeSpent" value="516025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,12 +344,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="740" y="49" width="1240" height="1080" extended-state="0" />
+    <frame x="985" y="12" width="902" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06356413" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285273" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" visible="true" weight="0.4741036" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49766198" weight="0.4741036" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32768923" />
       <window_info anchor="bottom" id="TeamCity" order="7" weight="0.3285273" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.502338" side_tool="true" weight="0.48197734" />
@@ -481,16 +468,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Recipes/thread/src/ThreadPool.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="e#112#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recipes/thread/src/ThreadLocal.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1193,29 +1170,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrent/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Concurrent/hierarchical_mutex.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#41#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Concurrent/test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
             <element signature="e#41#60#0" expanded="true" />
           </folding>
         </state>
@@ -1230,11 +1190,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Concurrent/one-off_event.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="187" column="2" selection-start-line="187" selection-start-column="2" selection-end-line="187" selection-end-column="2" />
+        <state relative-caret-position="44">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="e#0#2#0" />
-            <element signature="e#118#135#0" expanded="true" />
             <element signature="e#228#2579#0" />
             <element signature="e#157#170#1" />
             <element signature="e#169#210#0" />
@@ -1244,6 +1203,7 @@
             <element signature="e#489#518#1" />
             <element signature="e#720#737#0" />
             <element signature="e#249#279#0" />
+            <element signature="e#1636#4464#0" />
             <element signature="e#1675#1909#1" />
             <element signature="e#1976#2079#0" />
             <element signature="e#2082#2225#0" />
@@ -1251,6 +1211,44 @@
             <element signature="e#2574#2826#0" />
             <element signature="e#3019#3771#0" />
             <element signature="e#3774#3839#0" />
+            <element signature="e#4292#4462#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="6" column="103" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Concurrent/WaitTime.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
+          <folding>
+            <element signature="e#108#124#0" expanded="true" />
+            <element signature="e#245#3370#0" />
+            <element signature="e#208#234#0" />
+            <element signature="e#208#702#0" />
+            <element signature="e#536#699#0" />
+            <element signature="e#1169#1192#0" />
+            <element signature="e#1512#1524#0" expanded="true" />
+            <element signature="e#1519#1603#0" />
+            <element signature="e#2245#2257#0" expanded="true" />
+            <element signature="e#2236#2300#0" />
+            <element signature="e#3013#3035#0" />
           </folding>
         </state>
       </provider>

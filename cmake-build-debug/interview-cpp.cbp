@@ -302,6 +302,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ning/Interview-cpp/Concurrent/WaitTime.h">
+			<Option target="thread"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/hierarchical_mutex.cpp">
 			<Option target="thread"/>
 		</Unit>
