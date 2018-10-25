@@ -3,12 +3,15 @@
 //
 
 #include <iostream>
-#include "one-off_event.h"
+#include "hierarchical_mutex.h"
+#include "Atomic.h"
+#include "WaitTime.h"
+#include "thread_test.h"
+#include "DataStructure.h"
 
 int main() {
 	std::cout << "Thread test :" << std::endl;
 
-	Concurrent::test_oneOffEvent1();
 
 	return 0;
 }

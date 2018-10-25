@@ -28,7 +28,7 @@ namespace Concurrent {
 		// 类型转换为 time_t
 
 		// 时延 duration
-		std::chrono::duration;
+		// std::chrono::duration;
 		std::chrono::milliseconds ms(54802);
 		std::chrono::seconds s = std::chrono::duration_cast<std::chrono::seconds>(ms); // 54s
 		/*
@@ -40,9 +40,9 @@ namespace Concurrent {
 		auto start = std::chrono::high_resolution_clock::now();
 		do_something();
 		auto stop = std::chrono::high_resolution_clock::now();
-		std::cout << "do_something() took " << std::chrono::duration<double, std::chrono::seconds>(stop - start).count()
-		          << " seconds" << std::endl;
 
+		//std::cout << "do_something() took " << std::chrono::duration<double, std::chrono::seconds>(stop - start).count()
+		//         << " seconds" << std::endl;
 	}
 
 	std::condition_variable cv;

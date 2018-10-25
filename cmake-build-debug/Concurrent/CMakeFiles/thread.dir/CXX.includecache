@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/Interview-cpp/Concurrent/hierarchical_mutex.cpp
+iostream
+-
+mutex
+-
+hierarchical_mutex.h
+/Users/ning/Interview-cpp/Concurrent/hierarchical_mutex.h
+
+/Users/ning/Interview-cpp/Concurrent/hierarchical_mutex.h
+thread
+-
+

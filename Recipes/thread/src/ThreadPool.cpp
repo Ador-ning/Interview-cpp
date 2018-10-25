@@ -42,7 +42,7 @@ void ThreadPool::stop() {
 
 void ThreadPool::run(const Task &f) {
 	if (threads_.empty()) {
-		task();
+		task();         //
 	} else {
 		MutexLockGuard lock(mutex_);
 		queue_.push_back(f);
