@@ -8,7 +8,8 @@
 #include <exception>
 #include <stack>
 #include <queue>
-#include <boost/thread/thread.hpp>
+#include <map>
+#include <algorithm>
 
 namespace Concurrent {
 	struct empty_stack : std::exception {
@@ -180,34 +181,63 @@ namespace Concurrent {
 		typedef Value mapped_type;
 		typedef Hash hash_type;
 
+		threadsafe_lookup_table(unsigned num_buckets = 19, Hash const &hasher_ = Hash()) :
+				buckets(num_buckets), hasher(hasher_) {
+			for (unsigned i = 0; i < num_buckets; ++i) {
+				buckets[i].reset(new bucket_type);
+			}
+		}
+
+		threadsafe_lookup_table(threadsafe_lookup_table const &) = delete;
+
+		threadsafe_lookup_table &operator=(threadsafe_lookup_table const &) = delete;
+
+		Value value_for(Key const &key, Value const &default_value = Value()) const {
+			return get_bucket(key).value_for(key, default_value);
+		}
+
+		void add_or_update_mapping(Key const &key, Value const &value) {
+			get_bucket(key).add_or_update_mapping(key, value);
+		}
+
+		void remove_mapping(Key const &key) {
+			get_bucket(key).remove_mapping(key);
+		}
+
+		std::map<Key, Value> get_map() const {
+			std::vector<std::unique_lock<std::mutex>> locks;
+
+			for (unsigned i = 0; i < buckets.size(); ++i) {
+				locks.push_back(std::unique_lock<std::mutex>(buckets[i].mutex));
+			}
+
+			std::map<Key, Value> res;
+
+			for (unsigned j = 0; j < buckets.size(); ++j) {
+				typename bucket_type::bucket_iterator it = buckets[j].data.begin();
+				for (; it != buckets[j].data.end(); ++it)
+					res.insert(*it);
+			}
+
+			return res;
+		}
+
 	private:
+
 		class bucket_type {
-		private:
+		public:
 			typedef std::pair<Key, Value> bucket_value;
 			typedef std::list<bucket_value> bucket_data;    // list
 			typedef typename bucket_data::iterator bucket_iterator;
 
-			bucket_data data;
-
-			mutable boost::shared_mutex mutex;
-
-			bucket_iterator find_entry_for(Key const &key) const {
-				return std::find_if(data.begin(), data.end(), [&](bucket_value const &item) {
-					return item.first == key;
-				});
-			}
-
-		public:
 			Value value_for(Key const &key, Value const &default_value) const {
-				boost::shared_lock<boost::shared_mutex> lock(mutex);
-
+				std::lock_guard<std::mutex> lock(mutex);
 				bucket_iterator const found_entry = find_entry_for(key);
 				return (found_entry == data.end()) ? default_value : found_entry->second;
 			}
 
 			void add_or_update_mapping(Key const &key, Value const &value) {
-
-				std::unique_lock<boost::shared_mutex> lock(mutex);
+				std::unique_lock<std::mutex> lock(mutex);
 				bucket_iterator const found_entry = find_entry_for(key);
 
 				if (data.end() == found_entry)
@@ -217,16 +247,28 @@ namespace Concurrent {
 			}
 
 			void remove_mapping(Key const &key) {
-				std::unique_lock<boost::shared_mutex> lock(mutex);
+				std::unique_lock<std::mutex> lock(mutex);
 				bucket_iterator const found_entry = find_entry_for(key);
 				if (found_entry != data.end())
 					data.erase(found_entry);
+			}
+
+		private:
+			bucket_data data;
+
+			mutable std::mutex mutex;
+
+			bucket_iterator find_entry_for(Key const &key) const {
+				return std::find_if(data.begin(), data.end(), [&](bucket_value const &item) {
+					return item.first == key;
+				});
 			}
 		};
 
 		std::vector<std::unique_ptr<bucket_type>> buckets;
 		Hash hasher;
 
+		// hash
 		bucket_type &get_bucket(Key const &key) const {
 			std::size_t const bucket_index = hasher(key) % buckets.size();
 			return *buckets[bucket_index];
@@ -234,7 +276,86 @@ namespace Concurrent {
 	};
 
 
-}
+	template<typename T>
+	class threadsafe_list {
+	public:
+		threadsafe_list() {}
+
+		~threadsafe_list() {}    // new data
+
+		threadsafe_list(threadsafe_list const &) = delete;
+
+		threadsafe_list &operator=(threadsafe_list const &) = delete;
+
+		void push_front(T const &value) {
+			std::unique_ptr<node> new_node(new node(value));
+			std::lock_guard<std::mutex> lock(head.m);
+			new_node->next = std::move(head.next);
+			head.next = std::move(new_node);
+		}
+
+		template<typename Function>
+		void for_each(Function f) {
+			node *current = &head;
+			std::unique_lock<std::mutex> lock(head.m);
+			while (node *const next = current->next.get()) {
+				std::unique_lock<std::mutex> next_lock(next->m);
+				lock.unlock();
+				current = next;
+				lock = std::move(next_lock);
+			}
+		}
+
+		template<typename Predicate>
+		std::shared_ptr<T> find_first_if(Predicate p) {
+			node *current = &head;
+
+			std::unique_lock<std::mutex> lock(head.m);
+			while (node *const next = current->next.get()) {
+				std::unique_lock<std::mutex> next_lock(next->m);
+				lock.unlock();
+				if (p(*next->data))
+					return next->data;
+				current = next;
+				lock = std::move(next_lock);
+			}
+		}
+
+		template<typename Predicate>
+		void remove_if(Predicate p) {
+			node *current = &head;
+			std::unique_lock<std::mutex> lock(head.m);
+			while (node *const next = current->next.get()) {
+				std::unique_lock<std::mutex> next_lock(next->m);
+				lock.unlock();
+				if (p(*next->data)) {
+					std::unique_ptr<node> old_next = std::move(current->next);
+					current->next = std::move(next->next);
+					next_lock.unlock();
+				} else {
+					lock.unlock();
+					current = next;
+					lock = std::move(next_lock);
+				}
+			}
+		}
+
+	private:
+		struct node {
+			std::mutex m;
+			std::shared_ptr<T> data;
+			std::unique_ptr<node> next;
+
+			node() : next() {}
+
+			node(T const &value) : data(std::make_shared<T>(value)) {}
+		};
+
+		node head;
+
+	};
+
+};
 
 
 #endif //INTERVIEW_CPP_DATASTRUCTURE_H
