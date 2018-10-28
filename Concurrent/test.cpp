@@ -8,6 +8,7 @@
 #include "WaitTime.h"
 #include "thread_test.h"
 #include "DataStructure.h"
+#include "DataStructureNoLock.h"
 
 int main() {
 	std::cout << "Thread test :" << std::endl;

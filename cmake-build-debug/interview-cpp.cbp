@@ -320,6 +320,9 @@
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/DataStructure.h">
 			<Option target="thread"/>
 		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Concurrent/DataStructureNoLock.h">
+			<Option target="thread"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/WaitTime.h">
 			<Option target="thread"/>
 		</Unit>
@@ -331,6 +334,9 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/test.cpp">
 			<Option target="thread_test"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Concurrent/threadPool.h">
+			<Option target="thread"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/thread_test.h">
 			<Option target="thread"/>

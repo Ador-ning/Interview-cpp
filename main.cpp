@@ -33,6 +33,9 @@
 #include "Concurrent/hierarchical_mutex.h"
 #include "Concurrent/hierarchical_mutex.cpp"
 
+#include <numeric>
+#include <list>
+
 using namespace std;
 
 void test_ConvertBST() {
@@ -198,12 +201,61 @@ bool helper(vector<pair<int, int>> arr, int i, int users, int count) {
 	return false;
 }
 
+// STL using
+std::ostream &operator<<(ostream &ostr, const std::list<int> &list) {
+	for (auto &i : list)
+		ostr << ' ' << i;
+	return ostr;
+}
+
+void stl_using() {
+
+	// 1. std::partialsum()
+	vector<int> v = {2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
+	cout << "The first 10 even numbers are: ";
+	// 2 4 6 8 10 12 14 16 18 20
+	// v[n] = v[n-1] + v[0],  1<= n <= v.size()
+	partial_sum(v.begin(), v.end(), std::ostream_iterator<int>(std::cout, " "));
+	cout << "\n";
+
+	// 2 4 8 16 32 64 128 256 512 1024
+	partial_sum(v.begin(), v.end(), v.begin(), std::multiplies<int>());
+	cout << "The first 10 powers of 2 are: ";
+	for (auto n:v)
+		cout << n << " ";
+	cout << "\n";
+
+	// 2. std::list::splice() / merge() / remove()
+	/*
+	 * Parameters:
+	 *  pos -   element before which the content will be inserted
+	 *  other - anthoer container to trasfer the content from
+	 *  it - the element to transfer from other to *this
+	 *  first, last - the range of elements to transfer from other to *this
+	 * */
+	list<int> list1 = {1, 2, 3, 4, 5};
+	list<int> list2 = {10, 20, 30, 40, 50};
+
+	auto it = list1.begin();
+	std::advance(it, 2);    //
+	list1.splice(it, list2);
+	// list1:  1 2 10 20 30 40 50 3 4 5
+	// list2:
+	cout << "list1: " << list1 << endl;
+	cout << "list2: " << list2 << endl;
+
+	list2.splice(list2.begin(), list1, it, list1.end());
+	// list1:  1 2 10 20 30 40 50
+	// list2:  3 4 5
+	cout << "list1: " << list1 << endl;
+	cout << "list2: " << list2 << endl;
+}
 
 // /Users/ning/Interview-cpp/cmake-build-debug/TestProject -d -o -i
 int main(int argc, char **argv) {
 	cout << "Test Cpp Project: " << endl;
 
-	// test_thread();
+	stl_using();
 
 	return 0;
 }
