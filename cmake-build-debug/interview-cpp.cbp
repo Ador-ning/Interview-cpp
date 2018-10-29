@@ -332,6 +332,9 @@
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/hierarchical_mutex.h">
 			<Option target="thread"/>
 		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Concurrent/interrupt_thread.h">
+			<Option target="thread"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/test.cpp">
 			<Option target="thread_test"/>
 		</Unit>

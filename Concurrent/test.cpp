@@ -9,6 +9,7 @@
 #include "thread_test.h"
 #include "DataStructure.h"
 #include "DataStructureNoLock.h"
+#include "interrupt_thread.h"
 
 int main() {
 	std::cout << "Thread test :" << std::endl;
