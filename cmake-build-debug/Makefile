@@ -188,6 +188,32 @@ thread_test/fast:
 	$(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/build
 .PHONY : thread_test/fast
 
+#=============================================================================
+# Target rules for targets named http_www
+
+# Build rule for target.
+http_www: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_www
+.PHONY : http_www
+
+# fast build rule for target.
+http_www/fast:
+	$(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/build
+.PHONY : http_www/fast
+
+#=============================================================================
+# Target rules for targets named http
+
+# Build rule for target.
+http: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http
+.PHONY : http
+
+# fast build rule for target.
+http/fast:
+	$(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/build
+.PHONY : http/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -229,6 +255,8 @@ help:
 	@echo "... thread_src"
 	@echo "... thread"
 	@echo "... thread_test"
+	@echo "... http_www"
+	@echo "... http"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

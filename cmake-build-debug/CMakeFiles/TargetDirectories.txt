@@ -22,3 +22,7 @@
 /Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/edit_cache.dir
 /Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/thread.dir
 /Users/ning/Interview-cpp/cmake-build-debug/Concurrent/CMakeFiles/thread_test.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Http/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Http/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Http/CMakeFiles/http_www.dir
+/Users/ning/Interview-cpp/cmake-build-debug/Http/CMakeFiles/http.dir

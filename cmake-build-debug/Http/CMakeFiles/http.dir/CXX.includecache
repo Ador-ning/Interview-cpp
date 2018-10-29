@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ning/Interview-cpp/Http/define.h
+string_view
+-
+
+/Users/ning/Interview-cpp/Http/test.cpp
+iostream
+-
+define.h
+/Users/ning/Interview-cpp/Http/define.h
+

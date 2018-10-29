@@ -5,7 +5,7 @@
 		<Option title="Recipes"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;CMake Files\Http\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Recipes"/>
@@ -132,6 +132,9 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Concurrent\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

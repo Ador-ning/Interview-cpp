@@ -16,6 +16,7 @@ link_directories(/usr/local/Cellar/boost/1.67/lib)
 add_subdirectory(JSON)
 add_subdirectory(Recipes)
 add_subdirectory(Concurrent)
+add_subdirectory(Http)
 
 # 源文件
 set(SRC_FILE main.cpp)

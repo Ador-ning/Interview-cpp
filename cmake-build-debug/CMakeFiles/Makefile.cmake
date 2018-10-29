@@ -32,6 +32,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "../Concurrent/CMakeLists.txt"
+  "../Http/CMakeLists.txt"
   "../JSON/CMakeLists.txt"
   "../JSON/src/CMakeLists.txt"
   "../Recipes/CMakeLists.txt"
@@ -61,6 +62,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Recipes/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Recipes/thread/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Concurrent/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Http/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -71,4 +73,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "Recipes/thread/src/CMakeFiles/thread_src.dir/DependInfo.cmake"
   "Concurrent/CMakeFiles/thread.dir/DependInfo.cmake"
   "Concurrent/CMakeFiles/thread_test.dir/DependInfo.cmake"
+  "Http/CMakeFiles/http_www.dir/DependInfo.cmake"
+  "Http/CMakeFiles/http.dir/DependInfo.cmake"
   )
