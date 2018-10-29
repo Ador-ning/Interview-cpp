@@ -92,7 +92,7 @@ namespace Concurrent {
 			                            chunk_data, chunk_data.begin(), divide_point);
 
 			std::future<std::list<T>> new_lower = new_lower_chunk.promise.get_future();
-			chunks.push(std::move(new_lower_chunk));    // 11   将产生的数据块 push到栈上
+			// chunks.push(std::move(new_lower_chunk));    // 11   将产生的数据块 push到栈上
 
 			if (threads.size() < max_thread_count)      // 12   产生新线程
 				threads.push_back(std::thread(&sorter<T>::sort_thread, this));
