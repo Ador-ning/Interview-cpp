@@ -449,6 +449,9 @@
 		<Unit filename="/Users/ning/Interview-cpp/Http/utils.h">
 			<Option target="http_www"/>
 		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/uuids.h">
+			<Option target="http_www"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/src/leptjson.c">
 			<Option target="leptjson"/>
 		</Unit>

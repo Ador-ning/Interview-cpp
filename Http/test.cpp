@@ -7,6 +7,7 @@
 #include "define.h"
 #include "define_ws.h"
 #include "utils.h"
+#include "uuids.h"
 
 int main() {
 	std::cout << "Running test Http Project: " << std::endl;

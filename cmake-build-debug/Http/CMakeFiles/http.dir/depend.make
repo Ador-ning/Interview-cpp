@@ -5,4 +5,5 @@ Http/CMakeFiles/http.dir/test.cpp.o: ../Http/define.h
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/define_ws.h
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/test.cpp
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/utils.h
+Http/CMakeFiles/http.dir/test.cpp.o: ../Http/uuids.h
 

@@ -27,6 +27,8 @@ define_ws.h
 /Users/ning/Interview-cpp/Http/define_ws.h
 utils.h
 /Users/ning/Interview-cpp/Http/utils.h
+uuids.h
+/Users/ning/Interview-cpp/Http/uuids.h
 
 /Users/ning/Interview-cpp/Http/utils.h
 string
@@ -57,4 +59,34 @@ iostream
 -
 define.h
 /Users/ning/Interview-cpp/Http/define.h
+
+/Users/ning/Interview-cpp/Http/uuids.h
+string
+-
+sstream
+-
+iomanip
+-
+array
+-
+string_view
+-
+iterator
+-
+random
+-
+memory
+-
+functional
+-
+type_traits
+-
+assert.h
+-
+objbase.h
+-
+uuid/uuid.h
+-
+CoreFoundation/CFUUID.h
+-
 
