@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.1)
 project(interview-cpp)
 
 # 编译标准
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 set(BOOST_ROOT "/usr/local/Cellar/boost")
 #添加头文件搜索路径
