@@ -11,7 +11,7 @@
 #include <string_view>
 
 namespace Http {
-	// using namespace std::string_view_literals;
+	using namespace std::string_view_literals;
 
 #if defined(_WIN32)
 #define __SWAP_LONGLONG(l)            \
