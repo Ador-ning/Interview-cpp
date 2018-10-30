@@ -23,6 +23,8 @@
 #include "define.h"
 
 namespace Http {
+	using namespace std::string_view_literals;
+
 	class noncopyable {
 	public:
 		noncopyable() = default;
@@ -126,30 +128,22 @@ namespace Http {
 		switch (method) {
 			case Http::http_method::DEL:
 				return "DELETE"sv;
-				break;
 			case Http::http_method::GET:
 				return "GET"sv;
 			case Http::http_method::POST:
 				return "POST"sv;
-				break;
 			case Http::http_method::HEAD:
 				return "HEAD"sv;
-				break;
 			case Http::http_method::TRACE:
 				return "TRACE"sv;
-				break;
 			case Http::http_method::OPTIONS:
 				return "OPTIONS"sv;
-				break;
 			case Http::http_method::PUT:
 				return "PUT"sv;
-				break;
 			case Http::http_method::CONNECT:
 				return "CONNECT"sv;
-				break;
 			default:
 				return "UNKNOWN"sv;
-				break;
 		}
 	}
 
@@ -455,7 +449,88 @@ public:\
 
 	template<typename ...Args, typename F, std::size_t ...Idx>
 	constexpr void for_each_l(std::tuple<Args...> &t, F &&f, std::index_sequence<Idx...>) {
-		(std::forward<F>(f)(std::get<size_t>(t)), Idx); // 处理参数 函数
+		(std::forward<F>(f)(std::get<Idx>(t)), ...); // 语法
+	}
+
+	template<typename... Args, typename F, std::size_t... Idx>
+	constexpr void for_each_r(std::tuple<Args...> &t, F &&f, std::index_sequence<Idx...>) {
+		constexpr auto size = sizeof...(Idx);
+		(std::forward<F>(f)(std::get<size - Idx - 1>(t)), ...);
+	}
+
+	template<http_method N>
+	constexpr void get_str(std::string &s, std::string_view name) {
+		s = type_to_name(std::integral_constant<http_method, N>{}).data();
+		s += std::string(name.data(), name.length());
+	}
+
+	template<http_method... Is>
+	constexpr auto get_arr(std::string_view name) {
+		std::array<std::string, sizeof...(Is)> arr = {};
+		size_t index = 0;
+		(get_str<Is>(arr[index++], name), ...);
+
+		return arr;
+	}
+
+	inline std::string get_time_str(std::time_t t) {
+		std::stringstream ss;
+		ss << std::put_time(std::localtime(&t), "%Y-%m-%d %H:%M:%S");
+		return ss.str();
+	}
+
+	inline std::string get_gmt_time_str(std::time_t t) {
+		struct tm *GMTime = gmtime(&t);
+		char buff[512] = {0};
+		strftime(buff, sizeof(buff), "%a, %d %b %Y %H:%M:%S %Z", GMTime);
+		return buff;
+	}
+
+	inline std::string get_cur_time_str() {
+		return get_time_str(std::time(nullptr));
+	}
+
+	const std::map<std::string_view, std::string_view> get_cookies_map(std::string_view str) {
+		std::map<std::string_view, std::string_view> cookies;
+		auto cookies_vec = split(str, "; ");
+		for (auto iter:cookies_vec) {
+			auto cookie_key_value = split(iter, "=");
+			if (cookie_key_value.size() == 2)
+				cookies[cookie_key_value[0]] = cookie_key_value[1];
+		}
+		return cookies;
+	}
+
+	template<typename T, typename Tuple>
+	class has_type;
+
+	template<typename T, typename ...Us>
+	class has_type<T, std::tuple<Us...>> : std::disjunction<std::is_same<T, Us>...> {
+	};
+
+
+	template<typename T>
+	class filter_helper {
+	public:
+		static constexpr auto func() {
+			return std::tuple<>();
+		}
+
+		template<class ...Args>
+		static constexpr auto func(T &&, Args &&...args) {
+			return filter_helper::func(std::forward<Args>(args)...);    // ....
+		}
+
+		template<class X, class... Args>
+		static constexpr auto func(X &&x, Args &&...args) {
+			return std::tuple_cat(std::make_tuple(std::forward<X>(x)),
+			                      filter_helper::func(std::forward<Args>(args)...));    // 语法检查
+		}
+	};
+
+	template<typename T, typename ...Args>
+	inline auto filter(Args &&...args) {
+		return filter_helper<T>::func(std::forward<Args>(args)...);
 	}
 }
 
