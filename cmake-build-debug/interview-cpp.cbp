@@ -442,9 +442,21 @@
 		<Unit filename="/Users/ning/Interview-cpp/Http/define_ws.h">
 			<Option target="http_www"/>
 		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/function_traits.cpp">
+			<Option target="http_www"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/mime_types.cpp">
+			<Option target="http_www"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/sha1.cpp">
+			<Option target="http_www"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/test.cpp">
 			<Option target="http_www"/>
 			<Option target="http"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/use_asio.cpp">
+			<Option target="http_www"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/utils.h">
 			<Option target="http_www"/>

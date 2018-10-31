@@ -140,6 +140,87 @@ http/fast:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/build
 .PHONY : http/fast
 
+function_traits.o: function_traits.cpp.o
+
+.PHONY : function_traits.o
+
+# target to build an object file
+function_traits.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.o
+.PHONY : function_traits.cpp.o
+
+function_traits.i: function_traits.cpp.i
+
+.PHONY : function_traits.i
+
+# target to preprocess a source file
+function_traits.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.i
+.PHONY : function_traits.cpp.i
+
+function_traits.s: function_traits.cpp.s
+
+.PHONY : function_traits.s
+
+# target to generate assembly for a file
+function_traits.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.s
+.PHONY : function_traits.cpp.s
+
+mime_types.o: mime_types.cpp.o
+
+.PHONY : mime_types.o
+
+# target to build an object file
+mime_types.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.o
+.PHONY : mime_types.cpp.o
+
+mime_types.i: mime_types.cpp.i
+
+.PHONY : mime_types.i
+
+# target to preprocess a source file
+mime_types.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.i
+.PHONY : mime_types.cpp.i
+
+mime_types.s: mime_types.cpp.s
+
+.PHONY : mime_types.s
+
+# target to generate assembly for a file
+mime_types.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.s
+.PHONY : mime_types.cpp.s
+
+sha1.o: sha1.cpp.o
+
+.PHONY : sha1.o
+
+# target to build an object file
+sha1.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.o
+.PHONY : sha1.cpp.o
+
+sha1.i: sha1.cpp.i
+
+.PHONY : sha1.i
+
+# target to preprocess a source file
+sha1.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.i
+.PHONY : sha1.cpp.i
+
+sha1.s: sha1.cpp.s
+
+.PHONY : sha1.s
+
+# target to generate assembly for a file
+sha1.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.s
+.PHONY : sha1.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -170,6 +251,33 @@ test.cpp.s:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/test.cpp.s
 .PHONY : test.cpp.s
 
+use_asio.o: use_asio.cpp.o
+
+.PHONY : use_asio.o
+
+# target to build an object file
+use_asio.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.o
+.PHONY : use_asio.cpp.o
+
+use_asio.i: use_asio.cpp.i
+
+.PHONY : use_asio.i
+
+# target to preprocess a source file
+use_asio.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.i
+.PHONY : use_asio.cpp.i
+
+use_asio.s: use_asio.cpp.s
+
+.PHONY : use_asio.s
+
+# target to generate assembly for a file
+use_asio.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.s
+.PHONY : use_asio.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,9 +288,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... http_www"
 	@echo "... http"
+	@echo "... function_traits.o"
+	@echo "... function_traits.i"
+	@echo "... function_traits.s"
+	@echo "... mime_types.o"
+	@echo "... mime_types.i"
+	@echo "... mime_types.s"
+	@echo "... sha1.o"
+	@echo "... sha1.i"
+	@echo "... sha1.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
+	@echo "... use_asio.o"
+	@echo "... use_asio.i"
+	@echo "... use_asio.s"
 .PHONY : help
 
 

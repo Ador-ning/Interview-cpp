@@ -3,6 +3,9 @@
 
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/define.h
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/define_ws.h
+Http/CMakeFiles/http.dir/test.cpp.o: ../Http/function_traits.cpp
+Http/CMakeFiles/http.dir/test.cpp.o: ../Http/mime_types.cpp
+Http/CMakeFiles/http.dir/test.cpp.o: ../Http/sha1.cpp
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/test.cpp
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/utils.h
 Http/CMakeFiles/http.dir/test.cpp.o: ../Http/uuids.h
