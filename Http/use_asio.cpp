@@ -2,8 +2,6 @@
 // Created by ning on 2018/10/30.
 //
 
-#pragma once
-
 #if defined(ASIO_STANDALONE)
 //MSVC : define environment path 'ASIO_STANDALONE_INCLUDE', e.g. 'E:\bdlibs\asio-1.10.6\include'
 
@@ -24,10 +22,13 @@ namespace boost
 	}
 }
 #else
+
 #include <boost/asio.hpp>
 
 #ifdef CINATRA_ENABLE_SSL
+
 #include <boost/asio/ssl.hpp>
+
 #endif
 
 #include <boost/asio/steady_timer.hpp>

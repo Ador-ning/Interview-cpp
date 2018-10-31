@@ -24,9 +24,7 @@
 #elif defined(__linux__) || defined(__unix__)
 #include <uuid/uuid.h>
 #elif defined(__APPLE__)
-
 #include <CoreFoundation/CFUUID.h>
-
 #endif
 
 namespace uuids {

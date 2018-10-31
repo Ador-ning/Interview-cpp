@@ -81,9 +81,57 @@ Http/CMakeFiles/http_www.dir/mime_types.cpp.o.provides: Http/CMakeFiles/http_www
 Http/CMakeFiles/http_www.dir/mime_types.cpp.o.provides.build: Http/CMakeFiles/http_www.dir/mime_types.cpp.o
 
 
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o: ../Http/io_service_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/io_service_pool.cpp.o -c /Users/ning/Interview-cpp/Http/io_service_pool.cpp
+
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_www.dir/io_service_pool.cpp.i"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ning/Interview-cpp/Http/io_service_pool.cpp > CMakeFiles/http_www.dir/io_service_pool.cpp.i
+
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_www.dir/io_service_pool.cpp.s"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ning/Interview-cpp/Http/io_service_pool.cpp -o CMakeFiles/http_www.dir/io_service_pool.cpp.s
+
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.requires:
+
+.PHONY : Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.requires
+
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.provides: Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.requires
+	$(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.provides.build
+.PHONY : Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.provides
+
+Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.provides.build: Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o
+
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
+Http/CMakeFiles/http_www.dir/gzip.cpp.o: ../Http/gzip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Http/CMakeFiles/http_www.dir/gzip.cpp.o"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/gzip.cpp.o -c /Users/ning/Interview-cpp/Http/gzip.cpp
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_www.dir/gzip.cpp.i"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ning/Interview-cpp/Http/gzip.cpp > CMakeFiles/http_www.dir/gzip.cpp.i
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_www.dir/gzip.cpp.s"
+	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ning/Interview-cpp/Http/gzip.cpp -o CMakeFiles/http_www.dir/gzip.cpp.s
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.o.requires:
+
+.PHONY : Http/CMakeFiles/http_www.dir/gzip.cpp.o.requires
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.o.provides: Http/CMakeFiles/http_www.dir/gzip.cpp.o.requires
+	$(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/gzip.cpp.o.provides.build
+.PHONY : Http/CMakeFiles/http_www.dir/gzip.cpp.o.provides
+
+Http/CMakeFiles/http_www.dir/gzip.cpp.o.provides.build: Http/CMakeFiles/http_www.dir/gzip.cpp.o
+
+
 Http/CMakeFiles/http_www.dir/test.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
 Http/CMakeFiles/http_www.dir/test.cpp.o: ../Http/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Http/CMakeFiles/http_www.dir/test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Http/CMakeFiles/http_www.dir/test.cpp.o"
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/test.cpp.o -c /Users/ning/Interview-cpp/Http/test.cpp
 
 Http/CMakeFiles/http_www.dir/test.cpp.i: cmake_force
@@ -107,7 +155,7 @@ Http/CMakeFiles/http_www.dir/test.cpp.o.provides.build: Http/CMakeFiles/http_www
 
 Http/CMakeFiles/http_www.dir/sha1.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
 Http/CMakeFiles/http_www.dir/sha1.cpp.o: ../Http/sha1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Http/CMakeFiles/http_www.dir/sha1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Http/CMakeFiles/http_www.dir/sha1.cpp.o"
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/sha1.cpp.o -c /Users/ning/Interview-cpp/Http/sha1.cpp
 
 Http/CMakeFiles/http_www.dir/sha1.cpp.i: cmake_force
@@ -131,7 +179,7 @@ Http/CMakeFiles/http_www.dir/sha1.cpp.o.provides.build: Http/CMakeFiles/http_www
 
 Http/CMakeFiles/http_www.dir/use_asio.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
 Http/CMakeFiles/http_www.dir/use_asio.cpp.o: ../Http/use_asio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Http/CMakeFiles/http_www.dir/use_asio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Http/CMakeFiles/http_www.dir/use_asio.cpp.o"
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/use_asio.cpp.o -c /Users/ning/Interview-cpp/Http/use_asio.cpp
 
 Http/CMakeFiles/http_www.dir/use_asio.cpp.i: cmake_force
@@ -155,7 +203,7 @@ Http/CMakeFiles/http_www.dir/use_asio.cpp.o.provides.build: Http/CMakeFiles/http
 
 Http/CMakeFiles/http_www.dir/function_traits.cpp.o: Http/CMakeFiles/http_www.dir/flags.make
 Http/CMakeFiles/http_www.dir/function_traits.cpp.o: ../Http/function_traits.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Http/CMakeFiles/http_www.dir/function_traits.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Http/CMakeFiles/http_www.dir/function_traits.cpp.o"
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/http_www.dir/function_traits.cpp.o -c /Users/ning/Interview-cpp/Http/function_traits.cpp
 
 Http/CMakeFiles/http_www.dir/function_traits.cpp.i: cmake_force
@@ -180,6 +228,8 @@ Http/CMakeFiles/http_www.dir/function_traits.cpp.o.provides.build: Http/CMakeFil
 # Object files for target http_www
 http_www_OBJECTS = \
 "CMakeFiles/http_www.dir/mime_types.cpp.o" \
+"CMakeFiles/http_www.dir/io_service_pool.cpp.o" \
+"CMakeFiles/http_www.dir/gzip.cpp.o" \
 "CMakeFiles/http_www.dir/test.cpp.o" \
 "CMakeFiles/http_www.dir/sha1.cpp.o" \
 "CMakeFiles/http_www.dir/use_asio.cpp.o" \
@@ -189,13 +239,15 @@ http_www_OBJECTS = \
 http_www_EXTERNAL_OBJECTS =
 
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/mime_types.cpp.o
+Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o
+Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/gzip.cpp.o
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/test.cpp.o
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/sha1.cpp.o
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/use_asio.cpp.o
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/function_traits.cpp.o
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/build.make
 Http/libhttp_www.a: Http/CMakeFiles/http_www.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libhttp_www.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ning/Interview-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libhttp_www.a"
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && $(CMAKE_COMMAND) -P CMakeFiles/http_www.dir/cmake_clean_target.cmake
 	cd /Users/ning/Interview-cpp/cmake-build-debug/Http && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/http_www.dir/link.txt --verbose=$(VERBOSE)
 
@@ -205,6 +257,8 @@ Http/CMakeFiles/http_www.dir/build: Http/libhttp_www.a
 .PHONY : Http/CMakeFiles/http_www.dir/build
 
 Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/mime_types.cpp.o.requires
+Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/io_service_pool.cpp.o.requires
+Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/gzip.cpp.o.requires
 Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/test.cpp.o.requires
 Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/sha1.cpp.o.requires
 Http/CMakeFiles/http_www.dir/requires: Http/CMakeFiles/http_www.dir/use_asio.cpp.o.requires

@@ -5,13 +5,53 @@
 		<Option title="interview-cpp"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;CMake Files\Http\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\Http\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -44,7 +84,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -67,7 +106,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -90,7 +128,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -113,7 +150,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -136,7 +172,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -159,7 +194,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -182,7 +216,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -205,7 +238,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -228,7 +260,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -251,7 +282,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -274,7 +304,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -297,7 +326,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -313,52 +341,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Concurrent/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="http_www">
-				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/libhttp_www.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_www"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="http_www/fast">
-				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/libhttp_www.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_www/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="http">
 				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/http" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
@@ -366,9 +348,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add option="-DCINATRA_ENABLE_SSL"/>
+					<Add option="-DCINATRA_ENABLE_GZIP"/>
+					<Add option="-DCINATRA_ENABLE_CLIENT_SSL"/>
+					<Add directory="/usr/local/Cellar/boost/1.67.0_1/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
@@ -389,9 +374,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/boost/1.67/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add option="-DCINATRA_ENABLE_SSL"/>
+					<Add option="-DCINATRA_ENABLE_GZIP"/>
+					<Add option="-DCINATRA_ENABLE_CLIENT_SSL"/>
+					<Add directory="/usr/local/Cellar/boost/1.67.0_1/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/usr/include"/>
@@ -437,32 +425,34 @@
 			<Option target="thread"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/define.h">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/define_ws.h">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/function_traits.cpp">
-			<Option target="http_www"/>
+			<Option target="http"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/gzip.cpp">
+			<Option target="http"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/io_service_pool.cpp">
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/mime_types.cpp">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/sha1.cpp">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/test.cpp">
-			<Option target="http_www"/>
 			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/use_asio.cpp">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/utils.h">
-			<Option target="http_www"/>
-		</Unit>
-		<Unit filename="/Users/ning/Interview-cpp/Http/uuids.h">
-			<Option target="http_www"/>
+			<Option target="http"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/src/leptjson.c">
 			<Option target="leptjson"/>
@@ -536,6 +526,9 @@
 		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Recipes\thread\src\"/>
 		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\JSON\"/>
 		</Unit>
@@ -544,9 +537,6 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Concurrent/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Concurrent\"/>
-		</Unit>
-		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Http\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

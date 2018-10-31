@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/leptjson_test.dir/test.c.o  -o leptjson_test  -L/usr/local/Cellar/boost/1.67/lib -Wl,-rpath,/usr/local/Cellar/boost/1.67/lib src/libleptjson.a 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/leptjson_test.dir/test.c.o  -o leptjson_test src/libleptjson.a 

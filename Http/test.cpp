@@ -9,9 +9,10 @@
 #include "utils.h"
 #include "uuids.h"
 #include "sha1.cpp"
-// #include "use_asio.cpp"
+#include "use_asio.cpp"
 #include "function_traits.cpp"
 #include "mime_types.cpp"
+#include "gzip.cpp"
 
 int main() {
 	std::cout << "Running test Http Project: " << std::endl;

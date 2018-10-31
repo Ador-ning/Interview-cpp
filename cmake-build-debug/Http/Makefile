@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /Users/ning/Interview-cpp/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,21 +157,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Http/CMakeFiles/http_www.dir/rule:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/http_www.dir/rule
-.PHONY : Http/CMakeFiles/http_www.dir/rule
-
-# Convenience name for target.
-http_www: Http/CMakeFiles/http_www.dir/rule
-
-.PHONY : http_www
-
-# fast build rule for target.
-http_www/fast:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/build
-.PHONY : http_www/fast
-
-# Convenience name for target.
 Http/CMakeFiles/http.dir/rule:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/http.dir/rule
 .PHONY : Http/CMakeFiles/http.dir/rule
@@ -146,7 +177,7 @@ function_traits.o: function_traits.cpp.o
 
 # target to build an object file
 function_traits.cpp.o:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.o
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/function_traits.cpp.o
 .PHONY : function_traits.cpp.o
 
 function_traits.i: function_traits.cpp.i
@@ -155,7 +186,7 @@ function_traits.i: function_traits.cpp.i
 
 # target to preprocess a source file
 function_traits.cpp.i:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.i
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/function_traits.cpp.i
 .PHONY : function_traits.cpp.i
 
 function_traits.s: function_traits.cpp.s
@@ -164,8 +195,62 @@ function_traits.s: function_traits.cpp.s
 
 # target to generate assembly for a file
 function_traits.cpp.s:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/function_traits.cpp.s
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/function_traits.cpp.s
 .PHONY : function_traits.cpp.s
+
+gzip.o: gzip.cpp.o
+
+.PHONY : gzip.o
+
+# target to build an object file
+gzip.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/gzip.cpp.o
+.PHONY : gzip.cpp.o
+
+gzip.i: gzip.cpp.i
+
+.PHONY : gzip.i
+
+# target to preprocess a source file
+gzip.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/gzip.cpp.i
+.PHONY : gzip.cpp.i
+
+gzip.s: gzip.cpp.s
+
+.PHONY : gzip.s
+
+# target to generate assembly for a file
+gzip.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/gzip.cpp.s
+.PHONY : gzip.cpp.s
+
+io_service_pool.o: io_service_pool.cpp.o
+
+.PHONY : io_service_pool.o
+
+# target to build an object file
+io_service_pool.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/io_service_pool.cpp.o
+.PHONY : io_service_pool.cpp.o
+
+io_service_pool.i: io_service_pool.cpp.i
+
+.PHONY : io_service_pool.i
+
+# target to preprocess a source file
+io_service_pool.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/io_service_pool.cpp.i
+.PHONY : io_service_pool.cpp.i
+
+io_service_pool.s: io_service_pool.cpp.s
+
+.PHONY : io_service_pool.s
+
+# target to generate assembly for a file
+io_service_pool.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/io_service_pool.cpp.s
+.PHONY : io_service_pool.cpp.s
 
 mime_types.o: mime_types.cpp.o
 
@@ -173,7 +258,7 @@ mime_types.o: mime_types.cpp.o
 
 # target to build an object file
 mime_types.cpp.o:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.o
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/mime_types.cpp.o
 .PHONY : mime_types.cpp.o
 
 mime_types.i: mime_types.cpp.i
@@ -182,7 +267,7 @@ mime_types.i: mime_types.cpp.i
 
 # target to preprocess a source file
 mime_types.cpp.i:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.i
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/mime_types.cpp.i
 .PHONY : mime_types.cpp.i
 
 mime_types.s: mime_types.cpp.s
@@ -191,7 +276,7 @@ mime_types.s: mime_types.cpp.s
 
 # target to generate assembly for a file
 mime_types.cpp.s:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/mime_types.cpp.s
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/mime_types.cpp.s
 .PHONY : mime_types.cpp.s
 
 sha1.o: sha1.cpp.o
@@ -200,7 +285,7 @@ sha1.o: sha1.cpp.o
 
 # target to build an object file
 sha1.cpp.o:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.o
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/sha1.cpp.o
 .PHONY : sha1.cpp.o
 
 sha1.i: sha1.cpp.i
@@ -209,7 +294,7 @@ sha1.i: sha1.cpp.i
 
 # target to preprocess a source file
 sha1.cpp.i:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.i
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/sha1.cpp.i
 .PHONY : sha1.cpp.i
 
 sha1.s: sha1.cpp.s
@@ -218,7 +303,7 @@ sha1.s: sha1.cpp.s
 
 # target to generate assembly for a file
 sha1.cpp.s:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/sha1.cpp.s
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/sha1.cpp.s
 .PHONY : sha1.cpp.s
 
 test.o: test.cpp.o
@@ -227,7 +312,6 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/test.cpp.o
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/test.cpp.o
 .PHONY : test.cpp.o
 
@@ -237,7 +321,6 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/test.cpp.i
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/test.cpp.i
 .PHONY : test.cpp.i
 
@@ -247,7 +330,6 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/test.cpp.s
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/test.cpp.s
 .PHONY : test.cpp.s
 
@@ -257,7 +339,7 @@ use_asio.o: use_asio.cpp.o
 
 # target to build an object file
 use_asio.cpp.o:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.o
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/use_asio.cpp.o
 .PHONY : use_asio.cpp.o
 
 use_asio.i: use_asio.cpp.i
@@ -266,7 +348,7 @@ use_asio.i: use_asio.cpp.i
 
 # target to preprocess a source file
 use_asio.cpp.i:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.i
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/use_asio.cpp.i
 .PHONY : use_asio.cpp.i
 
 use_asio.s: use_asio.cpp.s
@@ -275,7 +357,7 @@ use_asio.s: use_asio.cpp.s
 
 # target to generate assembly for a file
 use_asio.cpp.s:
-	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_www.dir/build.make Http/CMakeFiles/http_www.dir/use_asio.cpp.s
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http.dir/build.make Http/CMakeFiles/http.dir/use_asio.cpp.s
 .PHONY : use_asio.cpp.s
 
 # Help Target
@@ -284,13 +366,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... http_www"
 	@echo "... http"
 	@echo "... function_traits.o"
 	@echo "... function_traits.i"
 	@echo "... function_traits.s"
+	@echo "... gzip.o"
+	@echo "... gzip.i"
+	@echo "... gzip.s"
+	@echo "... io_service_pool.o"
+	@echo "... io_service_pool.i"
+	@echo "... io_service_pool.s"
 	@echo "... mime_types.o"
 	@echo "... mime_types.i"
 	@echo "... mime_types.s"

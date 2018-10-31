@@ -6,5 +6,5 @@ C_FLAGS =  -ansi -pedantic -Walll -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/usr/local/Cellar/boost/1.67/include 
+C_INCLUDES = 
 

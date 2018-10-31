@@ -7,11 +7,10 @@ project(interview-cpp)
 # 编译标准
 set(CMAKE_CXX_STANDARD 17)
 
-set(BOOST_ROOT "/usr/local/Cellar/boost")
-#添加头文件搜索路径
-include_directories(/usr/local/Cellar/boost/1.67/include)
-#添加库文件搜索路径
-link_directories(/usr/local/Cellar/boost/1.67/lib)
+# set(BOOST_ROOT "/usr/local/Cellar/boost/1.67.0_1")
+# find_package(Boost 1.67.0 REQUIRED COMPONENTS system)
+# include_directories(${Boost_INCLUDE_DIRS})
+# link_directories(${Boost_LIBRARY_DIRS})
 
 add_subdirectory(JSON)
 add_subdirectory(Recipes)

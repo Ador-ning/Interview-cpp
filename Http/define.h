@@ -26,7 +26,7 @@ namespace Http {
 	};
 
 	inline const std::string_view STAIC_RES = "staic_resource";
-	inline const std::string CSESSIONID = "CSESSIONID";
+	inline const std::string CSESSION_ID = "CSESSIONID";
 }
 
 #endif //INTERVIEW_CPP_DEFINE_H

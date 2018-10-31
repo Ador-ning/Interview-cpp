@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/http_www.dir/mime_types.cpp.o"
+  "CMakeFiles/http_www.dir/io_service_pool.cpp.o"
+  "CMakeFiles/http_www.dir/gzip.cpp.o"
   "CMakeFiles/http_www.dir/test.cpp.o"
   "CMakeFiles/http_www.dir/sha1.cpp.o"
   "CMakeFiles/http_www.dir/use_asio.cpp.o"

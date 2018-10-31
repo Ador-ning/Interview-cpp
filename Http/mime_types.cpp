@@ -2,9 +2,8 @@
 // Created by ning on 2018/10/31.
 //
 
-#pragma once
-
 #include <string_view>
+#include <string>
 #include <map>
 #include "define.h"
 

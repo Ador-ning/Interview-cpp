@@ -1,9 +1,6 @@
 //
 // Created by ning on 2018/10/30.
 //
-
-#pragma once
-
 #include <type_traits>
 #include <functional>
 #include <tuple>
