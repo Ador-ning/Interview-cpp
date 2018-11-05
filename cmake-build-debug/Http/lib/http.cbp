@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lib/http"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;CMake Files\Http\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ning/Interview-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/string/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\string\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/tpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\tpc\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\thread\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Recipes/thread/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Recipes\thread\src\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\JSON\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/JSON/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\JSON\src\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Concurrent/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Concurrent\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
