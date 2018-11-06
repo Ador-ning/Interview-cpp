@@ -1,5 +1,11 @@
 /Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/file_example.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/lib.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/database_example.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/websocket_example.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/http_examples.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/CMakeFiles/http_lib.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/ormpp/CMakeFiles/rebuild_cache.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/ormpp/CMakeFiles/edit_cache.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/ormpp/CMakeFiles/ormpp.dir
@@ -9,3 +15,15 @@
 /Users/ning/Interview-cpp/Http/cmake-build-debug/iguana/CMakeFiles/msgpack_example.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/iguana/CMakeFiles/json_example.dir
 /Users/ning/Interview-cpp/Http/cmake-build-debug/iguana/CMakeFiles/example.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/CMakeFiles/lib_http_src2_exe.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/http/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/http/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/http/CMakeFiles/lib_http_src1_exe.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/CMakeFiles/lib_src2_exe.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/http/CMakeFiles/rebuild_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/http/CMakeFiles/edit_cache.dir
+/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/http/CMakeFiles/lib_src1_exe.dir

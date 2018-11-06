@@ -5,7 +5,7 @@
 		<Option title="ormpp"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ormpp\;CMake Files\iguana\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ormpp\;CMake Files\iguana\;CMake Files\lib_http\;CMake Files\lib_http\http\;CMake Files\lib\;CMake Files\lib\http\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/Http/cmake-build-debug/ormpp"/>
@@ -108,6 +108,18 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\iguana\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib_http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib_http\http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\http\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

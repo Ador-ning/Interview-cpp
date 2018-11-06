@@ -16,7 +16,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CheckIncludeFile.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CheckIncludeFileCXX.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CheckLibraryExists.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/CheckSymbolExists.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.10/Modules/Compiler/AppleClang-C.cmake"
@@ -44,6 +44,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.3/CMakeSystem.cmake"
   "../iguana/CMakeLists.txt"
+  "../lib/CMakeLists.txt"
+  "../lib/http/CMakeLists.txt"
+  "../lib_http/CMakeLists.txt"
+  "../lib_http/http/CMakeLists.txt"
   "../ormpp/CMakeLists.txt"
   )
 
@@ -58,13 +62,27 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "ormpp/CMakeFiles/CMakeDirectoryInformation.cmake"
   "iguana/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib_http/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib_http/http/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/http/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/file_example.dir/DependInfo.cmake"
+  "CMakeFiles/lib.dir/DependInfo.cmake"
+  "CMakeFiles/database_example.dir/DependInfo.cmake"
+  "CMakeFiles/websocket_example.dir/DependInfo.cmake"
+  "CMakeFiles/http_examples.dir/DependInfo.cmake"
+  "CMakeFiles/http_lib.dir/DependInfo.cmake"
   "ormpp/CMakeFiles/ormpp.dir/DependInfo.cmake"
   "iguana/CMakeFiles/xml_example.dir/DependInfo.cmake"
   "iguana/CMakeFiles/msgpack_example.dir/DependInfo.cmake"
   "iguana/CMakeFiles/json_example.dir/DependInfo.cmake"
   "iguana/CMakeFiles/example.dir/DependInfo.cmake"
+  "lib_http/CMakeFiles/lib_http_src2_exe.dir/DependInfo.cmake"
+  "lib_http/http/CMakeFiles/lib_http_src1_exe.dir/DependInfo.cmake"
+  "lib/CMakeFiles/lib_src2_exe.dir/DependInfo.cmake"
+  "lib/http/CMakeFiles/lib_src1_exe.dir/DependInfo.cmake"
   )

@@ -36,6 +36,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/ning/Interview-cpp/Http/cmake-build-debug/ormpp/cmake_install.cmake")
   include("/Users/ning/Interview-cpp/Http/cmake-build-debug/iguana/cmake_install.cmake")
+  include("/Users/ning/Interview-cpp/Http/cmake-build-debug/lib_http/cmake_install.cmake")
+  include("/Users/ning/Interview-cpp/Http/cmake-build-debug/lib/cmake_install.cmake")
 
 endif()
 

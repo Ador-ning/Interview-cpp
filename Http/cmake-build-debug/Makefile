@@ -111,6 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named file_example
+
+# Build rule for target.
+file_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 file_example
+.PHONY : file_example
+
+# fast build rule for target.
+file_example/fast:
+	$(MAKE) -f CMakeFiles/file_example.dir/build.make CMakeFiles/file_example.dir/build
+.PHONY : file_example/fast
+
+#=============================================================================
+# Target rules for targets named lib
+
+# Build rule for target.
+lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib
+.PHONY : lib
+
+# fast build rule for target.
+lib/fast:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
+.PHONY : lib/fast
+
+#=============================================================================
+# Target rules for targets named database_example
+
+# Build rule for target.
+database_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 database_example
+.PHONY : database_example
+
+# fast build rule for target.
+database_example/fast:
+	$(MAKE) -f CMakeFiles/database_example.dir/build.make CMakeFiles/database_example.dir/build
+.PHONY : database_example/fast
+
+#=============================================================================
+# Target rules for targets named websocket_example
+
+# Build rule for target.
+websocket_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 websocket_example
+.PHONY : websocket_example
+
+# fast build rule for target.
+websocket_example/fast:
+	$(MAKE) -f CMakeFiles/websocket_example.dir/build.make CMakeFiles/websocket_example.dir/build
+.PHONY : websocket_example/fast
+
+#=============================================================================
+# Target rules for targets named http_examples
+
+# Build rule for target.
+http_examples: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_examples
+.PHONY : http_examples
+
+# fast build rule for target.
+http_examples/fast:
+	$(MAKE) -f CMakeFiles/http_examples.dir/build.make CMakeFiles/http_examples.dir/build
+.PHONY : http_examples/fast
+
+#=============================================================================
+# Target rules for targets named http_lib
+
+# Build rule for target.
+http_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_lib
+.PHONY : http_lib
+
+# fast build rule for target.
+http_lib/fast:
+	$(MAKE) -f CMakeFiles/http_lib.dir/build.make CMakeFiles/http_lib.dir/build
+.PHONY : http_lib/fast
+
+#=============================================================================
 # Target rules for targets named ormpp
 
 # Build rule for target.
@@ -175,6 +253,166 @@ example/fast:
 	$(MAKE) -f iguana/CMakeFiles/example.dir/build.make iguana/CMakeFiles/example.dir/build
 .PHONY : example/fast
 
+#=============================================================================
+# Target rules for targets named lib_http_src2_exe
+
+# Build rule for target.
+lib_http_src2_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_http_src2_exe
+.PHONY : lib_http_src2_exe
+
+# fast build rule for target.
+lib_http_src2_exe/fast:
+	$(MAKE) -f lib_http/CMakeFiles/lib_http_src2_exe.dir/build.make lib_http/CMakeFiles/lib_http_src2_exe.dir/build
+.PHONY : lib_http_src2_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_http_src1_exe
+
+# Build rule for target.
+lib_http_src1_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_http_src1_exe
+.PHONY : lib_http_src1_exe
+
+# fast build rule for target.
+lib_http_src1_exe/fast:
+	$(MAKE) -f lib_http/http/CMakeFiles/lib_http_src1_exe.dir/build.make lib_http/http/CMakeFiles/lib_http_src1_exe.dir/build
+.PHONY : lib_http_src1_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_src2_exe
+
+# Build rule for target.
+lib_src2_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_src2_exe
+.PHONY : lib_src2_exe
+
+# fast build rule for target.
+lib_src2_exe/fast:
+	$(MAKE) -f lib/CMakeFiles/lib_src2_exe.dir/build.make lib/CMakeFiles/lib_src2_exe.dir/build
+.PHONY : lib_src2_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_src1_exe
+
+# Build rule for target.
+lib_src1_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_src1_exe
+.PHONY : lib_src1_exe
+
+# fast build rule for target.
+lib_src1_exe/fast:
+	$(MAKE) -f lib/http/CMakeFiles/lib_src1_exe.dir/build.make lib/http/CMakeFiles/lib_src1_exe.dir/build
+.PHONY : lib_src1_exe/fast
+
+examples/database.o: examples/database.cpp.o
+
+.PHONY : examples/database.o
+
+# target to build an object file
+examples/database.cpp.o:
+	$(MAKE) -f CMakeFiles/database_example.dir/build.make CMakeFiles/database_example.dir/examples/database.cpp.o
+.PHONY : examples/database.cpp.o
+
+examples/database.i: examples/database.cpp.i
+
+.PHONY : examples/database.i
+
+# target to preprocess a source file
+examples/database.cpp.i:
+	$(MAKE) -f CMakeFiles/database_example.dir/build.make CMakeFiles/database_example.dir/examples/database.cpp.i
+.PHONY : examples/database.cpp.i
+
+examples/database.s: examples/database.cpp.s
+
+.PHONY : examples/database.s
+
+# target to generate assembly for a file
+examples/database.cpp.s:
+	$(MAKE) -f CMakeFiles/database_example.dir/build.make CMakeFiles/database_example.dir/examples/database.cpp.s
+.PHONY : examples/database.cpp.s
+
+examples/file_manager.o: examples/file_manager.cpp.o
+
+.PHONY : examples/file_manager.o
+
+# target to build an object file
+examples/file_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/file_example.dir/build.make CMakeFiles/file_example.dir/examples/file_manager.cpp.o
+.PHONY : examples/file_manager.cpp.o
+
+examples/file_manager.i: examples/file_manager.cpp.i
+
+.PHONY : examples/file_manager.i
+
+# target to preprocess a source file
+examples/file_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/file_example.dir/build.make CMakeFiles/file_example.dir/examples/file_manager.cpp.i
+.PHONY : examples/file_manager.cpp.i
+
+examples/file_manager.s: examples/file_manager.cpp.s
+
+.PHONY : examples/file_manager.s
+
+# target to generate assembly for a file
+examples/file_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/file_example.dir/build.make CMakeFiles/file_example.dir/examples/file_manager.cpp.s
+.PHONY : examples/file_manager.cpp.s
+
+examples/main.o: examples/main.cpp.o
+
+.PHONY : examples/main.o
+
+# target to build an object file
+examples/main.cpp.o:
+	$(MAKE) -f CMakeFiles/http_examples.dir/build.make CMakeFiles/http_examples.dir/examples/main.cpp.o
+.PHONY : examples/main.cpp.o
+
+examples/main.i: examples/main.cpp.i
+
+.PHONY : examples/main.i
+
+# target to preprocess a source file
+examples/main.cpp.i:
+	$(MAKE) -f CMakeFiles/http_examples.dir/build.make CMakeFiles/http_examples.dir/examples/main.cpp.i
+.PHONY : examples/main.cpp.i
+
+examples/main.s: examples/main.cpp.s
+
+.PHONY : examples/main.s
+
+# target to generate assembly for a file
+examples/main.cpp.s:
+	$(MAKE) -f CMakeFiles/http_examples.dir/build.make CMakeFiles/http_examples.dir/examples/main.cpp.s
+.PHONY : examples/main.cpp.s
+
+examples/websocket.o: examples/websocket.cpp.o
+
+.PHONY : examples/websocket.o
+
+# target to build an object file
+examples/websocket.cpp.o:
+	$(MAKE) -f CMakeFiles/websocket_example.dir/build.make CMakeFiles/websocket_example.dir/examples/websocket.cpp.o
+.PHONY : examples/websocket.cpp.o
+
+examples/websocket.i: examples/websocket.cpp.i
+
+.PHONY : examples/websocket.i
+
+# target to preprocess a source file
+examples/websocket.cpp.i:
+	$(MAKE) -f CMakeFiles/websocket_example.dir/build.make CMakeFiles/websocket_example.dir/examples/websocket.cpp.i
+.PHONY : examples/websocket.cpp.i
+
+examples/websocket.s: examples/websocket.cpp.s
+
+.PHONY : examples/websocket.s
+
+# target to generate assembly for a file
+examples/websocket.cpp.s:
+	$(MAKE) -f CMakeFiles/websocket_example.dir/build.make CMakeFiles/websocket_example.dir/examples/websocket.cpp.s
+.PHONY : examples/websocket.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,11 +421,33 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... file_example"
+	@echo "... lib"
+	@echo "... database_example"
+	@echo "... websocket_example"
+	@echo "... http_examples"
+	@echo "... http_lib"
 	@echo "... ormpp"
 	@echo "... xml_example"
 	@echo "... msgpack_example"
 	@echo "... json_example"
 	@echo "... example"
+	@echo "... lib_http_src2_exe"
+	@echo "... lib_http_src1_exe"
+	@echo "... lib_src2_exe"
+	@echo "... lib_src1_exe"
+	@echo "... examples/database.o"
+	@echo "... examples/database.i"
+	@echo "... examples/database.s"
+	@echo "... examples/file_manager.o"
+	@echo "... examples/file_manager.i"
+	@echo "... examples/file_manager.s"
+	@echo "... examples/main.o"
+	@echo "... examples/main.i"
+	@echo "... examples/main.s"
+	@echo "... examples/websocket.o"
+	@echo "... examples/websocket.i"
+	@echo "... examples/websocket.s"
 .PHONY : help
 
 
