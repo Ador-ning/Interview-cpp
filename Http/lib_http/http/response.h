@@ -199,7 +199,7 @@ namespace http {
 			forbidden = 403,
 			not_found = 404,
 			internal_server_error = 500,
-			no_implemented = 501,
+			not_implemented = 501,
 			bad_gateway = 502,
 			service_unavailable = 503
 		};
@@ -233,7 +233,7 @@ namespace http {
 					return stock_replies::not_found;
 				case response::internal_server_error:
 					return stock_replies::internal_server_error;
-				case response::no_implemented:
+				case response::not_implemented:
 					return stock_replies::not_implemented;
 				case response::bad_gateway:
 					return stock_replies::bad_gateway;
@@ -279,6 +279,10 @@ namespace http {
 
 		bool has_header(const char *name, size_t size) const;
 
+		std::size_t headers_num(const std::string &name) const;
+
+		std::size_t headers_num(const char *name, size_t size) const;
+
 		std::size_t headers_num() const;
 
 		boost::string_ref get_header_cs(std::string const &name) const;
@@ -291,7 +295,7 @@ namespace http {
 
 		void response_text(std::string body);
 
-		void response_file(boost::filesystem::path path);
+		bool response_file(boost::filesystem::path path);
 
 		void response_by_generator(content_generator_t gen); // function type
 
@@ -317,7 +321,7 @@ namespace http {
 			chunked_body
 		};
 
-		bool is_complete() { return body_type != none; }
+		bool is_complete() { return body_type_ != none; }
 
 	private:
 		std::vector<header_t> headers_;
@@ -325,10 +329,10 @@ namespace http {
 		status_type status_ = ok;
 
 		bool header_buffer_wroted_ = false;
-		body_type_t body_type = none;
+		body_type_t body_type_ = none;
 
 		std::shared_ptr<std::ifstream> fs_;
-		char chunked_len_buf[20];
+		char chunked_len_buf_[20];
 		content_generator_t content_gen_;
 
 		get_connection_func_t get_connection_func_; // std::shared_ptr<connection> (bool)

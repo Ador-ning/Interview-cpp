@@ -122,19 +122,23 @@ namespace http {
 		size_t body_len() const { return body_len_; }
 
 		struct buffer_t {
-			buffer_t(char *buffer_, std::size_t size_, std::size_t max_size_) : buffer(buffer_), size(size_),
-			                                                                    max_size(max_size_) {}
+			buffer_t(char *buffer_, std::size_t size, std::size_t max_size_) : buffer(buffer_), size_(size),
+			                                                                   max_size(max_size_) {}
 
 			std::size_t remain_size() {
-				return max_size - size;
+				return max_size - size_;
 			}
 
 			char *curr_ptr() {
-				return buffer + size;
+				return buffer + size_;
+			}
+
+			std::size_t size() const {
+				return size_;
 			}
 
 			char *buffer;
-			std::size_t size;
+			std::size_t size_;
 			std::size_t max_size;
 		};
 
@@ -194,7 +198,7 @@ namespace http {
 		}
 
 		void reset() {
-			raw_request().size = 0;
+			raw_request().size_ = 0;
 			queries_.clear();
 			multipart_form_data_.clear();
 			urlencoded_form_data_.clear();
