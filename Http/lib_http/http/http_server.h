@@ -31,7 +31,7 @@ namespace http {
 
 		struct ssl_config_t {
 			ssl_method_t ssl_method;
-			std::string private_ky;
+			std::string private_key;
 			std::string certificate_chain;
 			bool is_file;
 		};
@@ -62,12 +62,12 @@ namespace http {
 		}
 
 	private:
-		void start_accept(std::shared_ptr<boost::asio::ip::tcp::socket> const &acceptor);
+		void start_accept(std::shared_ptr<boost::asio::ip::tcp::acceptor> const &acceptor);
 
-		void start_accept(std::shared_ptr<boost::asio::ip::tcp::socket> const &acceptor,
+		void start_accept(std::shared_ptr<boost::asio::ip::tcp::acceptor> const &acceptor,
 		                  std::shared_ptr<boost::asio::ssl::context_base> const &ssl_ctx);
 
-		void do_listen(std::shared_ptr<boost::asio::ip::tcp::socket> const &acceptor,
+		void do_listen(std::shared_ptr<boost::asio::ip::tcp::acceptor> const &acceptor,
 		               const std::string &address, const std::string &port);
 
 		io_service_pool io_service_pool_;
