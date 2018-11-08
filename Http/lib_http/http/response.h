@@ -119,7 +119,7 @@ namespace http {
 
 			connection(response &rep, write_func1_t wf1, write_func2_t wf2, read_func_t rf,
 			           read_func_t rsf, read_chunk_func_t rcf, shutdown_func_t sf, close_func_t cf,
-			           is_closed_func_t icf, end_func_t ef) : rep_(rep), write_func1_(wf1), write_func2_(wf2),
+			           is_closed_func_t icf, end_func_t ef) : rep_(rep), write_func1_(std::move(wf1)), write_func2_(wf2),
 			                                                  read_func_(rf),
 			                                                  read_some_func_(rsf), read_chunk_func_(rcf),
 			                                                  shutdown_func_(sf), close_func_(cf), is_closed_func_(icf),
@@ -303,7 +303,7 @@ namespace http {
 
 		void set_delay(bool delay) { delay_ = delay; }
 
-		void set_get_function_func(get_connection_func_t func) {
+		void set_get_connection_func(get_connection_func_t func) {
 			get_connection_func_ = func;
 		}
 
@@ -322,6 +322,8 @@ namespace http {
 		};
 
 		bool is_complete() { return body_type_ != none; }
+
+		body_type_t body_type() { return body_type_; }
 
 	private:
 		std::vector<header_t> headers_;

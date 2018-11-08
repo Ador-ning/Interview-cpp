@@ -43,7 +43,7 @@ extern "C" {
 * of a multiline header */
 struct phr_header {
 	const char *name;
-	size_t len;
+	size_t len; // name_len
 	const char *value;
 	size_t value_len;
 };

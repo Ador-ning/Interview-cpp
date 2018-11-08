@@ -14,10 +14,6 @@
 #endif
 
 namespace http {
-	// http 未完成 response.h request.h
-	const char *MONTH[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
-	                       "Sep", "Oct", "Nov", "Dec"};
-	const char *DAY_OF_WEEK[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 
 	template<typename Iterator>
 	Iterator cpydig(Iterator d, uint32_t n, std::size_t len) {
@@ -29,6 +25,56 @@ namespace http {
 		return d + len;
 	}
 
+	// http 未完成 response.h request.h
+	const char *MONTH[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+	                       "Sep", "Oct", "Nov", "Dec"};
+	const char *DAY_OF_WEEK[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+
+	std::string http_date(time_t t) {
+		std::string res(29, 0);
+		http_date(&res[0], t);
+		return res;
+	}
+
+	char *http_date(char *res, time_t t) {
+		struct tm tms;
+
+		if (gmtime_r(&t, &tms) == nullptr)
+			return res;
+
+		auto p = res;
+		auto s = DAY_OF_WEEK[tms.tm_wday];
+		p = std::copy_n(s, 3, p);
+		*p++ = ',';
+		*p++ = ' ';
+
+		p = cpydig(p, tms.tm_mday, 2);
+		*p++ = ' ';
+		s = MONTH[tms.tm_mon];
+		p = std::copy_n(s, 3, p);
+		*p++ = ' ';
+		p = cpydig(p, tms.tm_year + 1900, 4);
+		*p++ = ' ';
+		p = cpydig(p, tms.tm_hour, 2);
+		*p++ = ':';
+		p = cpydig(p, tms.tm_min, 2);
+		*p++ = ':';
+		p = cpydig(p, tms.tm_sec, 2);
+		s = " GMT";
+		p = std::copy_n(s, 4, p);
+
+		return p;
+	}
+
+	response reply_static_file(std::string const &static_path, request const &req) {
+		if (req.url().find("..") != std::string::npos)
+			return response::stock_reply(response::bad_request);
+
+		response rep;
+		if (rep.response_file((boost::filesystem::path(static_path) / req.path().to_string()).generic_string()))
+			return rep;
+		return response::stock_reply(response::not_found);
+	}
 
 	bool iequal(const char *src, std::size_t src_len, const char *dst, std::size_t dst_len) {
 		if (src_len != dst_len)
@@ -118,5 +164,4 @@ namespace http {
 		}
 		return true;
 	}
-
 }
