@@ -188,6 +188,201 @@ thread_test/fast:
 	$(MAKE) -f Concurrent/CMakeFiles/thread_test.dir/build.make Concurrent/CMakeFiles/thread_test.dir/build
 .PHONY : thread_test/fast
 
+#=============================================================================
+# Target rules for targets named file_example
+
+# Build rule for target.
+file_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 file_example
+.PHONY : file_example
+
+# fast build rule for target.
+file_example/fast:
+	$(MAKE) -f Http/CMakeFiles/file_example.dir/build.make Http/CMakeFiles/file_example.dir/build
+.PHONY : file_example/fast
+
+#=============================================================================
+# Target rules for targets named lib
+
+# Build rule for target.
+lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib
+.PHONY : lib
+
+# fast build rule for target.
+lib/fast:
+	$(MAKE) -f Http/CMakeFiles/lib.dir/build.make Http/CMakeFiles/lib.dir/build
+.PHONY : lib/fast
+
+#=============================================================================
+# Target rules for targets named database_example
+
+# Build rule for target.
+database_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 database_example
+.PHONY : database_example
+
+# fast build rule for target.
+database_example/fast:
+	$(MAKE) -f Http/CMakeFiles/database_example.dir/build.make Http/CMakeFiles/database_example.dir/build
+.PHONY : database_example/fast
+
+#=============================================================================
+# Target rules for targets named websocket_example
+
+# Build rule for target.
+websocket_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 websocket_example
+.PHONY : websocket_example
+
+# fast build rule for target.
+websocket_example/fast:
+	$(MAKE) -f Http/CMakeFiles/websocket_example.dir/build.make Http/CMakeFiles/websocket_example.dir/build
+.PHONY : websocket_example/fast
+
+#=============================================================================
+# Target rules for targets named http_examples
+
+# Build rule for target.
+http_examples: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_examples
+.PHONY : http_examples
+
+# fast build rule for target.
+http_examples/fast:
+	$(MAKE) -f Http/CMakeFiles/http_examples.dir/build.make Http/CMakeFiles/http_examples.dir/build
+.PHONY : http_examples/fast
+
+#=============================================================================
+# Target rules for targets named http_lib
+
+# Build rule for target.
+http_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 http_lib
+.PHONY : http_lib
+
+# fast build rule for target.
+http_lib/fast:
+	$(MAKE) -f Http/CMakeFiles/http_lib.dir/build.make Http/CMakeFiles/http_lib.dir/build
+.PHONY : http_lib/fast
+
+#=============================================================================
+# Target rules for targets named ormpp
+
+# Build rule for target.
+ormpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ormpp
+.PHONY : ormpp
+
+# fast build rule for target.
+ormpp/fast:
+	$(MAKE) -f Http/ormpp/CMakeFiles/ormpp.dir/build.make Http/ormpp/CMakeFiles/ormpp.dir/build
+.PHONY : ormpp/fast
+
+#=============================================================================
+# Target rules for targets named xml_example
+
+# Build rule for target.
+xml_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xml_example
+.PHONY : xml_example
+
+# fast build rule for target.
+xml_example/fast:
+	$(MAKE) -f Http/iguana/CMakeFiles/xml_example.dir/build.make Http/iguana/CMakeFiles/xml_example.dir/build
+.PHONY : xml_example/fast
+
+#=============================================================================
+# Target rules for targets named msgpack_example
+
+# Build rule for target.
+msgpack_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 msgpack_example
+.PHONY : msgpack_example
+
+# fast build rule for target.
+msgpack_example/fast:
+	$(MAKE) -f Http/iguana/CMakeFiles/msgpack_example.dir/build.make Http/iguana/CMakeFiles/msgpack_example.dir/build
+.PHONY : msgpack_example/fast
+
+#=============================================================================
+# Target rules for targets named json_example
+
+# Build rule for target.
+json_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 json_example
+.PHONY : json_example
+
+# fast build rule for target.
+json_example/fast:
+	$(MAKE) -f Http/iguana/CMakeFiles/json_example.dir/build.make Http/iguana/CMakeFiles/json_example.dir/build
+.PHONY : json_example/fast
+
+#=============================================================================
+# Target rules for targets named example
+
+# Build rule for target.
+example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example
+.PHONY : example
+
+# fast build rule for target.
+example/fast:
+	$(MAKE) -f Http/iguana/CMakeFiles/example.dir/build.make Http/iguana/CMakeFiles/example.dir/build
+.PHONY : example/fast
+
+#=============================================================================
+# Target rules for targets named lib_http_src2_exe
+
+# Build rule for target.
+lib_http_src2_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_http_src2_exe
+.PHONY : lib_http_src2_exe
+
+# fast build rule for target.
+lib_http_src2_exe/fast:
+	$(MAKE) -f Http/lib_http/CMakeFiles/lib_http_src2_exe.dir/build.make Http/lib_http/CMakeFiles/lib_http_src2_exe.dir/build
+.PHONY : lib_http_src2_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_http_src1_exe
+
+# Build rule for target.
+lib_http_src1_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_http_src1_exe
+.PHONY : lib_http_src1_exe
+
+# fast build rule for target.
+lib_http_src1_exe/fast:
+	$(MAKE) -f Http/lib_http/http/CMakeFiles/lib_http_src1_exe.dir/build.make Http/lib_http/http/CMakeFiles/lib_http_src1_exe.dir/build
+.PHONY : lib_http_src1_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_src2_exe
+
+# Build rule for target.
+lib_src2_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_src2_exe
+.PHONY : lib_src2_exe
+
+# fast build rule for target.
+lib_src2_exe/fast:
+	$(MAKE) -f Http/lib/CMakeFiles/lib_src2_exe.dir/build.make Http/lib/CMakeFiles/lib_src2_exe.dir/build
+.PHONY : lib_src2_exe/fast
+
+#=============================================================================
+# Target rules for targets named lib_src1_exe
+
+# Build rule for target.
+lib_src1_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib_src1_exe
+.PHONY : lib_src1_exe
+
+# fast build rule for target.
+lib_src1_exe/fast:
+	$(MAKE) -f Http/lib/http/CMakeFiles/lib_src1_exe.dir/build.make Http/lib/http/CMakeFiles/lib_src1_exe.dir/build
+.PHONY : lib_src1_exe/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -229,6 +424,21 @@ help:
 	@echo "... thread_src"
 	@echo "... thread"
 	@echo "... thread_test"
+	@echo "... file_example"
+	@echo "... lib"
+	@echo "... database_example"
+	@echo "... websocket_example"
+	@echo "... http_examples"
+	@echo "... http_lib"
+	@echo "... ormpp"
+	@echo "... xml_example"
+	@echo "... msgpack_example"
+	@echo "... json_example"
+	@echo "... example"
+	@echo "... lib_http_src2_exe"
+	@echo "... lib_http_src1_exe"
+	@echo "... lib_src2_exe"
+	@echo "... lib_src1_exe"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

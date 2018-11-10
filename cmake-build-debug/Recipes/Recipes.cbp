@@ -5,7 +5,7 @@
 		<Option title="Recipes"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\Http\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\Http\;CMake Files\Http\ormpp\;CMake Files\Http\iguana\;CMake Files\Http\lib_http\;CMake Files\Http\lib_http\http\;CMake Files\Http\lib\;CMake Files\Http\lib\http\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Recipes"/>
@@ -124,6 +124,24 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\ormpp\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\iguana\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib_http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib_http\http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib\http\"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\JSON\"/>

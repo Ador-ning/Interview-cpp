@@ -110,6 +110,204 @@ depend:
 	cd /Users/ning/Interview-cpp/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Http/CMakeFiles/file_example.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/file_example.dir/rule
+.PHONY : Http/CMakeFiles/file_example.dir/rule
+
+# Convenience name for target.
+file_example: Http/CMakeFiles/file_example.dir/rule
+
+.PHONY : file_example
+
+# fast build rule for target.
+file_example/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/file_example.dir/build.make Http/CMakeFiles/file_example.dir/build
+.PHONY : file_example/fast
+
+# Convenience name for target.
+Http/CMakeFiles/lib.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/lib.dir/rule
+.PHONY : Http/CMakeFiles/lib.dir/rule
+
+# Convenience name for target.
+lib: Http/CMakeFiles/lib.dir/rule
+
+.PHONY : lib
+
+# fast build rule for target.
+lib/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/lib.dir/build.make Http/CMakeFiles/lib.dir/build
+.PHONY : lib/fast
+
+# Convenience name for target.
+Http/CMakeFiles/database_example.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/database_example.dir/rule
+.PHONY : Http/CMakeFiles/database_example.dir/rule
+
+# Convenience name for target.
+database_example: Http/CMakeFiles/database_example.dir/rule
+
+.PHONY : database_example
+
+# fast build rule for target.
+database_example/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/database_example.dir/build.make Http/CMakeFiles/database_example.dir/build
+.PHONY : database_example/fast
+
+# Convenience name for target.
+Http/CMakeFiles/websocket_example.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/websocket_example.dir/rule
+.PHONY : Http/CMakeFiles/websocket_example.dir/rule
+
+# Convenience name for target.
+websocket_example: Http/CMakeFiles/websocket_example.dir/rule
+
+.PHONY : websocket_example
+
+# fast build rule for target.
+websocket_example/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/websocket_example.dir/build.make Http/CMakeFiles/websocket_example.dir/build
+.PHONY : websocket_example/fast
+
+# Convenience name for target.
+Http/CMakeFiles/http_examples.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/http_examples.dir/rule
+.PHONY : Http/CMakeFiles/http_examples.dir/rule
+
+# Convenience name for target.
+http_examples: Http/CMakeFiles/http_examples.dir/rule
+
+.PHONY : http_examples
+
+# fast build rule for target.
+http_examples/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_examples.dir/build.make Http/CMakeFiles/http_examples.dir/build
+.PHONY : http_examples/fast
+
+# Convenience name for target.
+Http/CMakeFiles/http_lib.dir/rule:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Http/CMakeFiles/http_lib.dir/rule
+.PHONY : Http/CMakeFiles/http_lib.dir/rule
+
+# Convenience name for target.
+http_lib: Http/CMakeFiles/http_lib.dir/rule
+
+.PHONY : http_lib
+
+# fast build rule for target.
+http_lib/fast:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_lib.dir/build.make Http/CMakeFiles/http_lib.dir/build
+.PHONY : http_lib/fast
+
+examples/database.o: examples/database.cpp.o
+
+.PHONY : examples/database.o
+
+# target to build an object file
+examples/database.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/database_example.dir/build.make Http/CMakeFiles/database_example.dir/examples/database.cpp.o
+.PHONY : examples/database.cpp.o
+
+examples/database.i: examples/database.cpp.i
+
+.PHONY : examples/database.i
+
+# target to preprocess a source file
+examples/database.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/database_example.dir/build.make Http/CMakeFiles/database_example.dir/examples/database.cpp.i
+.PHONY : examples/database.cpp.i
+
+examples/database.s: examples/database.cpp.s
+
+.PHONY : examples/database.s
+
+# target to generate assembly for a file
+examples/database.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/database_example.dir/build.make Http/CMakeFiles/database_example.dir/examples/database.cpp.s
+.PHONY : examples/database.cpp.s
+
+examples/file_manager.o: examples/file_manager.cpp.o
+
+.PHONY : examples/file_manager.o
+
+# target to build an object file
+examples/file_manager.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/file_example.dir/build.make Http/CMakeFiles/file_example.dir/examples/file_manager.cpp.o
+.PHONY : examples/file_manager.cpp.o
+
+examples/file_manager.i: examples/file_manager.cpp.i
+
+.PHONY : examples/file_manager.i
+
+# target to preprocess a source file
+examples/file_manager.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/file_example.dir/build.make Http/CMakeFiles/file_example.dir/examples/file_manager.cpp.i
+.PHONY : examples/file_manager.cpp.i
+
+examples/file_manager.s: examples/file_manager.cpp.s
+
+.PHONY : examples/file_manager.s
+
+# target to generate assembly for a file
+examples/file_manager.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/file_example.dir/build.make Http/CMakeFiles/file_example.dir/examples/file_manager.cpp.s
+.PHONY : examples/file_manager.cpp.s
+
+examples/main.o: examples/main.cpp.o
+
+.PHONY : examples/main.o
+
+# target to build an object file
+examples/main.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_examples.dir/build.make Http/CMakeFiles/http_examples.dir/examples/main.cpp.o
+.PHONY : examples/main.cpp.o
+
+examples/main.i: examples/main.cpp.i
+
+.PHONY : examples/main.i
+
+# target to preprocess a source file
+examples/main.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_examples.dir/build.make Http/CMakeFiles/http_examples.dir/examples/main.cpp.i
+.PHONY : examples/main.cpp.i
+
+examples/main.s: examples/main.cpp.s
+
+.PHONY : examples/main.s
+
+# target to generate assembly for a file
+examples/main.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/http_examples.dir/build.make Http/CMakeFiles/http_examples.dir/examples/main.cpp.s
+.PHONY : examples/main.cpp.s
+
+examples/websocket.o: examples/websocket.cpp.o
+
+.PHONY : examples/websocket.o
+
+# target to build an object file
+examples/websocket.cpp.o:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/websocket_example.dir/build.make Http/CMakeFiles/websocket_example.dir/examples/websocket.cpp.o
+.PHONY : examples/websocket.cpp.o
+
+examples/websocket.i: examples/websocket.cpp.i
+
+.PHONY : examples/websocket.i
+
+# target to preprocess a source file
+examples/websocket.cpp.i:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/websocket_example.dir/build.make Http/CMakeFiles/websocket_example.dir/examples/websocket.cpp.i
+.PHONY : examples/websocket.cpp.i
+
+examples/websocket.s: examples/websocket.cpp.s
+
+.PHONY : examples/websocket.s
+
+# target to generate assembly for a file
+examples/websocket.cpp.s:
+	cd /Users/ning/Interview-cpp/cmake-build-debug && $(MAKE) -f Http/CMakeFiles/websocket_example.dir/build.make Http/CMakeFiles/websocket_example.dir/examples/websocket.cpp.s
+.PHONY : examples/websocket.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +316,24 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... file_example"
+	@echo "... lib"
+	@echo "... database_example"
+	@echo "... websocket_example"
+	@echo "... http_examples"
+	@echo "... http_lib"
+	@echo "... examples/database.o"
+	@echo "... examples/database.i"
+	@echo "... examples/database.s"
+	@echo "... examples/file_manager.o"
+	@echo "... examples/file_manager.i"
+	@echo "... examples/file_manager.s"
+	@echo "... examples/main.o"
+	@echo "... examples/main.i"
+	@echo "... examples/main.s"
+	@echo "... examples/websocket.o"
+	@echo "... examples/websocket.i"
+	@echo "... examples/websocket.s"
 .PHONY : help
 
 

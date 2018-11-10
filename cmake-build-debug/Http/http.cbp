@@ -5,7 +5,7 @@
 		<Option title="http"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\Http\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Recipes\;CMake Files\Recipes\string\;CMake Files\Recipes\tpc\;CMake Files\Recipes\thread\;CMake Files\Recipes\thread\src\;CMake Files\Http\;CMake Files\Http\ormpp\;CMake Files\Http\iguana\;CMake Files\Http\lib_http\;CMake Files\Http\lib_http\http\;CMake Files\Http\lib\;CMake Files\Http\lib\http\;CMake Files\JSON\;CMake Files\JSON\src\;CMake Files\Concurrent\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
@@ -17,7 +17,883 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="file_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/file_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 file_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="file_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/file_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 file_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/liblib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/liblib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/database_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 database_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="database_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/database_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 database_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="websocket_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/websocket_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 websocket_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="websocket_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/websocket_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 websocket_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_examples">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/http_examples" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_examples"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_examples/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/http_examples" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_examples/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_lib">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/libhttp_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_lib/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/libhttp_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/ning/Interview-cpp"/>
+					<Add directory="/Users/ning/Interview-cpp/lib_http"/>
+					<Add directory="/Users/ning/Interview-cpp/lib"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 http_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ormpp">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/ormpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DORMPP_ENABLE_MYSQL"/>
+					<Add option="-DORMPP_ENABLE_SQLITE3"/>
+					<Add option="-DORMPP_ENABLE_PG"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 ormpp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ormpp/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/ormpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DORMPP_ENABLE_MYSQL"/>
+					<Add option="-DORMPP_ENABLE_SQLITE3"/>
+					<Add option="-DORMPP_ENABLE_PG"/>
+					<Add directory="/Users/ning/Interview-cpp/iguana"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 ormpp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/ormpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xml_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/xml_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 xml_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xml_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/xml_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 xml_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msgpack_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/msgpack_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 msgpack_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msgpack_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/msgpack_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 msgpack_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="json_example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/json_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 json_example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="json_example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/json_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 json_example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 example"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana"/>
+					<Add directory="/Users/ning/Interview-cpp/Http/iguana/third_party/msgpack/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/iguana/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_http_src2_exe">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/lib_http_src2_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 lib_http_src2_exe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_http_src2_exe/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/lib_http_src2_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 lib_http_src2_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_http_src1_exe">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/lib_http_src1_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 lib_http_src1_exe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_http_src1_exe/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/lib_http_src1_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 lib_http_src1_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib_http/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_src2_exe">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/lib_src2_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 lib_src2_exe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_src2_exe/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/lib_src2_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 lib_src2_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_src1_exe">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/lib_src1_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 lib_src1_exe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_src1_exe/fast">
+				<Option output="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/lib_src1_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 lib_src1_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ning/Interview-cpp/cmake-build-debug/Http/lib/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/ning/Interview-cpp/Http/examples/database.cpp">
+			<Option target="database_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/examples/file_manager.cpp">
+			<Option target="file_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/examples/main.cpp">
+			<Option target="http_examples"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/examples/websocket.cpp">
+			<Option target="websocket_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/example/example.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/example/json_example.cpp">
+			<Option target="json_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/example/msgpack_example.cpp">
+			<Option target="msgpack_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/example/xml_example.cpp">
+			<Option target="xml_example"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/aop.cpp">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/context_container.cpp">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/function_traits.cpp">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/http.h">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/http_router.h">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/middleware/cookies.cpp">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/middleware/session.cpp">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/router.h">
+			<Option target="lib_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/router.cpp">
+			<Option target="lib_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/connection.cpp">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/http_parser.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/http_server.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/io_service_pool.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/mime_types.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/multipart_parser.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/picohttpparser.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/request.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/response.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/utils.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/websocket.h">
+			<Option target="lib_http_src1_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http_parser.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http_server.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/io_service_pool.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/mime_type.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/multipart_parser.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/picohttpparser.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/request.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/response.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/utils.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/websocket.cpp">
+			<Option target="lib_http_src2_exe"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/connection_pool.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/dbng.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/entity.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/main.cpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/ormpp_cfg.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/pg_types.h">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/postgresql.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/type_mapping.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/unit_test.hpp">
+			<Option target="ormpp"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/utility.hpp">
+			<Option target="ormpp"/>
+		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -38,6 +914,24 @@
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/Http/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/ormpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\ormpp\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/iguana/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\iguana\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib_http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib_http/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib_http\http\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib\"/>
+		</Unit>
+		<Unit filename="/Users/ning/Interview-cpp/Http/lib/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Http\lib\http\"/>
 		</Unit>
 		<Unit filename="/Users/ning/Interview-cpp/JSON/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\JSON\"/>
