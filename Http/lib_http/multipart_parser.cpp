@@ -20,6 +20,7 @@ static void multipart_log(const char *format, ...) {
 }
 
 // Macros
+// part_data_begin  == FOR
 #define NOTIFY_CB(FOR)                                                 \
 do {                                                                   \
   if (p->settings->on_##FOR) {                                         \
@@ -130,7 +131,7 @@ size_t multipart_parser_execute(multipart_parser *p, const char *buf, size_t len
 						return i;
 
 					p->index = 0;
-					NOTIFY_CB(part_data_begin);
+					NOTIFY_CB(part_data_begin); // settings-> ob_part_data_begin
 					p->state = s_header_field_start;
 					break;
 				}
@@ -207,7 +208,7 @@ size_t multipart_parser_execute(multipart_parser *p, const char *buf, size_t len
 
 			case s_part_data_start:
 				multipart_log("s_part_data_start");
-				NOTIFY_CB(headers_complete);    // callback function
+				NOTIFY_CB(headers_complete);    // callback function  settings->on_headers_complete
 				mark = i;
 				p->state = s_part_data;
 
@@ -268,7 +269,7 @@ size_t multipart_parser_execute(multipart_parser *p, const char *buf, size_t len
 			case s_part_data_final_hyphen:
 				multipart_log("s_part_data_final_hyphen");
 				if (c == '-') {
-					NOTIFY_CB(body_end);
+					NOTIFY_CB(body_end); // settings->on_dody_end
 					p->state = s_end;
 					break;
 				}

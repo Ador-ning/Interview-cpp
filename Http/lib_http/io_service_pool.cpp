@@ -8,7 +8,7 @@
 #include <thread>
 
 namespace http {
-	io_service_pool::io_service_pool(std::size_t pool_size) : next_io_sevice_(0) {
+	io_service_pool::io_service_pool(std::size_t pool_size) : next_to_service_(0) {
 		if (pool_size == 0)
 			throw std::runtime_error("io_service_pool size is 0.");
 		for (std::size_t i = 0; i < pool_size; ++i) {

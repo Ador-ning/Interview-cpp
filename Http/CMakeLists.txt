@@ -32,6 +32,40 @@ set(DATABASE_TEST examples/database.cpp)
 set(FILE_EXAMPLE examples/file_manager.cpp)
 set(WEBSOCKET_EXAMPLE examples/websocket.cpp)
 
+set(HTTP_FILES
+		lib_http/http/connection.cpp
+		lib_http/http/http_parser.h
+		lib_http/http/http_server.h
+		lib_http/http/io_service_pool.h
+		lib_http/http/mime_types.h
+		lib_http/http/multipart_parser.h
+		lib_http/http/picohttpparser.h
+		lib_http/http/request.h
+		lib_http/http/response.h
+		lib_http/http/utils.h
+		lib_http/http/websocket.h
+		lib_http/http_parser.cpp
+		lib_http/http_server.cpp
+		lib_http/io_service_pool.cpp
+		lib_http/mime_types.cpp
+		lib_http/multipart_parser.cpp
+		lib_http/picohttpparser.cpp
+		lib_http/request.cpp
+		lib_http/response.cpp
+		lib_http/utils.cpp
+		lib_http/websocket.cpp)
+
+set(FILES
+		lib/http/middleware/cookies.cpp
+		lib/http/middleware/session.cpp
+		lib/http/aop.cpp
+		lib/http/http.h
+		lib/http/context_container.cpp
+		lib/http/function_traits.cpp
+		lib/http/router.h
+		lib/http/http_router.h
+		lib/http/router.cpp)
+
 # static library
 add_library(http_lib STATIC ${HTTP_FLIES})
 set_target_properties(http_lib PROPERTIES LINKER_LANGUAGE CXX)

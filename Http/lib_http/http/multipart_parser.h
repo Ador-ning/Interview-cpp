@@ -43,7 +43,7 @@ void multipart_parser_set_data(multipart_parser *p, void *data);
 
 void *multipart_parser_get_data(multipart_parser *p);
 
-#endif __cplusplus
+#ifdef __cplusplus
 }
 #endif
 
